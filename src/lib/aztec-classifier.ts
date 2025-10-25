@@ -7,6 +7,7 @@ import axiosRetry from "axios-retry";
 import toml from "toml";
 import { logger } from "./logger";
 import { TokenRotator } from "./token-rotator";
+import { config } from "./config";
 
 // Global token rotator instance (singleton)
 let tokenRotator: TokenRotator | null = null;
@@ -35,7 +36,7 @@ function getNextToken(fallbackToken?: string): string {
 
 // Configure axios with retry logic for better reliability
 axiosRetry(axios, {
-  retries: 5,
+  retries: config.retry.maxRetries,
   retryDelay: (retryCount, error) => {
     // Check for rate limit headers
     const retryAfter = error.response?.headers?.['retry-after'];
@@ -45,7 +46,7 @@ axiosRetry(axios, {
     if (retryAfter) {
       const delay = parseInt(retryAfter) * 1000;
       logger.info(`Rate limit retry-after header: waiting ${retryAfter} seconds`);
-      return delay;
+      return Math.min(delay, config.retry.maxRetryDelay); // Respect max delay
     }
 
     // If we have a rate limit reset time, calculate delay
@@ -54,21 +55,22 @@ axiosRetry(axios, {
       const now = Date.now();
       const delay = Math.max(resetTime - now + 1000, 1000); // Add 1s buffer
       logger.info(`Rate limit reset at ${new Date(resetTime).toISOString()}, waiting ${Math.ceil(delay / 1000)} seconds`);
-      return delay;
+      return Math.min(delay, config.retry.maxRetryDelay); // Respect max delay
     }
 
-    // For rate limits without headers, use longer backoff
+    // For rate limits without headers, use configured base delay
     if (error.response?.status === 403 || error.response?.status === 429) {
-      // Longer delays for rate limits: 10s, 20s, 40s, 60s, 90s
-      const baseDelay = 10000; // 10 seconds
-      const delay = Math.min(baseDelay * retryCount, 90000); // Cap at 90 seconds
+      const delay = Math.min(
+        config.retry.rateLimitBaseDelay * retryCount,
+        config.retry.maxRetryDelay
+      );
       logger.info(`Rate limit detected, waiting ${delay / 1000} seconds before retry ${retryCount}`);
       return delay;
     }
 
-    // For other errors, use standard exponential backoff
-    const delay = Math.pow(2, retryCount - 1) * 1000;
-    return Math.min(delay, 30000); // Cap at 30 seconds
+    // For other errors, use standard exponential backoff with configured base
+    const delay = Math.pow(2, retryCount - 1) * config.retry.standardRetryBaseDelay;
+    return Math.min(delay, config.retry.maxRetryDelay);
   },
   retryCondition: (error) => {
     // Retry on network errors or 5xx errors or rate limiting (403/429)
@@ -138,7 +140,7 @@ export async function findAllNargoTomlFiles(
         Authorization: `Bearer ${activeToken}`,
         Accept: 'application/vnd.github.v3+json'
       },
-      timeout: 30000 // 30 second timeout (increased for rate limit handling)
+      timeout: config.timeout.httpRequestTimeout
     });
 
     // Extract paths from search results
@@ -197,7 +199,7 @@ export async function fetchNargoTomlFromPath(
         Authorization: `Bearer ${activeToken}`,
         Accept: 'application/vnd.github.v3+json'
       },
-      timeout: 30000 // 30 second timeout (increased for rate limit handling)
+      timeout: config.timeout.httpRequestTimeout
     });
 
     // Handle if it's a directory (shouldn't happen with Nargo.toml, but be safe)

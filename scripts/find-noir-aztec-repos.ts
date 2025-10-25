@@ -5,6 +5,7 @@ import { GitHubSearchClient } from "../src/lib/github";
 import { createFileLogger } from "../src/lib/logger";
 import { RateLimitError } from "../src/lib/errors";
 import { classifyRepository } from "../src/lib/aztec-classifier";
+import { config } from "../src/lib/config";
 import * as path from "path";
 import * as fs from "fs";
 
@@ -99,7 +100,7 @@ async function findNoirAztecRepos(excludedRepoNames: string[]): Promise<RepoResu
   logger.info(`Initializing GitHub client with ${excludedRepoNames.length} excluded repos (filtered at API level)`);
 
   const client = new GitHubSearchClient({
-    searchTimeoutMs: 60000,
+    searchTimeoutMs: config.timeout.searchTimeout,
     excludeRepos: excludedRepoNames, // These repos will be filtered out by the API using -repo: filters
     excludeOrgs: [],
     excludeTopics: [],
@@ -249,11 +250,11 @@ async function findNoirAztecRepos(excludedRepoNames: string[]): Promise<RepoResu
           logger.info(`Found ${repoType} repo: ${repoFullName} (type: ${classification.nargoType}, checked ${classification.filesChecked} files)${indicators}${apiIssueWarning}`);
 
           // Rate limit pause
-          await new Promise(resolve => setTimeout(resolve, 100));
+          await new Promise(resolve => setTimeout(resolve, config.rateLimit.repoProcessingDelay));
         }
 
         // Longer pause between search queries
-        await new Promise(resolve => setTimeout(resolve, 2000));
+        await new Promise(resolve => setTimeout(resolve, config.rateLimit.searchQueryDelay));
 
       } catch (error) {
         if (error instanceof RateLimitError) {

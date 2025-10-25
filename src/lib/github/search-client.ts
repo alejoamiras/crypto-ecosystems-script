@@ -3,6 +3,7 @@ import { retry } from "@octokit/plugin-retry";
 import { throttling } from "@octokit/plugin-throttling";
 import { logger } from "../logger";
 import { TokenRotator } from "../token-rotator";
+import { config } from "../config";
 import {
   SearchTimeoutError,
   RateLimitError,
@@ -32,12 +33,12 @@ export class GitHubSearchClient {
   private tokenRotator?: TokenRotator;
   private useTokenRotation: boolean;
 
-  constructor(config: SearchConfig = {}) {
-    this.excludeRepos = new Set(config.excludeRepos || []);
-    this.excludeOrgs = new Set(config.excludeOrgs || []);
-    this.excludeTopics = new Set(config.excludeTopics || []);
-    this.searchTimeoutMs = config.searchTimeoutMs || 30000; // Default 30 seconds
-    this.useTokenRotation = config.useTokenRotation || false;
+  constructor(searchConfig: SearchConfig = {}) {
+    this.excludeRepos = new Set(searchConfig.excludeRepos || []);
+    this.excludeOrgs = new Set(searchConfig.excludeOrgs || []);
+    this.excludeTopics = new Set(searchConfig.excludeTopics || []);
+    this.searchTimeoutMs = searchConfig.searchTimeoutMs || config.timeout.searchTimeout;
+    this.useTokenRotation = searchConfig.useTokenRotation || false;
 
     // Initialize token rotation if enabled
     let token: string | undefined;
@@ -49,10 +50,10 @@ export class GitHubSearchClient {
       } catch (error) {
         logger.warn("Failed to initialize token rotation, falling back to single token");
         this.useTokenRotation = false;
-        token = config.githubToken || process.env.GITHUB_TOKEN;
+        token = searchConfig.githubToken || process.env.GITHUB_TOKEN;
       }
     } else {
-      token = config.githubToken || process.env.GITHUB_TOKEN;
+      token = searchConfig.githubToken || process.env.GITHUB_TOKEN;
     }
 
     if (!token) {
@@ -63,8 +64,8 @@ export class GitHubSearchClient {
     this.octokit = new MyOctokit({
       auth: token,
       retry: {
-        retries: config.maxRetries || 5,
-        retryAfterBaseValue: 1000,
+        retries: searchConfig.maxRetries || config.retry.maxRetries,
+        retryAfterBaseValue: config.retry.standardRetryBaseDelay,
         doNotRetry: [400, 401, 403, 404, 422],
       },
       throttle: {
@@ -86,8 +87,8 @@ export class GitHubSearchClient {
             }
           }
 
-          // Retry up to 5 times for rate limit
-          if (retryCount <= 5) {
+          // Retry up to configured max retries for rate limit
+          if (retryCount <= config.retry.maxRetries) {
             logger.info(`Retrying after ${retryAfter} seconds...`);
             return true;
           }
