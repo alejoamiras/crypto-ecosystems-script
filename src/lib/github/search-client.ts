@@ -342,4 +342,98 @@ export class GitHubSearchClient {
       topics: Array.from(this.excludeTopics),
     };
   }
+
+  /**
+   * Search for code/files in repositories
+   */
+  async searchCode(
+    query: string,
+    options?: SearchOptions
+  ): Promise<any[]> {
+    const maxResults = options?.maxResults || 100;
+    const perPage = Math.min(maxResults, 100);
+    const results: any[] = [];
+
+    try {
+      logger.info(`Searching code with query: ${query}`);
+
+      // Create timeout promise
+      const timeoutPromise = new Promise<never>((_, reject) => {
+        setTimeout(() => {
+          reject(new SearchTimeoutError(`Code search timed out after ${this.searchTimeoutMs}ms`));
+        }, this.searchTimeoutMs);
+      });
+
+      // Create search promise
+      const searchPromise = async () => {
+        let page = 1;
+        const maxPages = Math.ceil(maxResults / perPage);
+
+        while (page <= maxPages && results.length < maxResults) {
+          const response = await this.octokit.search.code({
+            q: query,
+            per_page: perPage,
+            page,
+            sort: options?.sort as any,
+            order: options?.order as any,
+          });
+
+          logger.debug(`Code search page ${page}: ${response.data.items.length} results`);
+
+          // Add results
+          results.push(...response.data.items);
+
+          // Check if we have more pages
+          if (response.data.items.length < perPage || results.length >= maxResults) {
+            break;
+          }
+
+          page++;
+
+          // Small delay between requests to avoid rate limiting
+          if (page <= maxPages && results.length < maxResults) {
+            await new Promise(resolve => setTimeout(resolve, 100));
+          }
+        }
+
+        return results.slice(0, maxResults);
+      };
+
+      // Race between search and timeout
+      const finalResults = await Promise.race([
+        searchPromise(),
+        timeoutPromise
+      ]);
+
+      logger.info(`Code search complete. Found ${finalResults.length} results`);
+      return finalResults;
+
+    } catch (error: any) {
+      // Handle specific GitHub API errors
+      if (error.status === 403 && error.response?.headers?.['x-ratelimit-remaining'] === '0') {
+        const resetTime = parseInt(error.response.headers['x-ratelimit-reset']);
+        const waitTime = Math.ceil((resetTime - Date.now() / 1000));
+
+        throw new RateLimitError(
+          `GitHub API rate limit exceeded. Reset in ${waitTime} seconds`,
+          waitTime
+        );
+      }
+
+      if (error.status === 403 && error.message?.includes('abuse')) {
+        throw new AbuseLimitError("GitHub abuse detection triggered. Please wait before retrying.");
+      }
+
+      if (error instanceof SearchTimeoutError) {
+        throw error;
+      }
+
+      // Re-throw other errors
+      throw new GitHubAPIError(
+        `Code search failed: ${error.message}`,
+        error.status,
+        error.response
+      );
+    }
+  }
 }

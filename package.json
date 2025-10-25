@@ -6,7 +6,8 @@
     "search": "bun run src/search.ts",
     "cli": "bun run src/cli.ts",
     "cli:help": "bun run src/cli.ts --help",
-    "example:crypto": "bun run examples/crypto-search.ts"
+    "example:crypto": "bun run examples/crypto-search.ts",
+    "find:aztec": "bun run scripts/find-noir-aztec-repos.ts"
   },
   "devDependencies": {
     "bun-types": "latest"
