@@ -1,10 +1,10 @@
 #!/usr/bin/env bun
 
 import dotenv from "dotenv";
-import { TokenRotator } from "../src/lib/token-rotator";
-import { GitHubSearchClient } from "../src/lib/github";
-import { createFileLogger } from "../src/lib/logger";
-import { classifyRepository } from "../src/lib/aztec-classifier";
+import { TokenRotator } from "../../src/lib/token-rotator";
+import { GitHubSearchClient } from "../../src/lib/github";
+import { createFileLogger } from "../../src/lib/logger";
+import { classifyRepository } from "../../src/lib/aztec-classifier";
 
 // Load environment variables
 dotenv.config();

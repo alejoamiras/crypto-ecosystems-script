@@ -1,7 +1,7 @@
 #!/usr/bin/env bun
 
 import dotenv from "dotenv";
-import { classifyRepository } from "../src/lib/aztec-classifier";
+import { classifyRepository } from "../../src/lib/aztec-classifier";
 
 dotenv.config();
 
