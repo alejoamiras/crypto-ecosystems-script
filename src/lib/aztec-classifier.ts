@@ -6,13 +6,69 @@ import axios from "axios";
 import axiosRetry from "axios-retry";
 import toml from "toml";
 import { logger } from "./logger";
+import { TokenRotator } from "./token-rotator";
+
+// Global token rotator instance (singleton)
+let tokenRotator: TokenRotator | null = null;
+let useTokenRotation = false;
+
+// Initialize token rotation if environment variable is set
+if (process.env.USE_TOKEN_ROTATION === 'true') {
+  try {
+    tokenRotator = new TokenRotator();
+    useTokenRotation = true;
+    logger.info(`Aztec classifier: Token rotation enabled with ${tokenRotator.getTokenCount()} tokens`);
+  } catch (error) {
+    logger.warn("Aztec classifier: Failed to initialize token rotation");
+  }
+}
+
+/**
+ * Get the next token (with rotation if enabled)
+ */
+function getNextToken(fallbackToken?: string): string {
+  if (useTokenRotation && tokenRotator) {
+    return tokenRotator.getNextToken();
+  }
+  return fallbackToken || process.env.GITHUB_TOKEN || '';
+}
 
 // Configure axios with retry logic for better reliability
 axiosRetry(axios, {
   retries: 5,
-  retryDelay: (retryCount) => {
-    // Exponential backoff: 1s, 2s, 4s
-    return Math.pow(2, retryCount - 1) * 1000;
+  retryDelay: (retryCount, error) => {
+    // Check for rate limit headers
+    const retryAfter = error.response?.headers?.['retry-after'];
+    const rateLimitReset = error.response?.headers?.['x-ratelimit-reset'];
+
+    // If we have a retry-after header, use it
+    if (retryAfter) {
+      const delay = parseInt(retryAfter) * 1000;
+      logger.info(`Rate limit retry-after header: waiting ${retryAfter} seconds`);
+      return delay;
+    }
+
+    // If we have a rate limit reset time, calculate delay
+    if (rateLimitReset) {
+      const resetTime = parseInt(rateLimitReset) * 1000;
+      const now = Date.now();
+      const delay = Math.max(resetTime - now + 1000, 1000); // Add 1s buffer
+      logger.info(`Rate limit reset at ${new Date(resetTime).toISOString()}, waiting ${Math.ceil(delay / 1000)} seconds`);
+      return delay;
+    }
+
+    // For rate limits without headers, use longer backoff
+    if (error.response?.status === 403 || error.response?.status === 429) {
+      // Longer delays for rate limits: 10s, 20s, 40s, 60s, 90s
+      const baseDelay = 10000; // 10 seconds
+      const delay = Math.min(baseDelay * retryCount, 90000); // Cap at 90 seconds
+      logger.info(`Rate limit detected, waiting ${delay / 1000} seconds before retry ${retryCount}`);
+      return delay;
+    }
+
+    // For other errors, use standard exponential backoff
+    const delay = Math.pow(2, retryCount - 1) * 1000;
+    return Math.min(delay, 30000); // Cap at 30 seconds
   },
   retryCondition: (error) => {
     // Retry on network errors or 5xx errors or rate limiting (403/429)
@@ -23,6 +79,16 @@ axiosRetry(axios, {
            (status !== undefined && status >= 500 && status < 600);
   },
   onRetry: (retryCount, error, requestConfig) => {
+    // Rotate token on rate limit if token rotation is enabled
+    if ((error.response?.status === 403 || error.response?.status === 429) &&
+        useTokenRotation && tokenRotator) {
+      const newToken = tokenRotator.getNextToken();
+      if (requestConfig.headers) {
+        requestConfig.headers['Authorization'] = `Bearer ${newToken}`;
+        logger.info(`Rotated to new token for retry ${retryCount}`);
+      }
+    }
+
     logger.warn({
       retryCount,
       url: requestConfig.url,
@@ -64,12 +130,15 @@ export async function findAllNargoTomlFiles(
   try {
     const searchUrl = `https://api.github.com/search/code?q=filename:Nargo.toml+repo:${owner}/${repo}`;
 
+    // Use token rotation if enabled
+    const activeToken = getNextToken(token);
+
     const response = await axios.get(searchUrl, {
       headers: {
-        Authorization: `Bearer ${token}`,
+        Authorization: `Bearer ${activeToken}`,
         Accept: 'application/vnd.github.v3+json'
       },
-      timeout: 10000 // 10 second timeout
+      timeout: 30000 // 30 second timeout (increased for rate limit handling)
     });
 
     // Extract paths from search results
@@ -120,12 +189,15 @@ export async function fetchNargoTomlFromPath(
   try {
     const url = `https://api.github.com/repos/${owner}/${repo}/contents/${path}`;
 
+    // Use token rotation if enabled
+    const activeToken = getNextToken(token);
+
     const response = await axios.get(url, {
       headers: {
-        Authorization: `Bearer ${token}`,
+        Authorization: `Bearer ${activeToken}`,
         Accept: 'application/vnd.github.v3+json'
       },
-      timeout: 10000 // 10 second timeout
+      timeout: 30000 // 30 second timeout (increased for rate limit handling)
     });
 
     // Handle if it's a directory (shouldn't happen with Nargo.toml, but be safe)

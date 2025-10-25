@@ -2,6 +2,7 @@ import { Octokit } from "@octokit/rest";
 import { retry } from "@octokit/plugin-retry";
 import { throttling } from "@octokit/plugin-throttling";
 import { logger } from "../logger";
+import { TokenRotator } from "../token-rotator";
 import {
   SearchTimeoutError,
   RateLimitError,
@@ -28,18 +29,35 @@ export class GitHubSearchClient {
   private excludeOrgs: Set<string>;
   private excludeTopics: Set<string>;
   private searchTimeoutMs: number;
+  private tokenRotator?: TokenRotator;
+  private useTokenRotation: boolean;
 
   constructor(config: SearchConfig = {}) {
-    const token = config.githubToken || process.env.GITHUB_TOKEN;
-
-    if (!token) {
-      logger.warn("No GitHub token provided. API rate limits will be very restrictive.");
-    }
-
     this.excludeRepos = new Set(config.excludeRepos || []);
     this.excludeOrgs = new Set(config.excludeOrgs || []);
     this.excludeTopics = new Set(config.excludeTopics || []);
     this.searchTimeoutMs = config.searchTimeoutMs || 30000; // Default 30 seconds
+    this.useTokenRotation = config.useTokenRotation || false;
+
+    // Initialize token rotation if enabled
+    let token: string | undefined;
+    if (this.useTokenRotation) {
+      try {
+        this.tokenRotator = new TokenRotator();
+        token = this.tokenRotator.getNextToken();
+        logger.info(`Token rotation enabled with ${this.tokenRotator.getTokenCount()} tokens`);
+      } catch (error) {
+        logger.warn("Failed to initialize token rotation, falling back to single token");
+        this.useTokenRotation = false;
+        token = config.githubToken || process.env.GITHUB_TOKEN;
+      }
+    } else {
+      token = config.githubToken || process.env.GITHUB_TOKEN;
+    }
+
+    if (!token) {
+      logger.warn("No GitHub token provided. API rate limits will be very restrictive.");
+    }
 
     // Initialize Octokit with retry and throttling plugins
     this.octokit = new MyOctokit({
@@ -50,10 +68,23 @@ export class GitHubSearchClient {
         doNotRetry: [400, 401, 403, 404, 422],
       },
       throttle: {
-        onRateLimit: (retryAfter, options: any, _octokit, retryCount) => {
+        onRateLimit: (retryAfter, options: any, octokit, retryCount) => {
           logger.warn(
             `Rate limit detected for request ${options.method} ${options.url}. Retry #${retryCount} after ${retryAfter} seconds.`
           );
+
+          // Try to rotate token if available
+          if (this.useTokenRotation && this.tokenRotator && retryCount === 1) {
+            const currentToken = (octokit.auth as any).token;
+            this.tokenRotator.markTokenAsRateLimited(currentToken);
+
+            const newToken = this.tokenRotator.getLeastRecentlyUsedToken();
+            if (newToken !== currentToken) {
+              logger.info("Rotating to a different token due to rate limit");
+              (octokit.auth as any) = newToken;
+              return true;
+            }
+          }
 
           // Retry up to 5 times for rate limit
           if (retryCount <= 5) {
@@ -69,8 +100,8 @@ export class GitHubSearchClient {
             `Secondary rate limit (abuse detection) for ${options.method} ${options.url}. Retry #${retryCount} after ${retryAfter} seconds.`
           );
 
-          // Retry up to 2 times for abuse detection
-          if (retryCount <= 2) {
+          // Retry up to 3 times for abuse detection
+          if (retryCount <= 3) {
             logger.info(`Retrying after ${retryAfter} seconds due to abuse detection...`);
             return true;
           }
@@ -106,6 +137,81 @@ export class GitHubSearchClient {
       logger.error({ error }, "Failed to check rate limit");
       throw new GitHubAPIError("Failed to check rate limit", undefined, error);
     }
+  }
+
+  /**
+   * Manually rotate to next token
+   */
+  rotateToken(): void {
+    if (!this.useTokenRotation || !this.tokenRotator) {
+      logger.warn("Token rotation is not enabled");
+      return;
+    }
+
+    const newToken = this.tokenRotator.getNextToken();
+    this.octokit = new MyOctokit({
+      auth: newToken,
+      retry: {
+        retries: 5,
+        retryAfterBaseValue: 1000,
+        doNotRetry: [400, 401, 403, 404, 422],
+      },
+      throttle: {
+        onRateLimit: (retryAfter, options: any, octokit, retryCount) => {
+          logger.warn(
+            `Rate limit detected for request ${options.method} ${options.url}. Retry #${retryCount} after ${retryAfter} seconds.`
+          );
+
+          // Try to rotate token if available
+          if (this.useTokenRotation && this.tokenRotator && retryCount === 1) {
+            const currentToken = (octokit.auth as any).token;
+            this.tokenRotator.markTokenAsRateLimited(currentToken);
+
+            const newToken = this.tokenRotator.getLeastRecentlyUsedToken();
+            if (newToken !== currentToken) {
+              logger.info("Rotating to a different token due to rate limit");
+              (octokit.auth as any) = newToken;
+              return true;
+            }
+          }
+
+          // Retry up to 5 times for rate limit
+          if (retryCount <= 5) {
+            logger.info(`Retrying after ${retryAfter} seconds...`);
+            return true;
+          }
+
+          logger.error("Max rate limit retries exceeded");
+          return false;
+        },
+        onSecondaryRateLimit: (retryAfter, options: any, _octokit, retryCount) => {
+          logger.warn(
+            `Secondary rate limit (abuse detection) for ${options.method} ${options.url}. Retry #${retryCount} after ${retryAfter} seconds.`
+          );
+
+          // Retry up to 3 times for abuse detection
+          if (retryCount <= 3) {
+            logger.info(`Retrying after ${retryAfter} seconds due to abuse detection...`);
+            return true;
+          }
+
+          logger.error("Max abuse limit retries exceeded");
+          return false;
+        },
+      },
+    });
+
+    logger.info("Manually rotated to next token");
+  }
+
+  /**
+   * Get token rotation statistics
+   */
+  getTokenStats() {
+    if (!this.tokenRotator) {
+      return null;
+    }
+    return this.tokenRotator.getUsageStats();
   }
 
   /**

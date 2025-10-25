@@ -4,6 +4,8 @@
 
 export interface SearchConfig {
   githubToken?: string;
+  githubTokens?: string[]; // Support multiple tokens for rotation
+  useTokenRotation?: boolean; // Enable token rotation
   maxRetries?: number;
   searchTimeoutMs?: number;
   excludeRepos?: string[];
