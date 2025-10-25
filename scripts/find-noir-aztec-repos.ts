@@ -292,8 +292,7 @@ function generateMigrationOutput(results: RepoResult[]): string {
     lines.push(`# Aztec Protocol Repositories (${aztecRepos.length} found)`);
     lines.push("# Repositories with type=contract or Aztec.nr dependencies");
     for (const repo of aztecRepos) {
-      const desc = repo.description ? ` # ${repo.description.substring(0, 50)}` : '';
-      lines.push(`repadd "Aztec Protocol" ${repo.url} #zkp #zk-circuit #noir #aztec${desc}`);
+      lines.push(`repadd "Aztec Protocol" ${repo.url} #zkp #noir #aztec`);
     }
     lines.push("");
   }
@@ -303,8 +302,7 @@ function generateMigrationOutput(results: RepoResult[]): string {
     lines.push(`# Noir Lang Repositories (${noirRepos.length} found)`);
     lines.push("# Repositories with type=bin or type=lib (no Aztec dependencies)");
     for (const repo of noirRepos) {
-      const desc = repo.description ? ` # ${repo.description.substring(0, 50)}` : '';
-      lines.push(`repadd "Noir Lang" ${repo.url} #zkp #zk-circuit #noir #aztec${desc}`);
+      lines.push(`repadd "Noir Lang" ${repo.url} #zkp #zk-circuit #noir #aztec`);
     }
   }
 
