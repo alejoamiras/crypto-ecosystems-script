@@ -45,7 +45,7 @@ export class GitHubSearchClient {
     this.octokit = new MyOctokit({
       auth: token,
       retry: {
-        retries: config.maxRetries || 3,
+        retries: config.maxRetries || 5,
         retryAfterBaseValue: 1000,
         doNotRetry: [400, 401, 403, 404, 422],
       },
@@ -55,8 +55,8 @@ export class GitHubSearchClient {
             `Rate limit detected for request ${options.method} ${options.url}. Retry #${retryCount} after ${retryAfter} seconds.`
           );
 
-          // Retry up to 3 times for rate limit
-          if (retryCount <= 3) {
+          // Retry up to 5 times for rate limit
+          if (retryCount <= 5) {
             logger.info(`Retrying after ${retryAfter} seconds...`);
             return true;
           }
@@ -289,7 +289,7 @@ export class GitHubSearchClient {
   async searchWithRetry(
     query: string,
     options?: SearchOptions,
-    maxRetries: number = 3
+    maxRetries: number = 5
   ): Promise<RepositorySearchResult[]> {
     let retryCount = 0;
 

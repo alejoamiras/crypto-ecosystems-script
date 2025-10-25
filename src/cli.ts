@@ -187,7 +187,7 @@ async function main() {
         sort: "stars",
         order: "desc",
       },
-      3 // max retries
+      5 // max retries
     );
 
     // Display results
