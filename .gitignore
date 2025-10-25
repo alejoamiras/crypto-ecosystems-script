@@ -176,3 +176,6 @@ dist
 .DS_Store
 outputs
 inputs
+
+# Output directory for search results
+output/

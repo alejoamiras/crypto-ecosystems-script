@@ -2,25 +2,42 @@
 
 A flexible GitHub repository search tool with both **scripting** and **CLI** interfaces.
 
-## Architecture
+## Project Structure
 
 ```
 crypto-ecosystems-scripts/
-├── search.ts              # Main module for scripting (programmatic use)
-├── cli.ts                 # CLI interface (interactive use)
+├── src/
+│   ├── search.ts          # Main module for scripting (programmatic use)
+│   ├── cli.ts             # CLI interface (interactive use)
+│   └── lib/
+│       ├── github/        # GitHub API client
+│       ├── errors/        # Custom error types
+│       └── logger/        # Logging configuration
 ├── examples/
 │   └── crypto-search.ts   # Example script showing usage patterns
-└── src/
-    ├── lib/
-    │   ├── github/        # GitHub API client
-    │   ├── errors/        # Custom error types
-    │   └── logger/        # Logging configuration
-    └── types/             # TypeScript interfaces
+├── output/                # Auto-generated directory for search results
+├── package.json           # Dependencies and scripts
+└── types/                 # TypeScript type definitions
+```
+
+## Setup
+
+1. Install dependencies:
+```bash
+bun install
+```
+
+2. Configure environment variables:
+```bash
+# Create .env file
+GITHUB_TOKEN=your_github_token  # Required for API access
+LOG_LEVEL=info                  # debug, info, warn, error
+NODE_ENV=production             # disables pretty logging in production
 ```
 
 ## Two Ways to Use
 
-### 1. Scripting Interface (`search.ts`)
+### 1. Scripting Interface (`src/search.ts`)
 
 Perfect for automation, data pipelines, and custom scripts.
 
@@ -33,12 +50,12 @@ import {
   searchRecent,
   createSearchClient,
   exportToCSV
-} from "./search";
+} from "./src/search";
 
 // Quick search with preset
 const results = await searchWithPreset("crypto", {
   maxResults: 50,
-  save: true
+  save: true  // Saves to output/ directory
 });
 
 // Custom search
@@ -57,16 +74,16 @@ const topicResults = await searchByTopics(
 const recentProjects = await searchRecent("web3", 7);
 
 // Export to CSV
-await exportToCSV(results, "output.csv");
+await exportToCSV(results);  // Saves to output/ directory
 ```
 
-### 2. CLI Interface (`cli.ts`)
+### 2. CLI Interface (`src/cli.ts`)
 
 Interactive command-line tool with presets and options.
 
 ```bash
 # Show help
-bun run cli --help
+bun run cli:help
 
 # Use preset
 bun run cli --preset crypto --max 50 --save
@@ -79,6 +96,17 @@ bun run cli --preset defi \
   --exclude-org binance \
   --exclude-topic tutorial
 ```
+
+## Output Management
+
+All search results are automatically saved to the `output/` directory:
+- JSON files: `output/{prefix}-results-{timestamp}.json`
+- CSV files: `output/{prefix}-{timestamp}.csv`
+
+The `output/` directory is:
+- Created automatically when saving results
+- Ignored by git (added to .gitignore)
+- Organized by timestamp for easy tracking
 
 ## Available Functions (Scripting)
 
@@ -166,18 +194,18 @@ displayResults(results, 10); // Show top 10
 ```
 
 #### `saveResults(results, prefix?)`
-Save results to timestamped JSON file.
+Save results to timestamped JSON file in the `output/` directory.
 
 ```typescript
 const filename = await saveResults(results, "ethereum");
-// Creates: ethereum-results-2024-10-24T13-30-00.json
+// Creates: output/ethereum-results-2024-10-24T13-30-00.json
 ```
 
 #### `exportToCSV(results, filename?)`
-Export results to CSV format.
+Export results to CSV format in the `output/` directory.
 
 ```typescript
-await exportToCSV(results, "analysis.csv");
+await exportToCSV(results, "output/analysis.csv");
 ```
 
 ## Presets
@@ -217,7 +245,7 @@ import {
   searchByOrg,
   searchByTopics,
   exportToCSV
-} from "./search";
+} from "./src/search";
 
 async function analyzeEcosystem() {
   // Get top Ethereum projects
@@ -233,7 +261,7 @@ async function analyzeEcosystem() {
 
   // Combine and export
   const allProjects = [...ethProjects, ...solidityTools];
-  await exportToCSV(allProjects, "ethereum-ecosystem.csv");
+  await exportToCSV(allProjects);  // Saves to output/ directory
 
   console.log(`Found ${allProjects.length} projects`);
 }
@@ -310,9 +338,9 @@ try {
 ```json
 {
   "scripts": {
-    "search": "bun run search.ts",        // Run example search
-    "cli": "bun run cli.ts",              // Run CLI
-    "cli:help": "bun run cli.ts --help",  // Show CLI help
+    "search": "bun run src/search.ts",        // Run example search
+    "cli": "bun run src/cli.ts",              // Run CLI
+    "cli:help": "bun run src/cli.ts --help",  // Show CLI help
     "example:crypto": "bun run examples/crypto-search.ts" // Run example
   }
 }
@@ -341,6 +369,12 @@ try {
    - Be specific in queries to reduce API calls
    - Use exclusions to filter unwanted results
    - Cache results when doing repeated analysis
+
+5. **File Management**:
+   - All results auto-save to `output/` directory
+   - Directory is gitignored by default
+   - Files are timestamped for tracking
+   - Clean up old files periodically
 
 ## Advanced Usage
 

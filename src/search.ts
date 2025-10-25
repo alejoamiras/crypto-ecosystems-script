@@ -1,7 +1,6 @@
 import dotenv from "dotenv";
-import { GitHubSearchClient, type RepositorySearchResult, type SearchOptions } from "./src/lib/github";
-import { logger } from "./src/lib/logger";
-import { SearchTimeoutError, RateLimitError, AbuseLimitError } from "./src/lib/errors";
+import { GitHubSearchClient, type RepositorySearchResult, type SearchOptions } from "./lib/github";
+import { logger } from "./lib/logger";
 
 // Load environment variables
 dotenv.config();
@@ -63,7 +62,7 @@ export function displayResults(results: RepositorySearchResult[], limit: number 
  */
 export async function saveResults(results: RepositorySearchResult[], prefix: string = "search"): Promise<string> {
   const timestamp = new Date().toISOString().replace(/[:.]/g, "-");
-  const filename = `${prefix}-results-${timestamp}.json`;
+  const filename = `output/${prefix}-results-${timestamp}.json`;
 
   await Bun.write(filename, JSON.stringify(results, null, 2));
   logger.info(`Results saved to ${filename}`);
@@ -250,7 +249,7 @@ export async function exportToCSV(results: RepositorySearchResult[], filename?: 
   ].join(","));
 
   const csv = [headers, ...rows].join("\n");
-  const outputFile = filename || `search-results-${Date.now()}.csv`;
+  const outputFile = filename || `output/search-results-${Date.now()}.csv`;
 
   await Bun.write(outputFile, csv);
   logger.info(`CSV exported to ${outputFile}`);
@@ -275,7 +274,7 @@ if (import.meta.main) {
       displayResults(results, 5);
 
       // Also export to CSV
-      await exportToCSV(results, "web3-tools.csv");
+      await exportToCSV(results, "output/web3-tools.csv");
 
       logger.info("Example search completed!");
     } catch (error) {

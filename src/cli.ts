@@ -1,9 +1,9 @@
 #!/usr/bin/env bun
 
 import dotenv from "dotenv";
-import { GitHubSearchClient, type RepositorySearchResult } from "./src/lib/github";
-import { logger } from "./src/lib/logger";
-import { SearchTimeoutError, RateLimitError, AbuseLimitError } from "./src/lib/errors";
+import { GitHubSearchClient, type RepositorySearchResult } from "./lib/github";
+import { logger } from "./lib/logger";
+import { SearchTimeoutError, RateLimitError, AbuseLimitError } from "./lib/errors";
 import { SEARCH_PRESETS, displayResults, saveResults } from "./search";
 
 // Load environment variables

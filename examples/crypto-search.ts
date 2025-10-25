@@ -14,7 +14,7 @@ import {
   saveResults,
   exportToCSV,
   SEARCH_PRESETS
-} from "../search";
+} from "../src/search";
 import { logger } from "../src/lib/logger";
 
 async function main() {
