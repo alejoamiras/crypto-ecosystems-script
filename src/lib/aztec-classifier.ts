@@ -2,12 +2,12 @@
  * Shared library for classifying Noir/Aztec repositories
  */
 
-import axios from "axios";
+import axios, { AxiosInstance } from "axios";
 import axiosRetry from "axios-retry";
 import toml from "toml";
 import { logger } from "./logger";
 import { TokenRotator } from "./token-rotator";
-import { config } from "./config";
+import { config as appConfig } from "./config";
 
 // Global token rotator instance (singleton)
 let tokenRotator: TokenRotator | null = null;
@@ -34,71 +34,83 @@ function getNextToken(fallbackToken?: string): string {
   return fallbackToken || process.env.GITHUB_TOKEN || '';
 }
 
-// Configure axios with retry logic for better reliability
-axiosRetry(axios, {
-  retries: config.retry.maxRetries,
-  retryDelay: (retryCount, error) => {
-    // Check for rate limit headers
-    const retryAfter = error.response?.headers?.['retry-after'];
-    const rateLimitReset = error.response?.headers?.['x-ratelimit-reset'];
+// Lazy-initialized axios instance with retry configuration
+let configuredAxios: AxiosInstance | null = null;
 
-    // If we have a retry-after header, use it
-    if (retryAfter) {
-      const delay = parseInt(retryAfter) * 1000;
-      logger.info(`Rate limit retry-after header: waiting ${retryAfter} seconds`);
-      return Math.min(delay, config.retry.maxRetryDelay); // Respect max delay
-    }
+// Get or create configured axios instance
+function getConfiguredAxios(): AxiosInstance {
+  if (!configuredAxios) {
+    configuredAxios = axios.create();
 
-    // If we have a rate limit reset time, calculate delay
-    if (rateLimitReset) {
-      const resetTime = parseInt(rateLimitReset) * 1000;
-      const now = Date.now();
-      const delay = Math.max(resetTime - now + 1000, 1000); // Add 1s buffer
-      logger.info(`Rate limit reset at ${new Date(resetTime).toISOString()}, waiting ${Math.ceil(delay / 1000)} seconds`);
-      return Math.min(delay, config.retry.maxRetryDelay); // Respect max delay
-    }
+    // Configure axios with retry logic using actual config values
+    axiosRetry(configuredAxios, {
+      retries: appConfig.retry.maxRetries,
+      retryDelay: (retryCount, error) => {
+        // Check for rate limit headers
+        const retryAfter = error.response?.headers?.['retry-after'];
+        const rateLimitReset = error.response?.headers?.['x-ratelimit-reset'];
 
-    // For rate limits without headers, use configured base delay
-    if (error.response?.status === 403 || error.response?.status === 429) {
-      const delay = Math.min(
-        config.retry.rateLimitBaseDelay * retryCount,
-        config.retry.maxRetryDelay
-      );
-      logger.info(`Rate limit detected, waiting ${delay / 1000} seconds before retry ${retryCount}`);
-      return delay;
-    }
+        // If we have a retry-after header, use it
+        if (retryAfter) {
+          const delay = parseInt(retryAfter) * 1000;
+          logger.info(`Rate limit retry-after header: waiting ${retryAfter} seconds`);
+          return Math.min(delay, appConfig.retry.maxRetryDelay);
+        }
 
-    // For other errors, use standard exponential backoff with configured base
-    const delay = Math.pow(2, retryCount - 1) * config.retry.standardRetryBaseDelay;
-    return Math.min(delay, config.retry.maxRetryDelay);
-  },
-  retryCondition: (error) => {
-    // Retry on network errors or 5xx errors or rate limiting (403/429)
-    const status = error.response?.status;
-    return axiosRetry.isNetworkOrIdempotentRequestError(error) ||
-           status === 429 ||
-           status === 403 ||
-           (status !== undefined && status >= 500 && status < 600);
-  },
-  onRetry: (retryCount, error, requestConfig) => {
-    // Rotate token on rate limit if token rotation is enabled
-    if ((error.response?.status === 403 || error.response?.status === 429) &&
-        useTokenRotation && tokenRotator) {
-      const newToken = tokenRotator.getNextToken();
-      if (requestConfig.headers) {
-        requestConfig.headers['Authorization'] = `Bearer ${newToken}`;
-        logger.info(`Rotated to new token for retry ${retryCount}`);
+        // If we have a rate limit reset time, calculate delay
+        if (rateLimitReset) {
+          const resetTime = parseInt(rateLimitReset) * 1000;
+          const now = Date.now();
+          const delay = Math.max(resetTime - now + 1000, 1000); // Add 1s buffer
+          logger.info(`Rate limit reset at ${new Date(resetTime).toISOString()}, waiting ${Math.ceil(delay / 1000)} seconds`);
+          return Math.min(delay, appConfig.retry.maxRetryDelay);
+        }
+
+        // For rate limits without headers, use configured base delay
+        if (error.response?.status === 403 || error.response?.status === 429) {
+          const delay = Math.min(
+            appConfig.retry.rateLimitBaseDelay * retryCount,
+            appConfig.retry.maxRetryDelay
+          );
+          logger.info(`Rate limit detected, waiting ${delay / 1000} seconds before retry ${retryCount}`);
+          return delay;
+        }
+
+        // For other errors, use standard exponential backoff
+        const delay = Math.pow(2, retryCount - 1) * appConfig.retry.standardRetryBaseDelay;
+        return Math.min(delay, appConfig.retry.maxRetryDelay);
+      },
+      retryCondition: (error) => {
+        // Retry on network errors or 5xx errors or rate limiting (403/429)
+        const status = error.response?.status;
+        return axiosRetry.isNetworkOrIdempotentRequestError(error) ||
+               status === 429 ||
+               status === 403 ||
+               (status !== undefined && status >= 500 && status < 600);
+      },
+      onRetry: (retryCount, error, requestConfig) => {
+        // Rotate token on rate limit if token rotation is enabled
+        if ((error.response?.status === 403 || error.response?.status === 429) &&
+            useTokenRotation && tokenRotator) {
+          const newToken = tokenRotator.getNextToken();
+          if (requestConfig.headers) {
+            requestConfig.headers['Authorization'] = `Bearer ${newToken}`;
+            logger.info(`Rotated to new token for retry ${retryCount}`);
+          }
+        }
+
+        logger.warn({
+          retryCount,
+          url: requestConfig.url,
+          status: error.response?.status,
+          message: error.message
+        }, `Retrying request (attempt ${retryCount})`);
       }
-    }
-
-    logger.warn({
-      retryCount,
-      url: requestConfig.url,
-      status: error.response?.status,
-      message: error.message
-    }, `Retrying request (attempt ${retryCount})`);
+    });
   }
-});
+
+  return configuredAxios;
+}
 
 interface NargoConfig {
   package?: {
@@ -135,12 +147,12 @@ export async function findAllNargoTomlFiles(
     // Use token rotation if enabled
     const activeToken = getNextToken(token);
 
-    const response = await axios.get(searchUrl, {
+    const response = await getConfiguredAxios().get(searchUrl, {
       headers: {
         Authorization: `Bearer ${activeToken}`,
         Accept: 'application/vnd.github.v3+json'
       },
-      timeout: config.timeout.httpRequestTimeout
+      timeout: appConfig.timeout.httpRequestTimeout
     });
 
     // Extract paths from search results
@@ -194,12 +206,12 @@ export async function fetchNargoTomlFromPath(
     // Use token rotation if enabled
     const activeToken = getNextToken(token);
 
-    const response = await axios.get(url, {
+    const response = await getConfiguredAxios().get(url, {
       headers: {
         Authorization: `Bearer ${activeToken}`,
         Accept: 'application/vnd.github.v3+json'
       },
-      timeout: config.timeout.httpRequestTimeout
+      timeout: appConfig.timeout.httpRequestTimeout
     });
 
     // Handle if it's a directory (shouldn't happen with Nargo.toml, but be safe)

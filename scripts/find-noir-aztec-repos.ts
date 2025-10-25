@@ -43,7 +43,8 @@ interface RepoResult {
   url: string;
   fullName: string;
   isAztec: boolean;
-  nargoType: string;
+  projectType: 'noir' | 'npm' | 'unknown';  // Changed from nargoType
+  nargoType?: string;  // Optional, only for Noir projects
   stars: number;
   description: string;
   nargoFilesChecked: number;
@@ -93,7 +94,9 @@ async function loadTrackedRepos(filePath: string): Promise<string[]> {
 }
 
 /**
- * Search for repositories containing Nargo.toml files
+ * Search for Aztec ecosystem repositories including:
+ * - Noir language projects (with Nargo.toml files)
+ * - JavaScript/TypeScript projects using Aztec npm packages
  * Tracked repos are automatically excluded at the GitHub API level via search query filters
  */
 async function findNoirAztecRepos(excludedRepoNames: string[]): Promise<RepoResult[]> {
@@ -117,7 +120,7 @@ async function findNoirAztecRepos(excludedRepoNames: string[]): Promise<RepoResu
   let totalSearchResults = 0; // Move this outside the try block
 
   try {
-    logger.info("Searching for repositories with Nargo.toml files...");
+    logger.info("Searching for Aztec ecosystem repositories (Noir contracts and npm package users)...");
 
     // Search queries to maximize coverage
     // IMPORTANT: GitHub limits each search to 1000 results, so we use multiple queries
@@ -195,7 +198,60 @@ async function findNoirAztecRepos(excludedRepoNames: string[]): Promise<RepoResu
       // 'filename:Nargo.toml language:Rust',
 
       // Recent updates to catch active projects
-      'filename:Nargo.toml pushed:>2024-06-01'
+      'filename:Nargo.toml pushed:>2024-06-01',
+
+      // ========================================
+      // NPM PACKAGE USERS (JavaScript/TypeScript)
+      // ========================================
+      // Classification priority:
+      // 1. If ANY @aztec packages → Aztec project (even if also has @noir-lang)
+      // 2. If ONLY @noir-lang packages → Noir project
+      // This is because Aztec projects often use both packages together
+
+      // Search for Aztec packages in package.json files
+      'filename:package.json "@aztec/aztec"',
+      'filename:package.json "@aztec/aztec.js"',
+      'filename:package.json "@aztec/accounts"',
+      'filename:package.json "@aztec/aztec-sandbox"',
+      'filename:package.json "@aztec/sdk"',
+      'filename:package.json "@aztec/circuits"',
+      'filename:package.json "@aztec/foundation"',
+      'filename:package.json "@aztec/noir-contracts"',
+
+      // Search for Noir packages in package.json files
+      'filename:package.json "@noir-lang"',
+      'filename:package.json "@noir-lang/noir_js"',
+      'filename:package.json "@noir-lang/backend_barretenberg"',
+      'filename:package.json "@noir-lang/acvm_js"',
+      'filename:package.json "@noir-lang/types"',
+
+      // Search for imports in TypeScript/JavaScript files
+      '"@aztec/aztec" language:typescript',
+      '"@aztec/aztec" language:javascript',
+      '"from \'@aztec" language:typescript',
+      '"require(\'@aztec" language:javascript',
+
+      // Search for Noir imports
+      '"@noir-lang" language:typescript',
+      '"@noir-lang" language:javascript',
+      '"from \'@noir-lang" language:typescript',
+      '"require(\'@noir-lang" language:javascript',
+
+      // Search for specific Aztec contract imports
+      '"@aztec/noir-contracts" extension:ts',
+      '"@aztec/accounts" extension:ts',
+      '"aztec.js" "createAccount" language:typescript',
+
+      // Search for Aztec-specific code patterns
+      '"AztecAddress" language:typescript',
+      '"deployL2Contract" language:typescript',
+      '"createPXEClient" language:typescript',
+      '"createWallet" "@aztec" language:typescript',
+
+      // Search for Aztec in specific periods (npm packages are newer)
+      'filename:package.json "@aztec" created:>2024-01-01',
+      'filename:package.json "@aztec" pushed:>2024-06-01',
+      '"@aztec/aztec" created:>2023-06-01'
     ];
 
     logger.info(`Will run ${searchQueries.length} search queries to maximize coverage`);
@@ -226,28 +282,82 @@ async function findNoirAztecRepos(excludedRepoNames: string[]): Promise<RepoResu
           const repoUrl = `https://github.com/${repoFullName}`;
           const [owner, repo] = repoFullName.split('/');
 
-          // Use the shared classification logic
-          logger.debug(`Analyzing repository ${repoFullName}...`);
-          const classification = await classifyRepository(owner, repo, token);
+          // Determine if this is a Noir project or npm package user
+          const isNpmSearch = query.includes('package.json') ||
+                             query.includes('@aztec') ||
+                             query.includes('@noir-lang') ||
+                             query.includes('typescript') ||
+                             query.includes('javascript');
 
-          results.push({
-            url: repoUrl,
-            fullName: codeResult.repository.full_name,
-            isAztec: classification.isAztec,
-            nargoType: classification.nargoType,
-            stars: codeResult.repository.stargazers_count || 0,
-            description: codeResult.repository.description || '',
-            nargoFilesChecked: classification.filesChecked,
-            aztecIndicators: classification.aztecIndicators,
-            apiFailure: classification.apiFailure
-          });
+          if (isNpmSearch) {
+            // Determine if it's Aztec or Noir npm packages based on the search query
+            // Priority: If ANY @aztec package is found, it's an Aztec project
+            // Only classify as Noir if ONLY @noir-lang packages are found
 
-          const repoType = classification.isAztec ? 'Aztec' : 'Noir';
-          const indicators = classification.aztecIndicators.length > 0 ?
-            ` [${classification.aztecIndicators.join('; ')}]` : '';
-          const apiIssueWarning = classification.apiFailure ?
-            ` ⚠️ API ISSUES: ${classification.apiFailure.reason}` : '';
-          logger.info(`Found ${repoType} repo: ${repoFullName} (type: ${classification.nargoType}, checked ${classification.filesChecked} files)${indicators}${apiIssueWarning}`);
+            const hasAztecPackage = query.includes('@aztec') ||
+                                   query.includes('AztecAddress') ||
+                                   query.includes('createPXEClient') ||
+                                   query.includes('deployL2Contract') ||
+                                   query.includes('createWallet');
+            const hasNoirPackage = query.includes('@noir-lang');
+
+            // Aztec takes precedence - if any Aztec packages are found, it's an Aztec project
+            // This is because Aztec projects often use both @aztec and @noir-lang packages
+            const isAztec = hasAztecPackage;
+
+            let indicators: string[];
+            if (hasAztecPackage && hasNoirPackage) {
+              indicators = ['Uses Aztec npm packages', 'Uses Noir npm packages'];
+            } else if (hasAztecPackage) {
+              indicators = ['Uses Aztec npm packages'];
+            } else if (hasNoirPackage) {
+              indicators = ['Uses Noir npm packages (no Aztec dependencies)'];
+            } else {
+              // For general searches, default to Aztec since they're more likely in pattern searches
+              indicators = ['Uses related npm packages'];
+            }
+
+            logger.debug(`Found npm package user: ${repoFullName} (${isAztec ? 'Aztec' : 'Noir'}) - Query: ${query}`);
+
+            results.push({
+              url: repoUrl,
+              fullName: codeResult.repository.full_name,
+              isAztec: isAztec,
+              projectType: 'npm',
+              stars: codeResult.repository.stargazers_count || 0,
+              description: codeResult.repository.description || '',
+              nargoFilesChecked: 0,
+              aztecIndicators: indicators,
+              apiFailure: undefined
+            });
+
+            const ecosystem = isAztec ? 'Aztec' : 'Noir';
+            logger.info(`Found ${ecosystem} npm project: ${repoFullName} (${indicators.join(', ')})`);
+          } else {
+            // Use the shared classification logic for Noir projects
+            logger.debug(`Analyzing Noir repository ${repoFullName}...`);
+            const classification = await classifyRepository(owner, repo, token);
+
+            results.push({
+              url: repoUrl,
+              fullName: codeResult.repository.full_name,
+              isAztec: classification.isAztec,
+              projectType: 'noir',
+              nargoType: classification.nargoType,
+              stars: codeResult.repository.stargazers_count || 0,
+              description: codeResult.repository.description || '',
+              nargoFilesChecked: classification.filesChecked,
+              aztecIndicators: classification.aztecIndicators,
+              apiFailure: classification.apiFailure
+            });
+
+            const repoType = classification.isAztec ? 'Aztec' : 'Noir';
+            const indicators = classification.aztecIndicators.length > 0 ?
+              ` [${classification.aztecIndicators.join('; ')}]` : '';
+            const apiIssueWarning = classification.apiFailure ?
+              ` ⚠️ API ISSUES: ${classification.apiFailure.reason}` : '';
+            logger.info(`Found ${repoType} Noir repo: ${repoFullName} (type: ${classification.nargoType}, checked ${classification.filesChecked} files)${indicators}${apiIssueWarning}`);
+          }
 
           // Rate limit pause
           await new Promise(resolve => setTimeout(resolve, config.rateLimit.repoProcessingDelay));
@@ -281,31 +391,54 @@ async function findNoirAztecRepos(excludedRepoNames: string[]): Promise<RepoResu
 function generateMigrationOutput(results: RepoResult[]): string {
   const lines: string[] = [];
 
-  lines.push("# Electric Capital Migration Commands for Noir/Aztec Repositories");
+  lines.push("# Electric Capital Migration Commands for Aztec Ecosystem Repositories");
   lines.push(`# Generated: ${new Date().toISOString()}`);
   lines.push(`# Total new repositories found: ${results.length}`);
   lines.push("");
 
-  // Separate and sort
-  const aztecRepos = results.filter(r => r.isAztec).sort((a, b) => b.stars - a.stars);
-  const noirRepos = results.filter(r => !r.isAztec).sort((a, b) => b.stars - a.stars);
+  // Separate by project type and Aztec affiliation
+  const aztecNoirRepos = results.filter(r => r.isAztec && r.projectType === 'noir').sort((a, b) => b.stars - a.stars);
+  const aztecNpmRepos = results.filter(r => r.isAztec && r.projectType === 'npm').sort((a, b) => b.stars - a.stars);
+  const pureNoirRepos = results.filter(r => !r.isAztec && r.projectType === 'noir').sort((a, b) => b.stars - a.stars);
+  const noirNpmRepos = results.filter(r => !r.isAztec && r.projectType === 'npm').sort((a, b) => b.stars - a.stars);
 
-  // Add Aztec repositories
-  if (aztecRepos.length > 0) {
-    lines.push(`# Aztec Protocol Repositories (${aztecRepos.length} found)`);
-    lines.push("# Repositories with type=contract or Aztec.nr dependencies");
-    for (const repo of aztecRepos) {
+  // Add Aztec Noir repositories
+  if (aztecNoirRepos.length > 0) {
+    lines.push(`# Aztec Protocol - Noir Contracts (${aztecNoirRepos.length} found)`);
+    lines.push("# Repositories with Noir contracts using Aztec.nr");
+    for (const repo of aztecNoirRepos) {
       lines.push(`repadd "Aztec Protocol" ${repo.url} #zkp #zk-circuit #noir #aztec`);
     }
     lines.push("");
   }
 
-  // Add Noir repositories
-  if (noirRepos.length > 0) {
-    lines.push(`# Noir Lang Repositories (${noirRepos.length} found)`);
-    lines.push("# Repositories with type=bin or type=lib (no Aztec dependencies)");
-    for (const repo of noirRepos) {
-      lines.push(`repadd "Noir Lang" ${repo.url} #zkp #zk-circuit #noir #aztec`);
+  // Add Aztec npm package users
+  if (aztecNpmRepos.length > 0) {
+    lines.push(`# Aztec Protocol - JavaScript/TypeScript Projects (${aztecNpmRepos.length} found)`);
+    lines.push("# Repositories using Aztec npm packages (@aztec/*)");
+    lines.push("# Note: May also include @noir-lang packages as Aztec builds on Noir");
+    for (const repo of aztecNpmRepos) {
+      lines.push(`repadd "Aztec Protocol" ${repo.url} #zkp #aztec #javascript #typescript`);
+    }
+    lines.push("");
+  }
+
+  // Add pure Noir repositories
+  if (pureNoirRepos.length > 0) {
+    lines.push(`# Noir Lang - Pure Noir Projects (${pureNoirRepos.length} found)`);
+    lines.push("# Repositories using Noir without Aztec dependencies");
+    for (const repo of pureNoirRepos) {
+      lines.push(`repadd "Noir Lang" ${repo.url} #zkp #zk-circuit #noir`);
+    }
+    lines.push("");
+  }
+
+  // Add Noir npm package users
+  if (noirNpmRepos.length > 0) {
+    lines.push(`# Noir Lang - JavaScript/TypeScript Projects (${noirNpmRepos.length} found)`);
+    lines.push("# Repositories using ONLY Noir npm packages (@noir-lang/*), no Aztec dependencies");
+    for (const repo of noirNpmRepos) {
+      lines.push(`repadd "Noir Lang" ${repo.url} #zkp #noir #javascript #typescript`);
     }
   }
 
@@ -317,7 +450,7 @@ function generateMigrationOutput(results: RepoResult[]): string {
  */
 async function main() {
   try {
-    logger.info("Starting Noir/Aztec repository discovery (v4 - using shared classifier)...");
+    logger.info("Starting Aztec/Noir ecosystem discovery (including npm packages)...");
 
     // Ensure output directory exists
     if (!fs.existsSync('./output')) {
@@ -347,9 +480,11 @@ async function main() {
     logger.info(`Migration file saved to: ${outputPath}`);
 
     // Summary statistics
-    const aztecCount = newRepos.filter(r => r.isAztec).length;
-    const noirCount = newRepos.filter(r => !r.isAztec).length;
-    const unknownCount = newRepos.filter(r => r.nargoType === 'unknown').length;
+    const aztecNoirCount = newRepos.filter(r => r.isAztec && r.projectType === 'noir').length;
+    const aztecNpmCount = newRepos.filter(r => r.isAztec && r.projectType === 'npm').length;
+    const pureNoirCount = newRepos.filter(r => !r.isAztec && r.projectType === 'noir').length;
+    const noirNpmCount = newRepos.filter(r => !r.isAztec && r.projectType === 'npm').length;
+    const unknownCount = newRepos.filter(r => r.projectType === 'unknown').length;
     const filesCheckedTotal = newRepos.reduce((sum, r) => sum + r.nargoFilesChecked, 0);
 
     // API failure statistics
@@ -357,12 +492,19 @@ async function main() {
     const searchFailedRepos = apiFailureRepos.filter(r => r.apiFailure?.searchFailed);
     const allFetchesFailedRepos = apiFailureRepos.filter(r => r.apiFailure?.allFetchesFailed);
 
-    console.log("\n=== Summary (V4 - Shared Classifier with API Failure Tracking) ===");
+    console.log("\n=== Summary - Aztec/Noir Ecosystem Discovery ===");
     console.log(`Total repositories already tracked by Electric Capital: ${excludedRepoNames.length}`);
     console.log(`Total NEW repositories found: ${newRepos.length}`);
-    console.log(`  - Aztec Protocol: ${aztecCount}`);
-    console.log(`  - Noir Lang: ${noirCount}`);
-    console.log(`  - Unknown type: ${unknownCount}`);
+    console.log(`\nBreakdown by ecosystem and type:`);
+    console.log(`  Aztec Protocol:`);
+    console.log(`    - Noir Contracts: ${aztecNoirCount}`);
+    console.log(`    - JS/TS Projects: ${aztecNpmCount}`);
+    console.log(`  Noir Lang:`);
+    console.log(`    - Pure Noir Projects: ${pureNoirCount}`);
+    console.log(`    - JS/TS Projects: ${noirNpmCount}`);
+    if (unknownCount > 0) {
+      console.log(`  - Unknown type: ${unknownCount}`);
+    }
 
     if (apiFailureRepos.length > 0) {
       console.log(`\n⚠️  API Issues detected in ${apiFailureRepos.length} repositories:`);
@@ -379,11 +521,25 @@ async function main() {
     await Bun.write(jsonPath, JSON.stringify(newRepos, null, 2));
     console.log(`Detailed results saved to: ${jsonPath}`);
 
-    // Show some examples of repos that were classified as Aztec
-    if (aztecCount > 0) {
-      console.log("\nExample Aztec repositories found:");
-      newRepos.filter(r => r.isAztec).slice(0, 5).forEach(repo => {
+    // Show some examples of repos by type
+    if (aztecNoirCount > 0) {
+      console.log("\nExample Aztec Noir contracts found:");
+      newRepos.filter(r => r.isAztec && r.projectType === 'noir').slice(0, 3).forEach(repo => {
         console.log(`  - ${repo.fullName}: ${repo.aztecIndicators.join('; ')}`);
+      });
+    }
+
+    if (aztecNpmCount > 0) {
+      console.log("\nExample Aztec JS/TS projects found:");
+      newRepos.filter(r => r.isAztec && r.projectType === 'npm').slice(0, 3).forEach(repo => {
+        console.log(`  - ${repo.fullName}: ${repo.aztecIndicators.join(', ')}`);
+      });
+    }
+
+    if (noirNpmCount > 0) {
+      console.log("\nExample Noir JS/TS projects found:");
+      newRepos.filter(r => !r.isAztec && r.projectType === 'npm').slice(0, 3).forEach(repo => {
+        console.log(`  - ${repo.fullName}: ${repo.aztecIndicators.join(', ')}`);
       });
     }
 
