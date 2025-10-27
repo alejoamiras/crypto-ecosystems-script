@@ -8,6 +8,7 @@
     "cli:help": "bun run src/cli.ts --help",
     "example:crypto": "bun run examples/crypto-search.ts",
     "find:aztec": "bun run scripts/find-noir-aztec-repos.ts",
+    "find:aztec:v2": "USE_TOKEN_ROTATION=true LOG_TO_FILE=true bun run scripts/find-noir-aztec-repos-v2.ts",
     "find:aztec:log": "LOG_TO_FILE=true bun run scripts/find-noir-aztec-repos.ts",
     "find:aztec:rotate": "USE_TOKEN_ROTATION=true bun run scripts/find-noir-aztec-repos.ts",
     "find:aztec:full": "USE_TOKEN_ROTATION=true LOG_TO_FILE=true bun run scripts/find-noir-aztec-repos.ts"

@@ -15,7 +15,6 @@ import type {
   RepositorySearchResult,
   SearchOptions,
   RateLimitInfo,
-  ExclusionConfig,
 } from "../../types/github";
 
 // Create custom Octokit with plugins
@@ -23,20 +22,21 @@ const MyOctokit = Octokit.plugin(retry, throttling);
 
 /**
  * GitHub Search Client with advanced error handling and rate limiting
+ *
+ * NOTE: Repository exclusions should be handled in your search queries directly:
+ * - To exclude orgs: "filename:Nargo.toml -org:AztecProtocol -org:noir-lang"
+ * - To filter by date: "filename:Nargo.toml created:>2024-01-01"
+ *
+ * GitHub's query length limit (~256 chars for code search) prevents excluding
+ * many repos at the API level, so build smart queries instead.
  */
 export class GitHubSearchClient {
   private octokit: InstanceType<typeof MyOctokit>;
-  private excludeRepos: Set<string>;
-  private excludeOrgs: Set<string>;
-  private excludeTopics: Set<string>;
   private searchTimeoutMs: number;
   private tokenRotator?: TokenRotator;
   private useTokenRotation: boolean;
 
   constructor(searchConfig: SearchConfig = {}) {
-    this.excludeRepos = new Set(searchConfig.excludeRepos || []);
-    this.excludeOrgs = new Set(searchConfig.excludeOrgs || []);
-    this.excludeTopics = new Set(searchConfig.excludeTopics || []);
     this.searchTimeoutMs = searchConfig.searchTimeoutMs || config.timeout.searchTimeout;
     this.useTokenRotation = searchConfig.useTokenRotation || false;
 
@@ -215,53 +215,6 @@ export class GitHubSearchClient {
     return this.tokenRotator.getUsageStats();
   }
 
-  /**
-   * Build search query with exclusions
-   */
-  private buildSearchQuery(baseQuery: string): string {
-    let query = baseQuery;
-
-    // Add exclusions to the query
-    for (const repo of this.excludeRepos) {
-      query += ` -repo:${repo}`;
-    }
-
-    for (const org of this.excludeOrgs) {
-      query += ` -org:${org} -user:${org}`;
-    }
-
-    return query;
-  }
-
-  /**
-   * Filter results based on exclusion lists
-   */
-  private filterResults(results: any[]): any[] {
-    return results.filter((repo) => {
-      // Check if repo should be excluded
-      if (this.excludeRepos.has(repo.full_name)) {
-        logger.debug(`Excluding repo: ${repo.full_name} (in exclusion list)`);
-        return false;
-      }
-
-      if (this.excludeOrgs.has(repo.owner.login)) {
-        logger.debug(`Excluding repo: ${repo.full_name} (owner in exclusion list)`);
-        return false;
-      }
-
-      // Check topic exclusions
-      if (repo.topics && repo.topics.length > 0) {
-        for (const topic of repo.topics) {
-          if (this.excludeTopics.has(topic)) {
-            logger.debug(`Excluding repo: ${repo.full_name} (has excluded topic: ${topic})`);
-            return false;
-          }
-        }
-      }
-
-      return true;
-    });
-  }
 
   /**
    * Transform GitHub API response to our result format
@@ -298,8 +251,7 @@ export class GitHubSearchClient {
     const startTime = Date.now();
     const { perPage = 30, maxResults = 100, sort = "stars", order = "desc" } = options;
 
-    const finalQuery = this.buildSearchQuery(query);
-    logger.info({ query: finalQuery, options }, "Starting repository search");
+    logger.info({ query, options }, "Starting repository search");
 
     const results: RepositorySearchResult[] = [];
     let page = 1;
@@ -323,7 +275,7 @@ export class GitHubSearchClient {
 
         // Race between API call and timeout
         const searchPromise = this.octokit.search.repos({
-          q: finalQuery,
+          q: query,
           sort,
           order,
           per_page: perPage,
@@ -334,11 +286,8 @@ export class GitHubSearchClient {
 
         logger.info(`Found ${response.data.total_count} total results, fetched ${response.data.items.length} on page ${page}`);
 
-        // Filter results
-        const filteredItems = this.filterResults(response.data.items);
-
         // Transform and add to results
-        for (const repo of filteredItems) {
+        for (const repo of response.data.items) {
           if (results.length >= maxResults) break;
           results.push(this.transformRepository(repo));
         }
@@ -419,36 +368,6 @@ export class GitHubSearchClient {
     throw new Error(`Failed after ${maxRetries} retries`);
   }
 
-  /**
-   * Update exclusion lists
-   */
-  updateExclusions(config: ExclusionConfig) {
-    if (config.repos) {
-      this.excludeRepos = new Set(config.repos);
-      logger.info(`Updated excluded repos: ${config.repos.join(", ")}`);
-    }
-
-    if (config.orgs) {
-      this.excludeOrgs = new Set(config.orgs);
-      logger.info(`Updated excluded orgs: ${config.orgs.join(", ")}`);
-    }
-
-    if (config.topics) {
-      this.excludeTopics = new Set(config.topics);
-      logger.info(`Updated excluded topics: ${config.topics.join(", ")}`);
-    }
-  }
-
-  /**
-   * Get current exclusion configuration
-   */
-  getExclusions(): ExclusionConfig {
-    return {
-      repos: Array.from(this.excludeRepos),
-      orgs: Array.from(this.excludeOrgs),
-      topics: Array.from(this.excludeTopics),
-    };
-  }
 
   /**
    * Search for code/files in repositories
@@ -460,6 +379,7 @@ export class GitHubSearchClient {
     const maxResults = options?.maxResults || 100;
     const perPage = Math.min(maxResults, 100);
     const results: any[] = [];
+    const uniqueRepos = new Set<string>(); // Track repos we've already included
 
     try {
       logger.info(`Searching code with query: ${query}`);
@@ -487,8 +407,23 @@ export class GitHubSearchClient {
 
           logger.debug(`Code search page ${page}: ${response.data.items.length} results`);
 
-          // Add results
-          results.push(...response.data.items);
+          // Add results, avoiding duplicates
+          for (const item of response.data.items) {
+            const repoFullName = item.repository.full_name.toLowerCase();
+
+            // Skip if we've already seen this repo in results
+            if (uniqueRepos.has(repoFullName)) {
+              continue;
+            }
+
+            uniqueRepos.add(repoFullName);
+            results.push(item);
+
+            // Stop if we have enough results
+            if (results.length >= maxResults) {
+              break;
+            }
+          }
 
           // Check if we have more pages
           if (response.data.items.length < perPage || results.length >= maxResults) {
@@ -512,7 +447,7 @@ export class GitHubSearchClient {
         timeoutPromise
       ]);
 
-      logger.info(`Code search complete. Found ${finalResults.length} results`);
+      logger.info(`Code search complete. Found ${finalResults.length} results (${uniqueRepos.size} unique repos)`);
       return finalResults;
 
     } catch (error: any) {

@@ -58,10 +58,14 @@ interface RepoResult {
 
 /**
  * Load already tracked repositories from Electric Capital export
- * Returns an array of repo names in "owner/repo" format for GitHub API exclusion
+ * Returns repo names and major orgs for exclusion
  */
-async function loadTrackedRepos(filePath: string): Promise<string[]> {
+async function loadTrackedRepos(filePath: string): Promise<{
+  repoNames: string[];
+  majorOrgs: string[];
+}> {
   const repoNames = new Set<string>();
+  const orgCounts = new Map<string, number>();
 
   try {
     const fileContent = await Bun.file(filePath).text();
@@ -77,36 +81,76 @@ async function loadTrackedRepos(filePath: string): Promise<string[]> {
         // Extract owner/repo format from GitHub URLs
         const match = normalizedUrl.match(/github\.com\/([^\/]+\/[^\/]+)/);
         if (match) {
-          repoNames.add(match[1].toLowerCase());
+          const fullName = match[1].toLowerCase();
+          repoNames.add(fullName);
+
+          // Count repos per org
+          const org = fullName.split('/')[0];
+          orgCounts.set(org, (orgCounts.get(org) || 0) + 1);
         }
       } catch (e) {
         logger.warn(`Failed to parse line: ${line}`);
       }
     }
 
+    // Get top orgs that have many repos
+    const majorOrgs = Array.from(orgCounts.entries())
+      .sort((a, b) => b[1] - a[1])
+      .slice(0, 5) // Top 5 orgs
+      .filter(([_, count]) => count >= 10) // Only orgs with 10+ repos
+      .map(([org]) => org);
+
     logger.info(`Loaded ${repoNames.size} tracked repositories from Electric Capital`);
+    logger.info(`Major orgs to exclude: ${majorOrgs.join(', ')} (${majorOrgs.reduce((sum, org) => sum + (orgCounts.get(org) || 0), 0)} repos total)`);
+
+    return {
+      repoNames: Array.from(repoNames),
+      majorOrgs
+    };
   } catch (error) {
     logger.error({ error }, "Failed to load tracked repos file");
     throw error;
   }
+}
 
-  return Array.from(repoNames);
+/**
+ * Build org exclusion string that fits within query limits
+ */
+function buildOrgExclusions(majorOrgs: string[], maxLength: number = 100): string {
+  let exclusions = '';
+
+  for (const org of majorOrgs) {
+    const addition = ` -org:${org} -user:${org}`;
+    // Check if adding this would exceed our budget
+    if (exclusions.length + addition.length > maxLength) {
+      break;
+    }
+    exclusions += addition;
+  }
+
+  return exclusions;
 }
 
 /**
  * Search for Aztec ecosystem repositories including:
  * - Noir language projects (with Nargo.toml files)
  * - JavaScript/TypeScript projects using Aztec npm packages
- * Tracked repos are automatically excluded at the GitHub API level via search query filters
+ * Now with org exclusions at API level for better efficiency
  */
-async function findNoirAztecRepos(excludedRepoNames: string[]): Promise<RepoResult[]> {
-  logger.info(`Initializing GitHub client with ${excludedRepoNames.length} excluded repos (filtered at API level)`);
+async function findNoirAztecRepos(
+  excludedRepoNames: string[],
+  majorOrgs: string[]
+): Promise<RepoResult[]> {
+  logger.info(`Loaded ${excludedRepoNames.length} tracked repos for post-filtering`);
+
+  // Build org exclusions that fit within query limits
+  const orgExclusions = buildOrgExclusions(majorOrgs);
+  if (orgExclusions) {
+    logger.info(`Will exclude at API level: ${orgExclusions}`);
+  }
 
   const client = new GitHubSearchClient({
     searchTimeoutMs: config.timeout.searchTimeout,
-    excludeRepos: excludedRepoNames, // These repos will be filtered out by the API using -repo: filters
-    excludeOrgs: [],
-    excludeTopics: [],
     useTokenRotation: process.env.USE_TOKEN_ROTATION === 'true'
   });
 
@@ -125,36 +169,39 @@ async function findNoirAztecRepos(excludedRepoNames: string[]): Promise<RepoResu
     // Search queries to maximize coverage
     // IMPORTANT: GitHub limits each search to 1000 results, so we use multiple queries
     // to catch different subsets of repositories
+    // NOW WITH ORG EXCLUSIONS to get more NEW repos per search!
+
+    // Add org exclusions to each query (being careful about length limits)
     const searchQueries = [
       // Primary search - will hit 1000 limit but gets most repos
-      'filename:Nargo.toml',
+      `filename:Nargo.toml${orgExclusions}`,
 
       // Aztec-specific searches to catch repos missed in general search
-      'Nargo.toml aztec',
-      'Nargo.toml contract',
-      'filename:Nargo.toml aztec',
-      'filename:Nargo.toml "type = \\"contract\\""',
+      `Nargo.toml aztec${orgExclusions}`,
+      `Nargo.toml contract${orgExclusions}`,
+      `filename:Nargo.toml aztec${orgExclusions}`,
+      `filename:Nargo.toml "type = \\"contract\\""${orgExclusions}`,
 
       // Date-based searches - monthly granularity to avoid 1k limit
-      // 2025 (current year up to end of year)
-      'filename:Nargo.toml created:2025-10-01..2026-01-01',
-      'filename:Nargo.toml created:2025-09-01..2025-10-01',
-      'filename:Nargo.toml created:2025-08-01..2025-09-01',
-      'filename:Nargo.toml created:2025-07-01..2025-08-01',
-      'filename:Nargo.toml created:2025-06-01..2025-07-01',
+      // 2025 (current year up to end of year) - add exclusions to recent dates
+      `filename:Nargo.toml created:2025-10-01..2026-01-01${orgExclusions}`,
+      `filename:Nargo.toml created:2025-09-01..2025-10-01${orgExclusions}`,
+      `filename:Nargo.toml created:2025-08-01..2025-09-01${orgExclusions}`,
+      `filename:Nargo.toml created:2025-07-01..2025-08-01${orgExclusions}`,
+      `filename:Nargo.toml created:2025-06-01..2025-07-01${orgExclusions}`,
       'filename:Nargo.toml created:2025-05-01..2025-06-01',
       'filename:Nargo.toml created:2025-04-01..2025-05-01',
       'filename:Nargo.toml created:2025-03-01..2025-04-01',
       'filename:Nargo.toml created:2025-02-01..2025-03-01',
       'filename:Nargo.toml created:2025-01-01..2025-02-01',
 
-      // 2024
-      'filename:Nargo.toml created:2024-12-01..2025-01-01',
-      'filename:Nargo.toml created:2024-11-01..2024-12-01',
-      'filename:Nargo.toml created:2024-10-01..2024-11-01',
-      'filename:Nargo.toml created:2024-09-01..2024-10-01',
-      'filename:Nargo.toml created:2024-08-01..2024-09-01',
-      'filename:Nargo.toml created:2024-07-01..2024-08-01',
+      // 2024 - add exclusions to recent months
+      `filename:Nargo.toml created:2024-12-01..2025-01-01${orgExclusions}`,
+      `filename:Nargo.toml created:2024-11-01..2024-12-01${orgExclusions}`,
+      `filename:Nargo.toml created:2024-10-01..2024-11-01${orgExclusions}`,
+      `filename:Nargo.toml created:2024-09-01..2024-10-01${orgExclusions}`,
+      `filename:Nargo.toml created:2024-08-01..2024-09-01${orgExclusions}`,
+      `filename:Nargo.toml created:2024-07-01..2024-08-01${orgExclusions}`,
       'filename:Nargo.toml created:2024-06-01..2024-07-01',
       'filename:Nargo.toml created:2024-05-01..2024-06-01',
       'filename:Nargo.toml created:2024-04-01..2024-05-01',
@@ -198,7 +245,7 @@ async function findNoirAztecRepos(excludedRepoNames: string[]): Promise<RepoResu
       // 'filename:Nargo.toml language:Rust',
 
       // Recent updates to catch active projects
-      'filename:Nargo.toml pushed:>2024-06-01',
+      `filename:Nargo.toml pushed:>2024-06-01${orgExclusions}`,
 
       // ========================================
       // NPM PACKAGE USERS (JavaScript/TypeScript)
@@ -209,21 +256,21 @@ async function findNoirAztecRepos(excludedRepoNames: string[]): Promise<RepoResu
       // This is because Aztec projects often use both packages together
 
       // Search for Aztec packages in package.json files
-      'filename:package.json "@aztec/aztec"',
-      'filename:package.json "@aztec/aztec.js"',
-      'filename:package.json "@aztec/accounts"',
-      'filename:package.json "@aztec/aztec-sandbox"',
-      'filename:package.json "@aztec/sdk"',
-      'filename:package.json "@aztec/circuits"',
-      'filename:package.json "@aztec/foundation"',
-      'filename:package.json "@aztec/noir-contracts"',
+      `filename:package.json "@aztec/aztec"${orgExclusions}`,
+      `filename:package.json "@aztec/aztec.js"${orgExclusions}`,
+      `filename:package.json "@aztec/accounts"${orgExclusions}`,
+      `filename:package.json "@aztec/aztec-sandbox"${orgExclusions}`,
+      `filename:package.json "@aztec/sdk"${orgExclusions}`,
+      `filename:package.json "@aztec/circuits"${orgExclusions}`,
+      `filename:package.json "@aztec/foundation"${orgExclusions}`,
+      `filename:package.json "@aztec/noir-contracts"${orgExclusions}`,
 
       // Search for Noir packages in package.json files
-      'filename:package.json "@noir-lang"',
-      'filename:package.json "@noir-lang/noir_js"',
-      'filename:package.json "@noir-lang/backend_barretenberg"',
-      'filename:package.json "@noir-lang/acvm_js"',
-      'filename:package.json "@noir-lang/types"',
+      `filename:package.json "@noir-lang"${orgExclusions}`,
+      `filename:package.json "@noir-lang/noir_js"${orgExclusions}`,
+      `filename:package.json "@noir-lang/backend_barretenberg"${orgExclusions}`,
+      `filename:package.json "@noir-lang/acvm_js"${orgExclusions}`,
+      `filename:package.json "@noir-lang/types"${orgExclusions}`,
 
       // Search for imports in TypeScript/JavaScript files
       '"@aztec/aztec" language:typescript',
@@ -276,8 +323,11 @@ async function findNoirAztecRepos(excludedRepoNames: string[]): Promise<RepoResu
           }
           processedRepos.add(repoFullName);
 
-          // Note: Tracked repos are already excluded at the API level via -repo: filters
-          // No need for manual checking here
+          // Check if this is a tracked repo (post-search filtering)
+          if (excludedRepoNames.includes(repoFullName)) {
+            logger.debug(`Skipping tracked repo: ${repoFullName}`);
+            continue;
+          }
 
           const repoUrl = `https://github.com/${repoFullName}`;
           const [owner, repo] = repoFullName.split('/');
@@ -458,11 +508,11 @@ async function main() {
       logger.info("Created output directory");
     }
 
-    // Load already tracked repositories
-    const excludedRepoNames = await loadTrackedRepos('./static/Aztec-Protocol-export.jsonl');
+    // Load already tracked repositories and major orgs
+    const { repoNames: excludedRepoNames, majorOrgs } = await loadTrackedRepos('./static/Aztec-Protocol-export.jsonl');
 
-    // Find new repositories (tracked repos are excluded at API level)
-    const newRepos = await findNoirAztecRepos(excludedRepoNames);
+    // Find new repositories (major orgs excluded at API level, rest filtered post-search)
+    const newRepos = await findNoirAztecRepos(excludedRepoNames, majorOrgs);
 
     if (newRepos.length === 0) {
       logger.info("No new repositories found");

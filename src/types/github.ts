@@ -8,9 +8,6 @@ export interface SearchConfig {
   useTokenRotation?: boolean; // Enable token rotation
   maxRetries?: number;
   searchTimeoutMs?: number;
-  excludeRepos?: string[];
-  excludeOrgs?: string[];
-  excludeTopics?: string[];
 }
 
 export interface RepositorySearchResult {
@@ -45,10 +42,4 @@ export interface RateLimitInfo {
   remaining: number;
   reset: number;
   used: number;
-}
-
-export interface ExclusionConfig {
-  repos?: string[];
-  orgs?: string[];
-  topics?: string[];
 }
