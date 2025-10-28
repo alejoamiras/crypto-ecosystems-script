@@ -1,19 +1,39 @@
 # Crypto Ecosystems Discovery Scripts
 
-A comprehensive toolkit for discovering and tracking cryptocurrency ecosystem repositories, with specialized support for **Aztec Protocol** and **Noir Lang** projects.
+A comprehensive toolkit for discovering, tracking, and analyzing cryptocurrency ecosystem repositories, with specialized support for **Aztec Protocol** and **Noir Lang** projects.
+
+## 📋 Quick Reference
+
+| Task | Command | Documentation |
+|------|---------|--------------|
+| **Discover Repos** | `bun run find:aztec` | [Scripts Guide](./docs/scripts-guide.md) |
+| **Create Database** | `bun run db:create` | [Repository Database](./REPOSITORY_DATABASE.md) |
+| **View Statistics** | `bun run db:stats` | [Repository Database](./REPOSITORY_DATABASE.md) |
+| **Compare Ecosystems** | `bun run report` | [Ecosystem Comparison](./ECOSYSTEM_COMPARISON.md) |
+| **Community Analysis** | `bun run report:community` | [Ecosystem Comparison](./ECOSYSTEM_COMPARISON.md) |
+| **Query Activity** | `bun run query:aztec` | [Repository Database](./REPOSITORY_DATABASE.md) |
+| **Consolidate** | `bun run consolidate` | [Consolidation Guide](./docs/consolidation-guide.md) |
 
 ## 🎯 Purpose
 
-This repository helps identify and track GitHub repositories in the cryptocurrency ecosystem, particularly focusing on:
-- **Noir Language** projects (using `Nargo.toml` files)
-- **Aztec Protocol** projects (contracts and applications)
-- **JavaScript/TypeScript** projects using Aztec or Noir npm packages
-- General cryptocurrency and blockchain projects
+This repository provides powerful tools to:
+- **Discover** GitHub repositories in cryptocurrency ecosystems
+- **Track** development activity and developer metrics
+- **Analyze** ecosystem health and community engagement
+- **Compare** ecosystems with detailed reports
 
-The primary goal is to generate migration commands for Electric Capital's crypto ecosystem tracking system.
+Key capabilities:
+- **Noir Language** projects discovery (using `Nargo.toml` files)
+- **Aztec Protocol** projects identification (contracts and applications)
+- **Developer activity analysis** with time-based queries
+- **Ecosystem comparison** with organization filtering
+- **Community vs Core development** insights
+
+The primary goal is to generate migration commands for Electric Capital's crypto ecosystem tracking system and provide deep insights into ecosystem development.
 
 ## 🚀 Quick Start
 
+### Repository Discovery
 ```bash
 # Install dependencies
 bun install
@@ -26,10 +46,29 @@ cp .env.example .env
 bun run find:aztec
 
 # Consolidate results
-bun run scripts/consolidate-migrations.ts
+bun run consolidate
 
 # Filter out already tracked repos
-bun run scripts/merge-with-existing.ts output/final-migration-consolidated-*.txt
+bun run merge output/final-migration-consolidated-*.txt
+```
+
+### Ecosystem Analysis
+```bash
+# Create repository database
+bun run db:create
+
+# View ecosystem statistics
+bun run db:stats
+
+# Compare ecosystems (last 31 days)
+bun run report
+
+# Community-only analysis (excludes core orgs)
+bun run report:community
+
+# Query specific ecosystem activity
+bun run query:aztec  # Last 10 days of Aztec activity
+bun run query:noir   # Last 10 days of Noir activity
 ```
 
 ## 📁 Project Structure
@@ -102,10 +141,18 @@ LOG_TO_FILE=false              # Write logs to file
 
 ## 📖 Documentation
 
-For detailed documentation on specific components:
+### Core Documentation
+- **[Repository Database & Analytics](./REPOSITORY_DATABASE.md)** - Complete guide to the repository database and querying ecosystem activity
+- **[Ecosystem Comparison Tool](./ECOSYSTEM_COMPARISON.md)** - Powerful ecosystem comparison with organization filtering
 - **[Scripts Guide](./docs/scripts-guide.md)** - In-depth guide for the Noir/Aztec discovery script
 - **[Consolidation Guide](./docs/consolidation-guide.md)** - Detailed documentation for migration consolidation tools
 - **[Documentation Index](./docs/README.md)** - Complete documentation overview
+
+### Quick Links
+- 🔍 [How to discover repositories](#1-aztecnoir-discovery-script)
+- 📊 [How to analyze ecosystems](#5-ecosystem-analytics-new)
+- 🆚 [How to compare ecosystems](#6-ecosystem-comparison-new)
+- 📈 [View recent results](#-recent-results)
 
 ## 📚 Main Components
 
@@ -202,6 +249,75 @@ bun run cli --preset crypto --max 50 --save
 bun run cli --query "solidity audit" --save
 ```
 
+### 5. Ecosystem Analytics (NEW!)
+
+**Script**: `scripts/query-ecosystem-activity.ts`
+
+Query and analyze developer activity in specific ecosystems:
+
+```bash
+# Analyze Aztec ecosystem (last 10 days)
+bun run query:aztec
+
+# Custom analysis with CSV export
+bun run query:activity --ecosystem "Noir Lang" --days 30 --csv
+
+# Save detailed metrics
+bun run query:activity --ecosystem "Aztec Protocol" --days 14 --output metrics.json
+```
+
+**Features:**
+- Track unique developers and commit activity
+- Identify top contributors and active repositories
+- Export results as JSON or CSV
+- Daily activity patterns
+
+### 6. Ecosystem Comparison (NEW!)
+
+**Script**: `scripts/ecosystem-comparison-report.ts`
+
+Generate beautiful comparative reports between Aztec and Noir ecosystems:
+
+```bash
+# Standard comparison (all repos)
+bun run report
+
+# Community-only view (excludes AztecProtocol & noir-lang)
+bun run report:community
+
+# Weekly community activity
+bun run report:community-week
+
+# Custom with JSON export
+bun run report:community --json
+```
+
+**Key Features:**
+- **Organization Filtering**: Exclude core orgs to see true community activity
+- **Comparative Metrics**: Side-by-side ecosystem comparison
+- **Developer Distribution**: Understand contribution patterns
+- **Export Options**: Console, text file, or JSON
+
+### 7. Repository Database (NEW!)
+
+**Scripts**: `scripts/create-repository-database.ts`, `scripts/quick-ecosystem-stats.ts`
+
+Consolidated database of all discovered repositories:
+
+```bash
+# Create/update database
+bun run db:create
+
+# View statistics (no API calls)
+bun run db:stats
+```
+
+**Database Contains:**
+- **1,536 total repositories**
+- **881 Aztec Protocol** repos
+- **655 Noir Lang** repos
+- Metadata including tags, source, and ecosystem classification
+
 ## 📊 Output Formats
 
 ### Migration File Format
@@ -261,11 +377,29 @@ The scripts include sophisticated rate limit handling:
 
 ## 📈 Recent Results
 
+### Repository Discovery
 From our latest discovery run:
-- **992** unique repositories found
-- **569** NEW repositories (not tracked)
-  - **186** Aztec Protocol projects
-  - **383** Noir Lang projects
+- **1,536** total repositories in database
+- **569** NEW repositories (not tracked by Electric Capital)
+  - **186** new Aztec Protocol projects
+  - **383** new Noir Lang projects
+
+### Ecosystem Activity (Last 31 Days)
+**Aztec Protocol:**
+- **105 unique developers**
+- **1,404 total commits**
+- **54 active repositories** (6.1% activity rate)
+
+**Noir Lang:**
+- **138 unique developers**
+- **1,760 total commits**
+- **71 active repositories** (10.8% activity rate)
+
+### Community Activity (Excluding Core Orgs)
+When excluding AztecProtocol and noir-lang organizations:
+- **Aztec Community**: 18 developers, 52 commits (last 7 days)
+- **Noir Community**: 40 developers, 375 commits (last 7 days)
+- Noir community shows **122% more developer activity**
 
 ## 🛠️ Development
 
