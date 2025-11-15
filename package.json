@@ -23,7 +23,11 @@
     "report:community": "bun run scripts/ecosystem-comparison-report.ts --exclude-orgs core",
     "report:week": "bun run scripts/ecosystem-comparison-report.ts --days 7",
     "report:month": "bun run scripts/ecosystem-comparison-report.ts --days 31",
-    "report:community-week": "bun run scripts/ecosystem-comparison-report.ts --days 7 --exclude-orgs core"
+    "report:community-week": "bun run scripts/ecosystem-comparison-report.ts --days 7 --exclude-orgs core",
+    "snapshot": "bun run scripts/snapshot-repositories.ts",
+    "snapshot:view": "bun run scripts/view-snapshot.ts",
+    "snapshot:compare": "bun run scripts/compare-snapshots.ts",
+    "snapshot:latest": "bun run scripts/compare-snapshots.ts --latest"
   },
   "devDependencies": {
     "bun-types": "^1.3.1"
