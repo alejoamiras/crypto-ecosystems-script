@@ -1,30 +1,49 @@
-{"url":"https://github.com/0xandee/tezac-playground","sub_ecosystems":[]}
+{"url":"https://github.com/0xandee/aztec-nft-playground","sub_ecosystems":[]}
 {"url":"https://github.com/0xbow-io/asp-aztec-bridge","sub_ecosystems":[]}
+{"url":"https://github.com/0xc0de42/zk-identity","sub_ecosystems":[]}
 {"url":"https://github.com/0xjimmy/risk-onchain","sub_ecosystems":[]}
+{"url":"https://github.com/0xkawaka/aztec-lending","sub_ecosystems":[]}
 {"url":"https://github.com/0xKawaka/comet","sub_ecosystems":[]}
+{"url":"https://github.com/0xmeir/ethbogota2022","sub_ecosystems":[]}
 {"url":"https://github.com/0xPhaze/ZeroLink","sub_ecosystems":[]}
 {"url":"https://github.com/0xrafi/degen-score","sub_ecosystems":[]}
+{"url":"https://github.com/0xrafi/degen-score-frontend","sub_ecosystems":[]}
 {"url":"https://github.com/0xrishabh/zkPic","sub_ecosystems":[]}
 {"url":"https://github.com/0xted97/aztec-private-voting","sub_ecosystems":[]}
 {"url":"https://github.com/1kx-network/zksafe","sub_ecosystems":[]}
 {"url":"https://github.com/33bits-xyz/app","sub_ecosystems":[]}
+{"url":"https://github.com/7flash/daohacks-fractal","sub_ecosystems":[]}
 {"url":"https://github.com/aagbotemi/noir-voting-contract","sub_ecosystems":[]}
 {"url":"https://github.com/abdul-abdi/mess-age","sub_ecosystems":[]}
 {"url":"https://github.com/abhi3700/My_Learning_Cryptography","sub_ecosystems":[]}
 {"url":"https://github.com/adachi-440/aztec_sandbox","sub_ecosystems":[]}
 {"url":"https://github.com/AdCazzum/fischietto","sub_ecosystems":[]}
+{"url":"https://github.com/advaithd/huff-pg","sub_ecosystems":[]}
 {"url":"https://github.com/aerius-labs/poseidon-noir","sub_ecosystems":[]}
 {"url":"https://github.com/agencyenterprise/hack-vortex-zkpaper","sub_ecosystems":[]}
 {"url":"https://github.com/alexanderblv/aztec","sub_ecosystems":[]}
 {"url":"https://github.com/AlexCheema/Graphite","sub_ecosystems":[]}
+{"url":"https://github.com/alexghr/aztec-tx-mirror","sub_ecosystems":[]}
 {"url":"https://github.com/alexghr/noir-wasm-browser-poc","sub_ecosystems":[]}
+{"url":"https://github.com/altaga/muffindex","sub_ecosystems":[]}
 {"url":"https://github.com/andrewwhitehouse/zkgame","sub_ecosystems":[]}
-{"url":"https://github.com/ankit875/azGuard-wallet","sub_ecosystems":[]}
+{"url":"https://github.com/ankiitagrwal/azguard-wallet","sub_ecosystems":[]}
 {"url":"https://github.com/anon-aadhaar/anon-aadhaar-noir","sub_ecosystems":[]}
+{"url":"https://github.com/aragonzkresearch/nouns_voting_on_aztec","sub_ecosystems":[]}
 {"url":"https://github.com/aragonzkresearch/popvote-nr","sub_ecosystems":[]}
+{"url":"https://github.com/arcology-builders/democracy","sub_ecosystems":[]}
+{"url":"https://github.com/arnabkaycee/eth-hack","sub_ecosystems":[]}
+{"url":"https://github.com/arpitsatpute/stealthsdk","sub_ecosystems":[]}
 {"url":"https://github.com/atelooo/kitkatAZtec","sub_ecosystems":[]}
+{"url":"https://github.com/attested-frontiers/openbanking.nr-circuit","sub_ecosystems":[]}
+{"url":"https://github.com/aviral10x/token","sub_ecosystems":[]}
 {"url":"https://github.com/AyushNigam-1/Defi-Bridge","sub_ecosystems":[]}
+{"url":"https://github.com/azguardwallet/aztec-wallet","sub_ecosystems":[]}
 {"url":"https://github.com/Aztec-alpha/zkmsg_circuit","sub_ecosystems":[]}
+{"url":"https://github.com/aztec-pioneers/aztec-otc-desk","sub_ecosystems":[]}
+{"url":"https://github.com/aztec-scan/aztec-scan-sdk","sub_ecosystems":[]}
+{"url":"https://github.com/aztec-scan/chicmoz","sub_ecosystems":[]}
+{"url":"https://github.com/aztecartifacts/aztec-artifacts-monorepo","sub_ecosystems":[]}
 {"url":"https://github.com/AztecGravix/app","sub_ecosystems":[]}
 {"url":"https://github.com/AztecProtocol/.github","sub_ecosystems":[]}
 {"url":"https://github.com/AztecProtocol/ab2","sub_ecosystems":[]}
@@ -107,6 +126,7 @@
 {"url":"https://github.com/AztecProtocol/zk-money","sub_ecosystems":[]}
 {"url":"https://github.com/AztecProtocol/zkether","sub_ecosystems":[]}
 {"url":"https://github.com/AztecProtocol/zkSecurity-aztec-packages","sub_ecosystems":[]}
+{"url":"https://github.com/balmy-protocol/aztec-dca-fe","sub_ecosystems":[]}
 {"url":"https://github.com/Bank-of-JubJub/base","sub_ecosystems":[]}
 {"url":"https://github.com/basstimam/aztec-tip-jar","sub_ecosystems":[]}
 {"url":"https://github.com/BattleZips/BattleZips-Noir","sub_ecosystems":[]}
@@ -115,9 +135,14 @@
 {"url":"https://github.com/benjaminbollen/community-circles","sub_ecosystems":[]}
 {"url":"https://github.com/berkingurcan/Whistec","sub_ecosystems":[]}
 {"url":"https://github.com/bg-expiriments/scaffold-eth-2-noir","sub_ecosystems":[]}
+{"url":"https://github.com/bitfancy/aztec-protocol-notestream","sub_ecosystems":[]}
 {"url":"https://github.com/blockchain-boulders/pebbles","sub_ecosystems":[]}
+{"url":"https://github.com/blocksense-network/blocksense","sub_ecosystems":[]}
+{"url":"https://github.com/bookyea/3","sub_ecosystems":[]}
 {"url":"https://github.com/BootNodeDev/rps-poc","sub_ecosystems":[]}
+{"url":"https://github.com/bosagora/zkagora-era","sub_ecosystems":[]}
 {"url":"https://github.com/brweisz/PSE-Core-Program-2024-","sub_ecosystems":[]}
+{"url":"https://github.com/btclayer/arbitrum","sub_ecosystems":[]}
 {"url":"https://github.com/catmcgee/alpha-workshops","sub_ecosystems":[]}
 {"url":"https://github.com/catmcgee/aztec-token-bridge","sub_ecosystems":[]}
 {"url":"https://github.com/catmcgee/aztec-voting","sub_ecosystems":[]}
@@ -125,48 +150,86 @@
 {"url":"https://github.com/catmcgee/aztec-vsummit","sub_ecosystems":[]}
 {"url":"https://github.com/catmcgee/aztecnr-ecdsa-secp256r1","sub_ecosystems":[]}
 {"url":"https://github.com/catmcgee/aztecnr-private-token-example","sub_ecosystems":[]}
+{"url":"https://github.com/catmcgee/quest-simple-repro","sub_ecosystems":[]}
 {"url":"https://github.com/catmcgee/the-private-peace-project","sub_ecosystems":[]}
 {"url":"https://github.com/Cheetah0x/AccountContract","sub_ecosystems":[]}
 {"url":"https://github.com/Cheetah0x/aztec-artifact-bug","sub_ecosystems":[]}
+{"url":"https://github.com/cheetah0x/aztec-blackjack","sub_ecosystems":[]}
 {"url":"https://github.com/Cheetah0x/aztec-privategroup","sub_ecosystems":[]}
 {"url":"https://github.com/Cheetah0x/aztec-starter","sub_ecosystems":[]}
+{"url":"https://github.com/cheetah0x/aztecfees-repro","sub_ecosystems":[]}
+{"url":"https://github.com/cheetah0x/note_discovery","sub_ecosystems":[]}
+{"url":"https://github.com/cheetah0x/pub_key_service","sub_ecosystems":[]}
 {"url":"https://github.com/Cheetah0x/publicGroups","sub_ecosystems":[]}
+{"url":"https://github.com/clarifiedlabs/aztec-codegen-error","sub_ecosystems":[]}
 {"url":"https://github.com/ClarifiedLabs/aztec-issue-9384","sub_ecosystems":[]}
+{"url":"https://github.com/clarifiedlabs/aztec-uint253","sub_ecosystems":[]}
 {"url":"https://github.com/ClearflySystems/encodeclub","sub_ecosystems":[]}
+{"url":"https://github.com/code-423n4/2023-10-zksync","sub_ecosystems":[]}
 {"url":"https://github.com/colinnielsen/ecrecover-noir","sub_ecosystems":[]}
 {"url":"https://github.com/colinnielsen/threshold-touch-id","sub_ecosystems":[]}
+{"url":"https://github.com/conduitxyz/token-bridge-contracts","sub_ecosystems":[]}
+{"url":"https://github.com/crisgarner/aztec-workshop-counter","sub_ecosystems":[]}
 {"url":"https://github.com/crisgarner/ethGlobal-hack","sub_ecosystems":[]}
 {"url":"https://github.com/critesjosh/aztec-account-abstraction-workshop","sub_ecosystems":[]}
+{"url":"https://github.com/critesjosh/aztec-account-history-exporter","sub_ecosystems":[]}
+{"url":"https://github.com/critesjosh/aztec-proxy-pattern","sub_ecosystems":[]}
+{"url":"https://github.com/critesjosh/aztec-sdk-starter","sub_ecosystems":[]}
+{"url":"https://github.com/critesjosh/aztec-vite-box-test","sub_ecosystems":[]}
+{"url":"https://github.com/critesjosh/aztec-wallet-ui-starter","sub_ecosystems":[]}
+{"url":"https://github.com/critesjosh/azteccli","sub_ecosystems":[]}
 {"url":"https://github.com/critesjosh/blank_testing","sub_ecosystems":[]}
 {"url":"https://github.com/critesjosh/circular_dependency","sub_ecosystems":[]}
+{"url":"https://github.com/critesjosh/cra5-aztec-boilerplate","sub_ecosystems":[]}
 {"url":"https://github.com/critesjosh/dapp-tutorial-55-1","sub_ecosystems":[]}
 {"url":"https://github.com/critesjosh/example-private-token","sub_ecosystems":[]}
+{"url":"https://github.com/critesjosh/new-sdk-test","sub_ecosystems":[]}
 {"url":"https://github.com/critesjosh/noir","sub_ecosystems":[]}
 {"url":"https://github.com/critesjosh/noir-browser-proving-test","sub_ecosystems":[]}
 {"url":"https://github.com/critesjosh/private_voting_workshop_ethcc","sub_ecosystems":[]}
 {"url":"https://github.com/critesjosh/sample-token-deploy","sub_ecosystems":[]}
+{"url":"https://github.com/critesjosh/scaffold-aztec","sub_ecosystems":[]}
+{"url":"https://github.com/critesjosh/secret_society","sub_ecosystems":[]}
 {"url":"https://github.com/critesjosh/test_codespace","sub_ecosystems":[]}
+{"url":"https://github.com/critesjosh/token-bridge-testnet","sub_ecosystems":[]}
 {"url":"https://github.com/critesjosh/token-bridge-tutorial-test","sub_ecosystems":[]}
 {"url":"https://github.com/critesjosh/token_bridge_tutorial","sub_ecosystems":[]}
+{"url":"https://github.com/cronos-labs/era-contracts","sub_ecosystems":[]}
+{"url":"https://github.com/d1ll0n/evm-hypervisor","sub_ecosystems":[]}
+{"url":"https://github.com/d1ll0n/gas-huffer","sub_ecosystems":[]}
 {"url":"https://github.com/d3mage/Nul","sub_ecosystems":[]}
 {"url":"https://github.com/dan-aztec/aztec-lwe-auction","sub_ecosystems":[]}
 {"url":"https://github.com/dan-aztec/noir-succinct-template","sub_ecosystems":[]}
 {"url":"https://github.com/DappaDanDev/green-zktricity_","sub_ecosystems":[]}
+{"url":"https://github.com/daveminer/oauth-verify","sub_ecosystems":[]}
+{"url":"https://github.com/daveminer/old-salt","sub_ecosystems":[]}
+{"url":"https://github.com/daveminer/priv-pool","sub_ecosystems":[]}
 {"url":"https://github.com/dbanks12/aztec-packages","sub_ecosystems":[]}
 {"url":"https://github.com/DDT92/nouns_voting_on_aztec","sub_ecosystems":[]}
+{"url":"https://github.com/defi-wonderland/aztec-boilerplate","sub_ecosystems":[]}
+{"url":"https://github.com/defi-wonderland/aztec-bridge-and-seek","sub_ecosystems":[]}
 {"url":"https://github.com/defi-wonderland/aztec-coin-toss","sub_ecosystems":[]}
 {"url":"https://github.com/defi-wonderland/aztec-coin-toss-pvp","sub_ecosystems":[]}
+{"url":"https://github.com/defi-wonderland/aztec-escrow-extensions","sub_ecosystems":[]}
+{"url":"https://github.com/defi-wonderland/aztec-extensions","sub_ecosystems":[]}
 {"url":"https://github.com/defi-wonderland/aztec-integration-testing","sub_ecosystems":[]}
 {"url":"https://github.com/defi-wonderland/aztec-patterns","sub_ecosystems":[]}
 {"url":"https://github.com/defi-wonderland/aztec-private-oracle","sub_ecosystems":[]}
 {"url":"https://github.com/defi-wonderland/aztec-token","sub_ecosystems":[]}
+{"url":"https://github.com/defi-wonderland/aztec-web-boilerplate","sub_ecosystems":[]}
+{"url":"https://github.com/defichat/mayan","sub_ecosystems":[]}
 {"url":"https://github.com/delaaxe/4337-noir","sub_ecosystems":[]}
+{"url":"https://github.com/dewdrop-labs/nebula","sub_ecosystems":[]}
 {"url":"https://github.com/distributed-lab/noir-plume","sub_ecosystems":[]}
+{"url":"https://github.com/distributedcollective/rollup","sub_ecosystems":[]}
 {"url":"https://github.com/Domson97/private-CMTAT-aztec-stablecoin","sub_ecosystems":[]}
 {"url":"https://github.com/dry-ethglobal-brussels/dry-mobile-app","sub_ecosystems":[]}
+{"url":"https://github.com/ehsan-g/aztec-test-issue","sub_ecosystems":[]}
 {"url":"https://github.com/ehsan-g/aztec-txe","sub_ecosystems":[]}
 {"url":"https://github.com/eliashezron/noirProjects","sub_ecosystems":[]}
-{"url":"https://github.com/EnigmaticJ3rry/zk-identity","sub_ecosystems":[]}
+{"url":"https://github.com/eliqaq/intellibridge-auditor","sub_ecosystems":[]}
+{"url":"https://github.com/elizaos/jeju","sub_ecosystems":[]}
+{"url":"https://github.com/enigmaglimmer/zksync","sub_ecosystems":[]}
 {"url":"https://github.com/Envoy-VC/ring-forum-noirhack","sub_ecosystems":[]}
 {"url":"https://github.com/Envoy-VC/zk-guesser","sub_ecosystems":[]}
 {"url":"https://github.com/Ethan-000/halo2_backend","sub_ecosystems":[]}
@@ -175,61 +238,100 @@
 {"url":"https://github.com/fabian416/aztec-counter","sub_ecosystems":[]}
 {"url":"https://github.com/ferkymel/Rentssure","sub_ecosystems":[]}
 {"url":"https://github.com/FeurJak/aztec-l2-tuts","sub_ecosystems":[]}
+{"url":"https://github.com/filipharald/aztec-message-box-playground","sub_ecosystems":[]}
 {"url":"https://github.com/FilipHarald/aztec-token-bridge-tutorial","sub_ecosystems":[]}
 {"url":"https://github.com/FilipHarald/min-repro-aztec-2","sub_ecosystems":[]}
 {"url":"https://github.com/FilipHarald/min-repro-aztec-3","sub_ecosystems":[]}
+{"url":"https://github.com/filipharald/min-repro-aztec-error-1","sub_ecosystems":[]}
 {"url":"https://github.com/FilipHarald/simple_aztec_app","sub_ecosystems":[]}
+{"url":"https://github.com/filozif/aztec-template","sub_ecosystems":[]}
 {"url":"https://github.com/filozif/private-message-wall","sub_ecosystems":[]}
 {"url":"https://github.com/finitology/hardhat-noir-starter","sub_ecosystems":[]}
 {"url":"https://github.com/fluidkey/ethdam-2024","sub_ecosystems":[]}
+{"url":"https://github.com/fragchain/az","sub_ecosystems":[]}
+{"url":"https://github.com/freight-trust/invoicetap","sub_ecosystems":[]}
 {"url":"https://github.com/fryorcraken/noir-tutorial","sub_ecosystems":[]}
 {"url":"https://github.com/FuzzingLabs/aztec_fuzzing","sub_ecosystems":[]}
 {"url":"https://github.com/gabrielantonyxaviour/priv.cast","sub_ecosystems":[]}
 {"url":"https://github.com/gabrielantonyxaviour/zkricket","sub_ecosystems":[]}
+{"url":"https://github.com/gatway-labs/chronovault-contract","sub_ecosystems":[]}
+{"url":"https://github.com/gatway-labs/stargate-contract","sub_ecosystems":[]}
+{"url":"https://github.com/getter34/zksync","sub_ecosystems":[]}
 {"url":"https://github.com/GianfrancoBazzani/zkHack-Berlin-Kinky-Swap","sub_ecosystems":[]}
 {"url":"https://github.com/gilbertsahumada/aztec-token-esp","sub_ecosystems":[]}
 {"url":"https://github.com/gilescope/noir","sub_ecosystems":[]}
 {"url":"https://github.com/gitshreevatsa/BNB-Polyhedra","sub_ecosystems":[]}
 {"url":"https://github.com/GraphitiLabs/zkaptcha","sub_ecosystems":[]}
 {"url":"https://github.com/GROOOOAAAARK/zks","sub_ecosystems":[]}
+{"url":"https://github.com/groxan/aztec-worker-demo","sub_ecosystems":[]}
 {"url":"https://github.com/guelowrd/aztec-sandbox-basic-example","sub_ecosystems":[]}
 {"url":"https://github.com/GustaveCharles/myTxeIssues","sub_ecosystems":[]}
+{"url":"https://github.com/ham3798/authdevice7702","sub_ecosystems":[]}
 {"url":"https://github.com/hardiktheprogrammer/dApp-on-aztec","sub_ecosystems":[]}
 {"url":"https://github.com/hashcloak/noir-bigint","sub_ecosystems":[]}
 {"url":"https://github.com/hashcloak/noir-bigint-bench","sub_ecosystems":[]}
 {"url":"https://github.com/hashcloak/zk-regex-tests-and-examples","sub_ecosystems":[]}
 {"url":"https://github.com/HastilyConceivedCreatures/safecat","sub_ecosystems":[]}
 {"url":"https://github.com/Heavy-Community/aztec-wallet","sub_ecosystems":[]}
+{"url":"https://github.com/heyskylark/basic-decentralized-staking","sub_ecosystems":[]}
 {"url":"https://github.com/holonym-foundation/aztec","sub_ecosystems":[]}
 {"url":"https://github.com/holonym-foundation/aztec-bridge","sub_ecosystems":[]}
+{"url":"https://github.com/holonym-foundation/id-hub-contracts","sub_ecosystems":[]}
 {"url":"https://github.com/hooperben/aztec-devnet-testing","sub_ecosystems":[]}
+{"url":"https://github.com/hooperben/commbank.eth","sub_ecosystems":[]}
+{"url":"https://github.com/hooperben/pubtc","sub_ecosystems":[]}
 {"url":"https://github.com/hooperben/zkOfficer","sub_ecosystems":[]}
+{"url":"https://github.com/hop-protocol/hop","sub_ecosystems":[]}
+{"url":"https://github.com/hpmaxi/awwi","sub_ecosystems":[]}
 {"url":"https://github.com/hyli-org/cairo-erc20-runner","sub_ecosystems":[]}
 {"url":"https://github.com/hyli-org/examples","sub_ecosystems":[]}
 {"url":"https://github.com/hyli-org/hyle-cosmos","sub_ecosystems":[]}
 {"url":"https://github.com/hyli-org/noir-collatz-conjecture","sub_ecosystems":[]}
 {"url":"https://github.com/hyli-org/verifiers-for-hyle","sub_ecosystems":[]}
 {"url":"https://github.com/iAmMichaelConnor/blob-lib","sub_ecosystems":[]}
+{"url":"https://github.com/ichetanmittal/native-webview","sub_ecosystems":[]}
+{"url":"https://github.com/ilpepepig/private-public-flow","sub_ecosystems":[]}
+{"url":"https://github.com/impayq/ui-impayq","sub_ecosystems":[]}
 {"url":"https://github.com/informalsystems/cycles-sandbox","sub_ecosystems":[]}
+{"url":"https://github.com/interstate-network/interstatejs","sub_ecosystems":[]}
+{"url":"https://github.com/interstate-network/iso-evm-hypervisor","sub_ecosystems":[]}
+{"url":"https://github.com/ioedeveloper/zk-project","sub_ecosystems":[]}
 {"url":"https://github.com/iri031/Review-pulse","sub_ecosystems":[]}
 {"url":"https://github.com/jat9292/Private-token","sub_ecosystems":[]}
+{"url":"https://github.com/jayendramadaram/avax-darkpools","sub_ecosystems":[]}
+{"url":"https://github.com/jayendramadaram/darkpool-gateway","sub_ecosystems":[]}
 {"url":"https://github.com/jeswr/noir-sparql-proof","sub_ecosystems":[]}
 {"url":"https://github.com/Jigsaw-23122002/ETH-Mumbai-2024","sub_ecosystems":[]}
 {"url":"https://github.com/jimjimvalkema/sterk-punt","sub_ecosystems":[]}
 {"url":"https://github.com/joaolago1113/aztec_wallet","sub_ecosystems":[]}
 {"url":"https://github.com/jonas089/vrf-noir","sub_ecosystems":[]}
+{"url":"https://github.com/joss-aztec/cra4-aztec-sdk-starter","sub_ecosystems":[]}
 {"url":"https://github.com/jp4g/brillig_bug_aztec","sub_ecosystems":[]}
+{"url":"https://github.com/jp4g/broken_notes_aztec_75","sub_ecosystems":[]}
 {"url":"https://github.com/jp4g/escrow-transfer-private-repro","sub_ecosystems":[]}
 {"url":"https://github.com/jp4g/otc-demo","sub_ecosystems":[]}
+{"url":"https://github.com/jp4g/otc-ui","sub_ecosystems":[]}
 {"url":"https://github.com/kamalbuilds/aztec-private-dapp","sub_ecosystems":[]}
 {"url":"https://github.com/KENILSHAHH/FederatedLearningZK","sub_ecosystems":[]}
+{"url":"https://github.com/kenkomu/newaztec","sub_ecosystems":[]}
 {"url":"https://github.com/kevincharm/i_lost_my_eth_in_a_boating_accident","sub_ecosystems":[]}
+{"url":"https://github.com/kevinstubbs/texcoco","sub_ecosystems":[]}
 {"url":"https://github.com/knocks-public/2024-CircuitBreaker","sub_ecosystems":[]}
+{"url":"https://github.com/lambdaclass/zksync_l3_poc","sub_ecosystems":[]}
+{"url":"https://github.com/layerk/layerk-blockchain","sub_ecosystems":[]}
+{"url":"https://github.com/layr-labs/eigenda-orbit-sdk","sub_ecosystems":[]}
 {"url":"https://github.com/LidiaCana/web3-contract-token","sub_ecosystems":[]}
+{"url":"https://github.com/lizanlycan/earth3","sub_ecosystems":[]}
 {"url":"https://github.com/loicttn/zkgames","sub_ecosystems":[]}
 {"url":"https://github.com/london-hackers/AztecSwap","sub_ecosystems":[]}
+{"url":"https://github.com/luca-blight/aztec-token-bridge","sub_ecosystems":[]}
+{"url":"https://github.com/lucasgelfond/eth-summer-project","sub_ecosystems":[]}
+{"url":"https://github.com/lucholeonel/zk-access","sub_ecosystems":[]}
+{"url":"https://github.com/lucholeonel/zk-coinbase-attestation-project","sub_ecosystems":[]}
 {"url":"https://github.com/Maadhav/aztec-bridge","sub_ecosystems":[]}
+{"url":"https://github.com/mach-34/aztec-openbanking-ui","sub_ecosystems":[]}
 {"url":"https://github.com/Mach-34/aztec-state-channels","sub_ecosystems":[]}
+{"url":"https://github.com/mach-34/aztec-usdc","sub_ecosystems":[]}
 {"url":"https://github.com/Mach-34/rollup-noir","sub_ecosystems":[]}
 {"url":"https://github.com/Mach-34/z-imburse","sub_ecosystems":[]}
 {"url":"https://github.com/Mach-34/zybil","sub_ecosystems":[]}
@@ -237,10 +339,17 @@
 {"url":"https://github.com/madztheo/noir-ecdsa","sub_ecosystems":[]}
 {"url":"https://github.com/madztheo/noir-large-integer","sub_ecosystems":[]}
 {"url":"https://github.com/mani99brar/9Key","sub_ecosystems":[]}
+{"url":"https://github.com/mankenavenkatesh/selective-zkp","sub_ecosystems":[]}
 {"url":"https://github.com/mansijoshi17/zk-reports-aztec","sub_ecosystems":[]}
+{"url":"https://github.com/marekkirejczyk/aztec-webpack-starter","sub_ecosystems":[]}
+{"url":"https://github.com/masaun/confidential-payroll-management","sub_ecosystems":[]}
+{"url":"https://github.com/masaun/confidential-payroll-management_old_untill-0929","sub_ecosystems":[]}
+{"url":"https://github.com/masaun/private-payroll","sub_ecosystems":[]}
 {"url":"https://github.com/mashharuki/ZKRepo","sub_ecosystems":[]}
 {"url":"https://github.com/Mautjee/score-sage","sub_ecosystems":[]}
+{"url":"https://github.com/maxsam4/zalary","sub_ecosystems":[]}
 {"url":"https://github.com/MayowaObisesan/noir-scroll-kyc","sub_ecosystems":[]}
+{"url":"https://github.com/metachain-meta/token-bridge-contracts","sub_ecosystems":[]}
 {"url":"https://github.com/michaelelliot/zkpassport-aztec-sandbox","sub_ecosystems":[]}
 {"url":"https://github.com/michaeljklein/zk-pong","sub_ecosystems":[]}
 {"url":"https://github.com/michaelneuder/noir","sub_ecosystems":[]}
@@ -254,8 +363,11 @@
 {"url":"https://github.com/mohammed7s/shadowBTC","sub_ecosystems":[]}
 {"url":"https://github.com/moven0831/mopro-example-app-anon-aadhaar-noir","sub_ecosystems":[]}
 {"url":"https://github.com/moven0831/mopro-example-app-keccak256","sub_ecosystems":[]}
+{"url":"https://github.com/muzzamil1/aztec-bridge","sub_ecosystems":[]}
 {"url":"https://github.com/mysteryon88/zk-hashes","sub_ecosystems":[]}
 {"url":"https://github.com/n0m44/aztec.js-test","sub_ecosystems":[]}
+{"url":"https://github.com/nathaliabarreiros/aztec-private-counter","sub_ecosystems":[]}
+{"url":"https://github.com/nathaliabarreiros/aztec-sample-dapp","sub_ecosystems":[]}
 {"url":"https://github.com/nemi-fi/aztec_storage_proofs","sub_ecosystems":[]}
 {"url":"https://github.com/nemi-fi/tee-rex","sub_ecosystems":[]}
 {"url":"https://github.com/nemi-fi/wallet-sdk","sub_ecosystems":[]}
@@ -263,20 +375,31 @@
 {"url":"https://github.com/neotheprogramist/zkps","sub_ecosystems":[]}
 {"url":"https://github.com/nerses-asaturyan/noir-crowdfunding-test","sub_ecosystems":[]}
 {"url":"https://github.com/nescampos/alphaotc","sub_ecosystems":[]}
+{"url":"https://github.com/nethermindeth/aztec-wormhole-app-demo","sub_ecosystems":[]}
+{"url":"https://github.com/nethermindeth/noir-abi-forms","sub_ecosystems":[]}
 {"url":"https://github.com/NethermindEth/worldcoin-private-social-graph","sub_ecosystems":[]}
+{"url":"https://github.com/nikolaykostadinov21/aztec-nr-experiments","sub_ecosystems":[]}
+{"url":"https://github.com/nikolaykostadinov21/aztec-typescript-experiments","sub_ecosystems":[]}
 {"url":"https://github.com/NikolayKostadinov21/noir-private-voting","sub_ecosystems":[]}
+{"url":"https://github.com/NoaSEED/NoaSEED","sub_ecosystems":[]}
 {"url":"https://github.com/nodestarQ/toadnado","sub_ecosystems":[]}
 {"url":"https://github.com/Noir-ETH-Light-Client/circuits","sub_ecosystems":[]}
+{"url":"https://github.com/noir-lang/aztec-contracts","sub_ecosystems":[]}
 {"url":"https://github.com/Noir-W3C-Verifiable-Credentials/protocol-core","sub_ecosystems":[]}
 {"url":"https://github.com/nojansheybani/zksurveybackup","sub_ecosystems":[]}
+{"url":"https://github.com/nrxschool/arbitrum-course","sub_ecosystems":[]}
 {"url":"https://github.com/nullity00/maci-noir","sub_ecosystems":[]}
 {"url":"https://github.com/nutrina/zk_passport_score","sub_ecosystems":[]}
+{"url":"https://github.com/obsidionlabs/app-example","sub_ecosystems":[]}
 {"url":"https://github.com/ofemeteng/aztec-otc","sub_ecosystems":[]}
 {"url":"https://github.com/ofemeteng/vora-explorer","sub_ecosystems":[]}
 {"url":"https://github.com/ofemeteng/vora-wallet","sub_ecosystems":[]}
+{"url":"https://github.com/offchainlabs/arbitrum-orbit-sdk","sub_ecosystems":[]}
+{"url":"https://github.com/offchainlabs/token-bridge-contracts","sub_ecosystems":[]}
 {"url":"https://github.com/oguzutku1745/v0rtex-priwp","sub_ecosystems":[]}
 {"url":"https://github.com/oguzutku1745/zkPoke","sub_ecosystems":[]}
 {"url":"https://github.com/ojasarora77/super-lancers-token","sub_ecosystems":[]}
+{"url":"https://github.com/olehmisar/aztec-recursive-proofs","sub_ecosystems":[]}
 {"url":"https://github.com/olehmisar/aztec-tools","sub_ecosystems":[]}
 {"url":"https://github.com/olehmisar/prols","sub_ecosystems":[]}
 {"url":"https://github.com/olehmisar/shieldswap","sub_ecosystems":[]}
@@ -285,25 +408,43 @@
 {"url":"https://github.com/oxor-io/sam-circuits","sub_ecosystems":[]}
 {"url":"https://github.com/palutz/Noir_workshops","sub_ecosystems":[]}
 {"url":"https://github.com/pamungkaski/syra-login-fe","sub_ecosystems":[]}
+{"url":"https://github.com/patogallaiovlabs/smart-wallet-react","sub_ecosystems":[]}
+{"url":"https://github.com/pawanjay176/zkcreds","sub_ecosystems":[]}
 {"url":"https://github.com/Philogy/noirder-book","sub_ecosystems":[]}
 {"url":"https://github.com/Philogy/noirken","sub_ecosystems":[]}
 {"url":"https://github.com/pierg/fact-fortress-compiler","sub_ecosystems":[]}
+{"url":"https://github.com/pierregvx/ghofastrollup","sub_ecosystems":[]}
 {"url":"https://github.com/polybase/zk-benchmarks","sub_ecosystems":[]}
 {"url":"https://github.com/porco-rosso-j/aztec-dex-build","sub_ecosystems":[]}
 {"url":"https://github.com/porco-rosso-j/aztec-mobile-wallet-dry","sub_ecosystems":[]}
 {"url":"https://github.com/porco-rosso-j/aztec-modular-smart-account","sub_ecosystems":[]}
 {"url":"https://github.com/porco-rosso-j/aztec-numer0n","sub_ecosystems":[]}
 {"url":"https://github.com/porco-rosso-j/aztec-packages","sub_ecosystems":[]}
+{"url":"https://github.com/porco-rosso-j/aztec-packages-aztec-bb","sub_ecosystems":[]}
 {"url":"https://github.com/porco-rosso-j/aztec-snap","sub_ecosystems":[]}
 {"url":"https://github.com/porco-rosso-j/aztec_lend","sub_ecosystems":[]}
+{"url":"https://github.com/porco-rosso-j/react-native-aztec-p256","sub_ecosystems":[]}
+{"url":"https://github.com/porco-rosso-j/repro-min_revertible_side_effect_counter-must-not-be-0","sub_ecosystems":[]}
+{"url":"https://github.com/porco-rosso-j/yarn-project-async","sub_ecosystems":[]}
+{"url":"https://github.com/pqest01/aztec-anonymous-messenger","sub_ecosystems":[]}
+{"url":"https://github.com/pqzk-labs/zk-coprocessor-bridge","sub_ecosystems":[]}
 {"url":"https://github.com/prajalsharma/ProofMint","sub_ecosystems":[]}
 {"url":"https://github.com/Pratyush/zk-mooc-lang-examples","sub_ecosystems":[]}
 {"url":"https://github.com/PriviChainEx/monorepo","sub_ecosystems":[]}
+{"url":"https://github.com/protocolwhisper/underfi","sub_ecosystems":[]}
 {"url":"https://github.com/Puckapao/v0-aztec-gpu-prover","sub_ecosystems":[]}
 {"url":"https://github.com/puzzlehq/aztec-sandbox-vite-starter","sub_ecosystems":[]}
 {"url":"https://github.com/puzzlehq/sandcastle","sub_ecosystems":[]}
+{"url":"https://github.com/pwollemi/zkevm","sub_ecosystems":[]}
+{"url":"https://github.com/qbitroot/otc-noirhack","sub_ecosystems":[]}
+{"url":"https://github.com/quantum3-labs/aztec-cross-chain-multisig","sub_ecosystems":[]}
+{"url":"https://github.com/r4reetik/nox","sub_ecosystems":[]}
 {"url":"https://github.com/rahul-kothari/aztec-sandbox-l1l2-init","sub_ecosystems":[]}
+{"url":"https://github.com/rahul-kothari/private-bets","sub_ecosystems":[]}
+{"url":"https://github.com/rajaroy43/rollup-l2","sub_ecosystems":[]}
+{"url":"https://github.com/rajeshb62/aztec-experiment","sub_ecosystems":[]}
 {"url":"https://github.com/rajeshb62/aztec-wallet","sub_ecosystems":[]}
+{"url":"https://github.com/rajeshb62/silly-aztec-wallet","sub_ecosystems":[]}
 {"url":"https://github.com/RareSkills/noir-zk-fullstack-example","sub_ecosystems":[]}
 {"url":"https://github.com/razacodespython/zu-next","sub_ecosystems":[]}
 {"url":"https://github.com/Resolfinity/lfgho-hackaton","sub_ecosystems":[]}
@@ -314,85 +455,146 @@
 {"url":"https://github.com/resurgencelabs/noir_hash","sub_ecosystems":[]}
 {"url":"https://github.com/resurgencelabs/types","sub_ecosystems":[]}
 {"url":"https://github.com/richardliang/noir-rsa","sub_ecosystems":[]}
+{"url":"https://github.com/risefinance/rise-contracts","sub_ecosystems":[]}
+{"url":"https://github.com/rojhattoptamus/secret-ballot","sub_ecosystems":[]}
 {"url":"https://github.com/ronykris/alpha-build-1","sub_ecosystems":[]}
+{"url":"https://github.com/rumata888/aztec-2","sub_ecosystems":[]}
 {"url":"https://github.com/RuntimeTerror-Labs/CelestialWallet","sub_ecosystems":[]}
 {"url":"https://github.com/salazarsebas/PrivacyKeys-NFT","sub_ecosystems":[]}
 {"url":"https://github.com/sambarnes/noir-by-example","sub_ecosystems":[]}
+{"url":"https://github.com/samfelix03/gods-hand","sub_ecosystems":[]}
 {"url":"https://github.com/sanjay-sol/zkpay","sub_ecosystems":[]}
 {"url":"https://github.com/santi-nihany/certo","sub_ecosystems":[]}
 {"url":"https://github.com/santi-nihany/noir-dapp","sub_ecosystems":[]}
+{"url":"https://github.com/sarthaksharma201731/headerinzksync","sub_ecosystems":[]}
+{"url":"https://github.com/satyamakgec/zalary","sub_ecosystems":[]}
+{"url":"https://github.com/satyambnsal/aztec-example","sub_ecosystems":[]}
 {"url":"https://github.com/satyambnsal/aztec-uniswap","sub_ecosystems":[]}
+{"url":"https://github.com/satyambnsal/escrow_contract_noir","sub_ecosystems":[]}
 {"url":"https://github.com/Savio-Sou/noir","sub_ecosystems":[]}
 {"url":"https://github.com/seetadev/ZKMedical-Billing","sub_ecosystems":[]}
+{"url":"https://github.com/shadeprotocol/shade-noir-contract","sub_ecosystems":[]}
 {"url":"https://github.com/shhtarknet/zkchase","sub_ecosystems":[]}
+{"url":"https://github.com/shiqicao/aztec_repro","sub_ecosystems":[]}
 {"url":"https://github.com/Shritesh99/deref","sub_ecosystems":[]}
 {"url":"https://github.com/Shubham1769/ZephyrShield","sub_ecosystems":[]}
 {"url":"https://github.com/shuklaayush/aztec-token-partition-table","sub_ecosystems":[]}
+{"url":"https://github.com/signorecello/aztec-supply-chain","sub_ecosystems":[]}
 {"url":"https://github.com/signorecello/froglin-game","sub_ecosystems":[]}
 {"url":"https://github.com/signorecello/moar_docs_playground","sub_ecosystems":[]}
 {"url":"https://github.com/signorecello/noir-recursion","sub_ecosystems":[]}
 {"url":"https://github.com/signorecello/progcrypto23-act","sub_ecosystems":[]}
 {"url":"https://github.com/simon-something/aztec-big-gist","sub_ecosystems":[]}
+{"url":"https://github.com/simondos/zkdao","sub_ecosystems":[]}
 {"url":"https://github.com/Sindri-Labs/docker-zkp","sub_ecosystems":[]}
 {"url":"https://github.com/Sindri-Labs/sindri-resources","sub_ecosystems":[]}
 {"url":"https://github.com/sirasistant/brillig-vm-circuit","sub_ecosystems":[]}
 {"url":"https://github.com/sirasistant/example-contract","sub_ecosystems":[]}
+{"url":"https://github.com/skardas/aztec-protocol","sub_ecosystems":[]}
 {"url":"https://github.com/skaunov/sample-dapp","sub_ecosystems":[]}
+{"url":"https://github.com/sky-ecosystem/xdomain","sub_ecosystems":[]}
+{"url":"https://github.com/smitrajput/lendz","sub_ecosystems":[]}
 {"url":"https://github.com/SpiralOutDotEu/voting-demo","sub_ecosystems":[]}
 {"url":"https://github.com/sripwoud/cza-templates","sub_ecosystems":[]}
 {"url":"https://github.com/Stack-Too-Deep/Thunder","sub_ecosystems":[]}
 {"url":"https://github.com/star-gazer111/zkSocial","sub_ecosystems":[]}
+{"url":"https://github.com/status-im/infra-role-aztec","sub_ecosystems":[]}
 {"url":"https://github.com/storswiftlabs/medical-zkML-backend","sub_ecosystems":[]}
+{"url":"https://github.com/substance-labs/aztec-evm-bridge","sub_ecosystems":[]}
 {"url":"https://github.com/substance-labs/aztec-evm-bridge-ui","sub_ecosystems":[]}
+{"url":"https://github.com/substance-labs/aztec-token-faucet","sub_ecosystems":[]}
+{"url":"https://github.com/substance-labs/revelio","sub_ecosystems":[]}
 {"url":"https://github.com/substance-labs/zk-ico","sub_ecosystems":[]}
 {"url":"https://github.com/Sun-Jc/noir-ivc","sub_ecosystems":[]}
 {"url":"https://github.com/susumutomita/aztec-tutorial","sub_ecosystems":[]}
 {"url":"https://github.com/Swoir/Swoir","sub_ecosystems":[]}
 {"url":"https://github.com/TaceoLabs/noir-examples","sub_ecosystems":[]}
 {"url":"https://github.com/TaceoLabs/noir-poseidon","sub_ecosystems":[]}
+{"url":"https://github.com/taurushq-io/private-cmtat-aztec","sub_ecosystems":[]}
 {"url":"https://github.com/Tetration-Lab/turing-zero","sub_ecosystems":[]}
+{"url":"https://github.com/themandalore/aztec-ganache-starter-kit","sub_ecosystems":[]}
 {"url":"https://github.com/therealyingtong/schnorr-tokens","sub_ecosystems":[]}
 {"url":"https://github.com/Thjarkgh/skirmish","sub_ecosystems":[]}
+{"url":"https://github.com/thunkar/aztec-keychain","sub_ecosystems":[]}
+{"url":"https://github.com/tiagofneto/the-startup-company","sub_ecosystems":[]}
 {"url":"https://github.com/tms7331/aztec-pick3","sub_ecosystems":[]}
 {"url":"https://github.com/TobiasLoader/zk-playground","sub_ecosystems":[]}
 {"url":"https://github.com/ToJen/circuit-breaker","sub_ecosystems":[]}
 {"url":"https://github.com/TomAFrench/keccak256-noir","sub_ecosystems":[]}
+{"url":"https://github.com/tomafrench/notestream","sub_ecosystems":[]}
 {"url":"https://github.com/tonk-labs/dappicom","sub_ecosystems":[]}
 {"url":"https://github.com/tonk-labs/gribi","sub_ecosystems":[]}
 {"url":"https://github.com/tony1908/zk-openbanking","sub_ecosystems":[]}
 {"url":"https://github.com/ToxicPine/zkpa","sub_ecosystems":[]}
+{"url":"https://github.com/trainprotocol/solver","sub_ecosystems":[]}
 {"url":"https://github.com/TrainProtocol/station","sub_ecosystems":[]}
 {"url":"https://github.com/tsujp/zk_benchmarks","sub_ecosystems":[]}
 {"url":"https://github.com/tuhoag/noir-typescript","sub_ecosystems":[]}
+{"url":"https://github.com/turnstileportal/turnstile-monorepo","sub_ecosystems":[]}
 {"url":"https://github.com/Turupawn/AztecEcdsaWasmDemo","sub_ecosystems":[]}
+{"url":"https://github.com/umarb97/shadowsplit","sub_ecosystems":[]}
+{"url":"https://github.com/v3y51/had","sub_ecosystems":[]}
 {"url":"https://github.com/vacekj/air-fried-gyatt","sub_ecosystems":[]}
 {"url":"https://github.com/Veridise/zk-language-comparison","sub_ecosystems":[]}
 {"url":"https://github.com/vezenovm/aztec-circuits-noir","sub_ecosystems":[]}
 {"url":"https://github.com/vlayer-xyz/noir-profiling","sub_ecosystems":[]}
+{"url":"https://github.com/vyomshm/ethindia2.0","sub_ecosystems":[]}
+{"url":"https://github.com/walletmesh/aztec-accounts","sub_ecosystems":[]}
+{"url":"https://github.com/walletmesh/walletmesh-packages","sub_ecosystems":[]}
+{"url":"https://github.com/warptoad/warp-toad","sub_ecosystems":[]}
 {"url":"https://github.com/wasabijiro/ChillVille","sub_ecosystems":[]}
 {"url":"https://github.com/wasabijiro/zkCredit","sub_ecosystems":[]}
+{"url":"https://github.com/web3privacy/hackathon-2025-berlin-submissions","sub_ecosystems":[]}
 {"url":"https://github.com/workingdoge/payslip.nr","sub_ecosystems":[]}
+{"url":"https://github.com/xorsal/aztec-boilerplate","sub_ecosystems":[]}
 {"url":"https://github.com/xorsal/train-example","sub_ecosystems":[]}
+{"url":"https://github.com/xuefeng-zhu/private-swap","sub_ecosystems":[]}
+{"url":"https://github.com/xythum-labs/darkpool-gateway","sub_ecosystems":[]}
+{"url":"https://github.com/yellowphil/aztec-shenanigans","sub_ecosystems":[]}
 {"url":"https://github.com/ykxy940/aztec-anonymous-donations","sub_ecosystems":[]}
 {"url":"https://github.com/zachalam/CreditVerifier","sub_ecosystems":[]}
+{"url":"https://github.com/zeeve-app/orbit-setup-script","sub_ecosystems":[]}
+{"url":"https://github.com/zenmo-bogota/zenmo-core","sub_ecosystems":[]}
 {"url":"https://github.com/ZeroK-Labs/froglin","sub_ecosystems":[]}
 {"url":"https://github.com/zeropoolnetwork/sharded-storage-toy-model","sub_ecosystems":[]}
+{"url":"https://github.com/zk-anticheat/speedrun-leaderboard","sub_ecosystems":[]}
+{"url":"https://github.com/zkamoeba-micro/micro","sub_ecosystems":[]}
 {"url":"https://github.com/ZKCamp/noir-basics","sub_ecosystems":[]}
 {"url":"https://github.com/zkemail/zkemail.nr","sub_ecosystems":[]}
 {"url":"https://github.com/zkworks-xyz/Quetzal","sub_ecosystems":[]}
 {"url":"https://github.com/zobront/aztec-hipster-airdrop","sub_ecosystems":[]}
 {"url":"https://github.com/zobront/aztec-poker","sub_ecosystems":[]}
 {"url":"https://github.com/zobront/aztec-rps","sub_ecosystems":[]}
+{"url":"https://github.com/0kelv/noir-age-verification","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/0x-ximon/noirdle","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/0x3327/SKProof","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/0x3327/ZKFloat","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/0xabh/OneKYC","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/0xandee/noir-playground","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/0xandee/noir-playground-server","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/0xandee/noirlings-app","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/0xc0de42/noir-panagram","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/0xjimmy/risk-noir-prover","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/0xmad/noir-poc","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/0xodus-eth/zkdoodles","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/0xpantera/bargo","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/0xpantera/wargo","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/0xpetra/noir-blackjack","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/0xshora/noir_dash","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/0xsiddharthks/zk-proof-of-burn","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/10d9e/paillier.sol","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/18121a05l2/zk-mixer","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/1kx-network/safe-ui-lite","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/33bits-xyz/api","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/aaronabuusama/private-starknet","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/aarontan11/veripact","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/aashim-limbu/implementation_tornado_cash","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/AB7zz/noirjs-learn","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/acgodson/siren-ai","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/adachi-440/learn-noir","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/afa7789/noir-workshop-erc55-core","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/agencyenterprise/zkgraph-bnb-hack","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/agrim-sharma174/zksci","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/akonior/noir_example","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/albertoZurini/ETHWarsaw2024","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/alexghr/ro_cnp","sub_ecosystems":["Noir Lang"]}
@@ -401,58 +603,115 @@
 {"url":"https://github.com/alpinevm/bech32-noir","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/alpinevm/dyn-sha256-noir","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/alpinevm/noir-verifier-benchmark","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/amangotchu/noirverification","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/amiller/noir-cfg","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/amiller/noir-microbenchmarks","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/anaPerezGhiglia/quadratic_votes_noir","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/anii76/zkhack-berlin","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/anj20/NoirSwap","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/anondotworld/anonworld","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/Another-DevX/chim-sindri","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/Another-DevX/sindri-scroll-hackaton","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/AnoyRC/Luna_CircuitBreaker","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/AnoyRC/zktableau","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/anudit/noir-single","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/anudit/omniddocs","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/anukulpandey/reef-remix-ide","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/Apocentre/noir-libs","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/Apocentre/zk-auth","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/ara-foundation/web","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/aragonzkresearch/noir-trie-proofs","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/aragonzkresearch/nouns-anonymous-voting","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/aragonzkresearch/zkRegistry","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/argentlabs/exploration-private-token","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/arjanjohan/scroll-fighter","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/armankolozyan/zkp-languages","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/armanthepythonguy/IncognitoInsights-ETHIndia23","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/armanthepythonguy/ZKP-Hype-ETHOnline","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/armsves/polkavote","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/arturo-clavero/zk-orderbook","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/arturo-clavero/zk-wordgame","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/asaidoguz/starknet-contracts","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/ashiqahamed17/zk-noir","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/ateett12ue/zkevm-sample","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/atomniketh/zkcamp","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/attested-frontiers/openbanking.nr-server","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/aviral10x/ethonline","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/aviral10x/scaffold-noir","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/ayan-ship/zk_panagram","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/ayush-ranjan-official/zk-science","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/ayushsingh82/hypernexa","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/ayushsingh82/PolyGate","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/AztecGravix/noir-contracts","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/badgooooor/anon-discord","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/badgooooor/noir-dot-matrix","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/bajpai244/privacy-pool-in-noir","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/battlezips/battlezips-noir-frontend","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/bauti-defi/Noir-Playground","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/berkingurcan/EncodeClub-ZK-Bootcamp-Q4","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/Blankeeir/recursion_noir","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/blockful/daoleaks","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/blocksense-network/benchmarking-noir","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/boomlabs-web3/hello-noir-frontend","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/brech1/zk-attestation","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/brweisz/noir-dapp-custom-template","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/brweisz/photoLock","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/brweisz/photoLock-hackathon","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/bug-reproduction/noir-test","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/bunsenstraat/remix-project","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/calvbore/hello-noir-solution","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/calvbore/zk-hello-world-noir","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/calvogenerico/grupo-3-ahorcado","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/carrion256/ghostfi","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/casiojapi/noir-telegram-bot","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/casiojapi/starknet-zk-workshop","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/CatKevin/zk-simulated-trading","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/catmcgee/ethrome","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/catmcgee/quantum-ethwarsaw","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/catmcgee/what-is-noir","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/cf-cartesi/dfast","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/charlielye/ziegenberg","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/chesley666/scaffold-garaga-learn","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/chiefbiiko/noir-safe","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/ChinoCribioli/ZK-Benchmark","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/ciaranightingale/zk-panagram","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/circuitscan/circuitscan","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/circuitscan/cli","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/circuitscan/noir-pipeline","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/claudiovb/zk-encode-bootcamp","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/cloud1992/zk_panagram","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/coderthroughout/kirmada","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/colinnielsen/dark-safe","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/colinnielsen/noir-array-helpers","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/colinnielsen/noir-field-parsing","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/colinnielsen/noir-u2b","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/colinnielsen/noir-verify-ecdsa_secp256k1","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/cosminmarian53/punkz-smart-contracts-and-circuits","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/cosminmarian53/zk_panagram_app","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/Created-for-a-purpose/AbstraZ","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/CredLancer/SuperLancers","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/crisgarner/zkret-attestations","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/cristianfleita/garaga-fe","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/critesjosh/noir-oracle","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/critesjosh/noir-password-checker","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/critesjosh/past-my-shades","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/crowd-wisdom/noirhack","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/cruzdanilo/receba","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/CuriaLab/passport-attestation","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/cyberwider/next-gen-rpc","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/cyfrin/updraft","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/cyfrin/zk-mixer-cu","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/cyfrin/zk-panagram-cu","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/cypriansakwa/base-noir-zk-verifier-tutorial","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/cypriansakwa/base-sepolia-deploy-setup","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/cypriansakwa/noir-base-sepolia-zk-tutorial","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/cypriansakwa/noir-base64-howto","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/cypriansakwa/noir-bls12-381-arithmetic","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/cypriansakwa/Noir-Circuit-Verifier-Example-with-Solidity-and-Foundry","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/cypriansakwa/noir-defi-balance-proof","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/cypriansakwa/noir-elliptic-dlog-proof","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/cypriansakwa/noir-foundry-base-sepolia-starter","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/cypriansakwa/noir-made-simple","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/cypriansakwa/noir-private-set-intersection","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/cypriansakwa/noir-recursion-parameterized","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/cypriansakwa/noir-string-search-example","sub_ecosystems":["Noir Lang"]}
@@ -469,84 +728,165 @@
 {"url":"https://github.com/cypriansakwa/noir_sepolia_demo","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/cypriansakwa/noir_solidity_verifier_demo","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/cypriansakwa/noir_weighted_voting_circuit","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/cypriansakwa/noir_zk_affine_relation","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/cypriansakwa/noir_zkp_bounds_check","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/cypriansakwa/parameterized_dot_product","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/cypriansakwa/private_key_recovery_gate","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/cypriansakwa/prove_threshold_policy","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/cypriansakwa/prove_weighted_threshold_compliance","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/cypriansakwa/scroll-sepolia-noir-zk-deployment","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/cypriansakwa/zk-age-verification","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/cypriansakwa/zk-lessons-noir-psi-onchain","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/cypriansakwa/zk-private-x","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/cypriansakwa/ZK_Aggregated_Credential_Score","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/cypriansakwa/ZK_Linear_Classifier","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/cypriansakwa/zk_proof_mul_and_sum","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/cypriansakwa/ZKModExpCircuit","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/cypriansakwa/zkp-quadratic-relation-noir","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/cypriansakwa/zkp_linear_check","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/cypriansakwa/zkp_pedersen_range_safe","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/DappaDanDev/zk-vaccinations","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/DappaDanDev/zk-with-love","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/datmedevil17/zk_panagram","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/daviskelvin824/zk-ktp","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/deanmlittle/secp256k1-zkdn","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/defi-wonderland/aztec-benchmark","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/defi-wonderland/aztec-standards","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/demian101/zkmessage","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/devarogundade/electron","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/devarogundade/thurbe","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/dhrupad-sah/ZK-Gas","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/Diegolden-com/eth-online-2023","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/distributed-lab/noir-semaphore","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/divij-mot/zkpbench","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/dntjd1097/zk-ageproof_challenge","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/dobbobalina2/google_oauth_zk_aa_demo","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/dodichakill/web3_zk-age-verification","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/dpinones/private_auction","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/duarteoctavio/nonparametrical_tests_noir","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/Dwaipayan25/ZKMaskP2P","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/efimso/ciphercampus","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/eggsyoncode/zk-mixer","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/eggsyoncode/zk_panagram","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/emarc99/noir-js-app","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/emirsoyturk/eth-global-istanbul","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/emirsoyturk/eth-global-online","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/Envoy-VC/noir_base64_lib","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/Envoy-VC/noir_hmac","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/Envoy-VC/noir_regex","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/Envoy-VC/synapse-protocol-levelup-2024","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/eqlabs/aztec-memorygame","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/erdoganishe/noirjs-test","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/erhant/noir-tckn","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/eryxcoop/acvm-backend-plonky2","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/eternauta1337/zeronaut","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/ETH-Ireland/saoirse-ethrome","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/ethbogotateam/truth","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/ethereum-jakarta/zk-age-verification","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/ethereum/ethereum-org-website","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/ETIM-PAUL/ZKEvent","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/eugenioclrc/obscura-protocol","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/eugypalu/ng-questplay","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/ewynx/feldman_noirjs","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/ewynx/noir-elgamal","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/ewynx/zkface","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/explore-beyond-innovations/proofbridge","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/extropyio/cerebra","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/fatlabsxyz/terry-escape","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/flyinglimao/ProgWallet","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/flyingnobita/noir-playground","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/fosgate29/crfq","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/Foulks-Plb/noir-lang-zkp-homomorphic","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/Foulks-Plb/ZKP-ECDH","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/francoperez03/noir-cookbook","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/frederic/zkDL","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/fusionfraxtalbuild/backend","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/fusionfraxtalbuild/frontend","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/fusionwallet/fusion_backend","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/fusionwallet/fusion_frontend","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/gabrielantonyxaviour/luffy","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/gabrielfior/ng-questplay","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/gakonst/noir-hello-world","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/gbarcomu/onchainprivatelineofcredit","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/ghoshvidip26/zkemployeeloan","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/gnarvaja/zk-coverage","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/gnosed/scarif","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/gnosisguild/enclave","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/gnosisguild/noir-web","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/goma16/w2p-ethtokyo","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/grjte/noir_base64_standard","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/grjte/noir_cbor","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/guelowrd/fruity-lib","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/guipublic/crypdoku","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/gustavecharles/noir-hack","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/H-Blues/zkpa","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/hackathon-Eth/eth-global","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/hamiha70/hyli-defi-app","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/HaMMeRSI/noir-vite-starter","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/HaMMeRSI/ZKStuff","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/HamzaZF/Privacy-Preserving-Exchange-Mechanism-Noir","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/hanzeG/zkp-benchmark","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/harpreet-singh-lks/thunder","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/hashcloak/noir-mpc-ml","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/hashcloak/noir_rsa_bench","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/heyao99/circuit","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/hgunduzoglu/instagram-social-verify","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/hhamud/noir-mode","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/hhamud/noir-ts-mode","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/hhamud/tree-sitter-noir","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/hikabu/tamplateforzkproofs","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/Hmac512/noir-chacha","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/holyaustin/EcrecoverZKProof","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/holyaustin/privacydappscroll","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/holyaustin/ZK-Whistle","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/hooperben/lambda-sandbox","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/hooperben/lisan","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/hooperben/nargo-issue","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/hooperben/noir-bsl","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/hooperben/noir-example","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/hooperben/noir-hardhat-template","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/hooperben/noir-hardhat-template-v2","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/hooperben/roman-kyoto-v2","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/hsy822/aztec-remix-plugin","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/hsy822/noir-plugin-backend","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/hsy822/zk-coinbase-attestor","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/hsy822/zk-glass-bridge","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/hubarDevPersonal/ZK","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/hugoo/zktools.dev","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/hyli-org/explorer","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/hyli-org/orange-trail","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/hyli-org/vibe-check","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/hyli-org/vibe-check-frontend","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/iam-robi/noir-starter-nuxt","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/iAmMichaelConnor/debug-bignum-refactor","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/iAmMichaelConnor/noir-pumpkin-plume","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/iAmMichaelConnor/viem-blobs-example","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/ian-bright/basic-noir-example","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/ian-bright/battlezips-noir-frontend-template","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/igorgabriel/whispr","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/ikemhood/create-aztec-dapp","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/imdavyking/zk-mixer","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/indextree/ultrahonk_soroban_contract","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/inference-labs-inc/proof-of-portfolio","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/irajgill/zk_panagram","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/itshbhere/zero-knowledge-panagram","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/jael0x/zalarycheck","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/janthanei/aztec-signing-next","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/jasonrobertdestiny/testnet","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/jat9292/noir-elgamal","sub_ecosystems":["Noir Lang"]}
-{"url":"https://github.com/JBANKS040/OpenBands","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/jereldlimjy/rock-scroll-scissors","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/jernkunpittaya/zk-lending","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/jimjimvalkema/privateLotteryNoir","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/jimjimvalkema/scrollZkStorageProofs","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/jimjimvalkema/scrollZkWormholes","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/jimjimvalkema/ultra-anon","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/jinali98/noir-age-verifier","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/jinali98/zk-panagram-game","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/jkrish1011/zero-knowledge-wordle-app","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/jmagan/noir-compilation","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/joeandrews/noir-test","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/joeandrews/noir-web-starter","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/jokerstudio/tornoirdo-mixer","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/jonas089/ecdsa-circuit-input-lib","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/jonas089/paradox-6","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/jonas089/rollup-raptor","sub_ecosystems":["Noir Lang"]}
@@ -554,32 +894,67 @@
 {"url":"https://github.com/jonybur/ecdsa_secp256r1","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/jonybur/fuzzy-tester","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/jordan-public/billion-zk-voters","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/jordan-public/dual-rollup-zk-opt","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/jordan-public/evm-private-execution","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/jordan-public/multiprotocol-lp","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/jordan-public/zk-optimized-sparse-merkle-tree","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/joss-aztec/barretenberg_browser_stopgap_wasm_build","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/joss-aztec/noir-quickstart","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/joss-aztec/noir_util_wasm","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/joss-aztec/quadratic_voting_noir","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/jp4g/noir_rsa_pss","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/jp4g/openbanking-sol","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/jtriley2p/snarki-boi","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/juleswi/geoprivacy","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/juleswi/geoprivacy_project","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/kaleababayneh/daemon","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/kaleababayneh/noir-wordle","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/kaleababayneh/zkuni","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/kalepail/zkp-maze","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/kapow-tech/swoir","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/kayvin59/bankproof","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/kayvin59/noirjs","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/keep-starknet-strange/scaffold-garaga","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/KENILSHAHH/Vortex","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/kevinsheeranxyj/scaffold-garaga","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/keygate-io/payments","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/kidneyweakx/orbitalmap","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/killroy192/noir-sandbx","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/kilyig/zkmafia","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/kingw18/ezklaim","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/kiseln/hangman-zokrates","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/kiseln/noir-browser-issue","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/knot-inc/noxx-contract","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/kobyhallx/aztec-backend","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/kobyhallx/noir-compile-nodejs","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/Kryha/scaffold-eth-2-noir","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/ksmit323/zk_bootcamp_project","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/lambdaclass/noir_backend_using_gnark","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/leungy23/Noir2","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/louis-amas/darkforest-noir","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/Louis-Amas/noir-vim-support","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/LucasAschenbach/content-commitment-protocol","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/LucasAschenbach/decent-rollup-noir","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/luthfidi/kelas-rutin","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/luzalbaposse/Morvo-App","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/lynette7/zk-anonymous-poll","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/Lynette7/zk-composite-proof-noir","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/m-kus/sn-zkemail-faucet","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/Mach-34/zkemail.nr-bench","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/Mach-34/zkemail.nr-benching","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/mach-34/zkemail.nr_header_demo","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/Maddiaa0/based-cometbft","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/Maddiaa0/high-orbit-sonic-cannon","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/Maddiaa0/lwe-noir","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/maddiaa0/noir-acir-from-bytes-failure-reproduction","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/maddiaa0/xorshift-noir","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/madztheo/noir-biguint-experiment","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/madztheo/noir-date","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/madztheo/noir-react-native-starter","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/madztheo/noir-string-utils","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/madztheo/zk-fruits-front-end","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/man2706kum/zk-whistle-frontend","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/manansinghal123/eth-api-payments","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/manu-bhadoria/complexnr","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/manu-bhadoria/CSPRNG","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/manu-bhadoria/DateTimeNr","sub_ecosystems":["Noir Lang"]}
@@ -589,22 +964,41 @@
 {"url":"https://github.com/manylov/noir-25-recursive-issue","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/manylov/noir-google-jwt","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/manylov/noir-trie-proofs-js-issue","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/marcos-sxt/milestone4-zkcomply","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/marcos-sxt/zk_comply","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/marcos-sxt/zk_comply_prod","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/MartinOndejka/zk-workshop","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/masaun/noir-zk-template-for-espresso","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/masaun/openbands-miniapp_zk-circuit_and_contracts","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/masaun/openbanking.nr-integration-examples","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/masaun/privacy-preserving-IP-NFT","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/masaun/verified-anonymous-sns","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/masaun/ZK-attestation-for-job-career-history","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/masaun/ZK-health-records-sharing-marketplace","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/masaun/zk-identity-integration-examples","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/masaun/ZK-insurance-claim-verifier","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/masaun/ZK-IP-packages-in-Noir","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/masaun/ZK-mortgage-agreement-manager","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/masaun/zk-references","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/masaun/ZK-travel-history-management-system","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/masaun/zktls-integration-examples","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/mateus-holanda/zkcargopass","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/mateuszradomski/zkmnist","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/matiasyocca/zk-location-app","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/MatteoMer/noir-poseidon","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/MatteoMer/stark-verifier-noir","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/mautjee/noir-lang-testing","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/mautjee/noir-next-hardhat-example","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/MayowaObisesan/zk-iris","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/megabyte0x/noirhack","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/megabyte0x/privyaudit","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/melocafe/mysterious-mango","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/melocafe/notorious-nectarine","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/metavind/noir-ml","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/micahtdew/noir-benchmarking","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/michaelc1999/suiequi","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/michaelelliot/noir-integration-test-recursive-proof","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/michaelelliot/noir-js-testing","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/michaelelliot/noir-sha1","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/michaelelliot/noir-sha2","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/michaelelliot/noir_recursion_pattern","sub_ecosystems":["Noir Lang"]}
@@ -613,17 +1007,37 @@
 {"url":"https://github.com/michaeljklein/noir_top_three_demo","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/michaeljklein/two_tag","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/micksabox/squizwords","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/microbecode/zkhangman","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/mikirov/noir-hop-poc","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/mikirov/zk-language-comparisson","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/miromero13/certeth","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/mistcash/mist-v1","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/mistcash/sdk","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/mkaihara/zk-merkle-proofs-noir","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/modorilabs/semaphore.nr","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/mohammed7s/openbanking.nr","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/molecular-lab/safestream","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/moven0831/mopro-example-app-rsa","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/moven0831/mopro-example-app-semaphore-noir","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/mr-harshtyagi/eco-track","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/MuneerFergiani/glympse","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/Muziris-Labs/fusion-circuits","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/muziris-labs/fusion-frontend","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/mw2000/merkle_tree_checker_mimc","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/nathaliabarreiros/shadowvault","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/nemi-fi/mezcal","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/neurvinch/aep","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/neurvinch/circuit","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/neurvinch/grow_up_noir","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/neurvinch/noir-2","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/neurvinch/tiny-noirjs-app-master","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/nfurfaro/hunter","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/nicolas3355/cs595lab","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/NikolayKostadinov21/learning-hub","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/nizhunt/dotproduct","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/nocturnuscoder/zk-panagram","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/Nodeguardians/ng-noir-quests-public","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/noemacee/pequila","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/noir-lang/.github","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/noir-lang/acvm","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/noir-lang/acvm-backend-barretenberg","sub_ecosystems":["Noir Lang"]}
@@ -660,6 +1074,7 @@
 {"url":"https://github.com/noir-lang/noir-bignum-paramgen","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/noir-lang/noir-cra","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/noir-lang/noir-edwards","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/noir-lang/noir-examples","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/noir-lang/noir-gates-diff","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/noir-lang/noir-in-an-afternoon","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/noir-lang/noir-library-starter","sub_ecosystems":["Noir Lang"]}
@@ -693,34 +1108,58 @@
 {"url":"https://github.com/noir-lang/zk_bench","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/noir-playground/noir-playground","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/nullity00/demo-circ","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/nuttakitdw/ethglobal-taipei","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/nzmpi/ZkTree-extension-se2","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/ocelots-app/passport-reader","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/oguzhaangumuss/noir-script-runner","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/olehmisar/hardhat-noir","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/olehmisar/hardhat-noir-starter","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/olehmisar/nodash","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/olehmisar/noir-directory","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/olehmisar/noir_webauthn","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/olehmisar/recursive-proofs-bug","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/olehmisar/zkemail","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/olivmath/zk-template","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/olivmath/zkproof18","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/only4sim/Noir-KZG","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/onurinanc/noir-bls-signature","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/opacitylabs/bb-service","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/openbandsxyz/openbands-miniapp","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/openbandsxyz/openbands-noirhack-submission","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/Oscar11800/exponential_elgamal","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/oxlumi/intro-to-noir","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/oxor-io/zk-layer-vote","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/parmanuxyz/noir","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/partylikeits1983/privacy-vote","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/partylikeits1983/tornado-2.0","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/partylikeits1983/zk-ecdsa","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/partylikeits1983/zk-imt","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/peitalin/noir-zk-pathfinding","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/pepoospina/microrevolutions-proofs","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/philsippl/noir-r1cs","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/pierg/fact-fortress-dapp","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/pinacoma/noir-cyfrin","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/pintoinfant/heimdall-protocol","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/piotr-stec/noir-bb-js-playground","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/piotr-stec/noir-recursive","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/PKerty/amm-front-v2","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/pluto/Noir-AES-GCM","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/pop-eax/zk-anticheat","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/porco-rosso-j/banganoir","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/porco-rosso-j/multi-factor-safe","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/porco-rosso-j/noir-browser-p256","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/porco-rosso-j/safe-recovery-noir","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/predator4727/zk_mixer","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/predator4727/zk_test_proof","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/privacy-ethereum/sonobe","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/privcast/frontend","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/prototyp3-dev/zk-barretenberg-verifier","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/pvgo80/noir-testing-fields","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/qedk/pseudoku","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/qpzm/noir-tutorial","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/radni/balance_check","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/radni/zk-flexor","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/raj-bhadra/mosaic","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/RajeshRk18/ecdh_verifier","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/RajeshRk18/Hmac_Sha256-verifier-noir","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/RajeshRk18/kzg-verifier","sub_ecosystems":["Noir Lang"]}
@@ -729,18 +1168,28 @@
 {"url":"https://github.com/RajeshRk18/noir-secp256k1-hash-to-curve","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/RajeshRk18/noir_bls12_381","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/RajeshRk18/noir_crypto","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/rasmaplasma/zk-noir-mixer","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/Rate-Limiting-Nullifier/noir-rln","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/rather-labs/noirhack","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/rather-labs/private-voting-poc","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/raven-house/aztec-nextjs-starter","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/raven-house/fog-of-noir","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/raven-house/noirlings","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/raven-house/vicinity","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/reef-chain/remix-app","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/RegisGraptin/CipherScroll","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/regisgraptin/zk-pal","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/remix-project-org/remix-project","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/remix-project-org/remix-project-ci","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/remix-project-org/script-runner-generator","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/resurgencelabs/fraction","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/resurgencelabs/hangman","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/resurgencelabs/phy_vector","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/resurgencelabs/signed_int","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/revjkee/aethernova","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/revjob/revjob-contracts","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/rezabfil-sec/mybigfatcryptowedding","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/riagma/voto3","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/richardliang/zkdsl-workshop","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/roberts-pumpurs/noir-learning-app","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/RontoSOFT/noir-json-parser","sub_ecosystems":["Noir Lang"]}
@@ -748,123 +1197,235 @@
 {"url":"https://github.com/royalnine/tokenomgo_ethlondon","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/ruizehung/Zero-Knowledge-Sudoku-Wordle-Trivia","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/sakuyacatcat/noir-tutorial","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/saleel/bb-threads","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/saleel/gitclaim","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/saleel/noir-example-rsa","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/saleel/noir-native-bb-prove-nodejs","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/saleel/noir-recursion-example","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/saleel/noir-solidity-example","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/saleel/noir-web-starter","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/saleel/stealthnote","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/salviega/node-starter-bun","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/sambarnes/dizklosure","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/samonto-karmaker/noir-tutorial","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/santi-nihany/cred-app","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/sanvaad/zk-mixer","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/sanvaad/zk-panagram","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/saRvaGnyA/ETH-Mumbai-2024","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/satyambnsal/chess-app","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/savchart/eth_vote_module","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/Savio-Sou/noir-benchmarks","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/Savio-Sou/noir-primitive-constraint-counts","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/schereo/noir-course","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/scifi-holic/zkml-xora-credit-score","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/scr1ptjunk13/mopro-example-app","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/sebaszeledon/zk-auth","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/secretfans-eth/secretfans","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/sendoud/zk-platoon","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/sentbyrain/e-message","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/Sequi-XYZ/sequi-backend","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/Sequi-XYZ/Sequi-circuits-test","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/Sequi-XYZ/sequi-demo","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/ser12500/shadowpool","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/sh-tech-1/rwa-network","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/shaaibu7/starkid","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/shahadpichen/zerodrive","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/shanzson/Zk-Noir-Workshop","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/shardeum/community-missions","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/SharmilaChoudhary/Vortex","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/shield-labs/zklogin","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/shivannsh/2048-nextjs","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/shourya4641/zk-panagram","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/shramee/noir-r1cs","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/shramee/noir-v1-elgamal","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/shuklaayush/noir-bigint","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/signorecello/crypto-ecosystems-scripts","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/signorecello/ethglobal_brussels","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/signorecello/honkdrop","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/signorecello/noir-breaking-verify-signature","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/signorecello/noir-bug-in-recursive-proofs","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/signorecello/noir-bug-slices-in-dependencies","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/signorecello/noir-min-browser-example","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/signorecello/noir-min-nodejs-example","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/signorecello/noir-playground","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/signorecello/noir-ultrahonk-bug","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/signorecello/noirjs-min-example","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/signorecello/stealthdrop_noir","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/signorecello/zcaptcha","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/sigridjineth/hello-noir-ui","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/simonas-notcat/noir-board-game","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/simonbc/zkpatreon","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/simonbc/zkpayments","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/Sindri-Labs/sindri-js","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/sindri-labs/sindri-rust","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/sirasistant/acvm-simulator-wasm","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/sirasistant/noir-playground","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/sirasistant/noir-storage-flatten","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/skaunov/hash_to_curve","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/SleepingShell/darkforest-noir","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/SleepingShell/noir-chacha20","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/slokh/demo-issue","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/snjax/zkships","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/socathie/hello-noir","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/socathie/hello-noir-ui","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/solide-project/solide-guides","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/soliditor413/scaffold-garaga","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/soliditydrone/gazometer","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/soro-kuraima/fusion_circuits","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/spalladino/hardhat-noir","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/spalladino/zkp-tests","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/span14/noir_float","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/sripwoud/noir-vite-template","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/ssups/zk-beer_shop","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/ssups/zk-vanity_address_challenge","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/storswiftlabs/convolution","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/storswiftlabs/matrix_operations","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/storswiftlabs/python2noir","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/storswiftlabs/quantized_arithmetic","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/storswiftlabs/zkml-noir","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/sumitvekariya/trulens","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/surfer05/btchd","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/sv-priv/semaphore-noir","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/swarnasn29/HexDeed","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/SwineCoder101/chatchampion","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/sybil-center/zkc-noir-demo","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/SyncStudy/dynamic-risk-contract-on-blockchain","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/TaceoLabs/co-snarks","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/taceolabs/docs","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/taceolabs/monty-hall-aztec","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/TaceoLabs/noir-aes","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/TaceoLabs/noir-griffin","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/TaceoLabs/noir-hydra","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/TaceoLabs/zksummit12_workshop","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/taikoonwang/zk-kit","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/takoprotocol/tako-anon","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/TalDerei/cyclone","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/tanguyvans/zkyc","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/team-1-hackathon-dorahacks-idn/eventverse","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/teddav/noir-recursive","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/teddav/zk-tenant","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/tetedo/blog-code","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/Tetration-Lab/webtree","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/themaden/zk-identityswap","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/therealshevos/osiris-hybrid","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/thomasacquin1225/ZKlash","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/thor314/circuit-examples","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/tim-schultz/zk_passport_score","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/tisura-labs/zk-kyc-app","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/TomAFrench/frogcrypto","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/tomafrench/noir-battleships","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/TomAFrench/noir-rln","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/TomAFrench/noir-template","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/TomAFrench/noir_shuffle","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/TomAFrench/semaphore-noir","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/tomafrench/turbo-prover-js","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/tomoima525/noir-merkle-root","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/Trivo25/noir-ethistanbul","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/truthixify/mastermind","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/tsujp/sanity_mre","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/tsujp/tikan","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/tsujp/tree_sitter_noir","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/tuhoag/zkssi","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/TUM-Blockchain-Club/zkGame","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/Turupawn/EcrecoverInclusionProof","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/Turupawn/PrivacyDAppDemo","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/turupawn/zk-hangman-noir","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/turupawn/zkbenchmark","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/Turupawn/zkTicketing","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/turupawn/zkvoting","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/uacias/noir-proving-minimal-example","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/uacias/privacy-extension","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/uacias/zk-auth","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/ultralane/circuits","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/ultrasoundlabs/zktron","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/ultraspicy/attested-image","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/unmani-shinde/hushzk","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/uratmangun/scroll-zk","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/usernode-labs/usernode-circuits","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/uttkarzsh/zk-mixer","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/uttkarzsh/zk-panagram-app","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/uyuyanmarul/cellow","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/vary-ar/ethglobal-trifecta-veil","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/vdsilveira/zk_credentials","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/vectorscience/starknet","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/vezenovm/basic_mul_noir_example","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/vezenovm/mastermind-noir","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/vezenovm/simple_shield","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/vhkdiy/noir-proof-starknet","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/vibern0/circuit-breaker-mosaic","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/vibern0/deref-fe","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/vibern0/web3-experiments-proof-of-concepts","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/vibern0/web3-experiments-tools-protocols","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/visoftsolutions/noir_java","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/visoftsolutions/noir_rs","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/visoftsolutions/noir_swift","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/vkpatva/noir","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/vladfdp/p256-proving-benchmark","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/vladimir-trifonov/noir-mip","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/vlayer-xyz/monorepo","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/vlayer-xyz/noir-assertions-order-repro","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/vlayer-xyz/noir-base64","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/vlayer-xyz/plain-repro","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/vlayer-xyz/repro-derived-constant","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/vlayer-xyz/repro-unmutable-env","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/vlayer-xyz/vlayer-js","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/vocdoni/smtverifier-noir","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/w3p-hackathon/front-end","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/wakeuplabs-io/noir-stylus-verifier","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/wakeuplabs-io/starkware-private-erc20","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/walnuthq/noir-libs-client","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/walnuthq/noir-static-analyzer","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/wamimi/aztec-counter-contract","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/wamimi/noir-zk-colouring-problem","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/wamimi/noir-zk-math-proof","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/wamimi/proof-of-venue-presence","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/wamimi/proof-of-wednesday-zk-sessions","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/wamimi/zk-agerange-proof","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/whitenois3/huh","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/wighawag/vitalik-secret","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/wilfred007/veryfi","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/willemolding/noir_shuffle","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/wtchai/researchnoir","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/wtchai/sonad","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/wtchai/younggurupikad","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/Wysdom-xyz/wysdom","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/xuhongxu96/bazel-repos","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/y-pakorn/noir-native-bn254","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/y-pakorn/zeroinch","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/yadlamani/zk-mixer","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/yadlamani/zk-worddle","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/yagopajarino/proof-of-poap-circuits","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/yaioxy/zk_mixer","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/yes-zking/ETH-Rome24","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/youtpout/pi-wallet","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/zac-williamson/fog_of_war_chess","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/zac-williamson/fog_of_war_chess_app","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/zac-williamson/noir-dependency-womp","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/zac-williamson/noir-optimized-poseidon","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/zac-williamson/noir-poseidon1-array-bug","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/zekshop/circuits","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/zeropointlabs/noir","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/ziemen4/zkguard","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/ziyinlox-purple/non-tech_to_tech","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/zk-bankai/zk-Krum","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/zk-kit/zk-kit","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/zk-kit/zk-kit.noir","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/zk-scaling-group5/merkle-tree-noir","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/zk-whistleblowing/front-end","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/ZKCamp/noir-toy-hashing-assignment","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/zkcamp/stealthdrop-assignment","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/zkdao-hackathon/zk-dao-backend-zk","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/zkdao-hackathon/zkdao-contracts","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/zkpassport/circuits","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/zkpassport/noir-starter-pack","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/zkpersona/noir-ethereum","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/zkpersona/noir-helpers","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/zkpersona/noir-hmac","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/zkpersona/noir-jwt","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/zkpersona/noir-social-verify","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/zkverify/tutorials","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/zkvrf/zkvrf","sub_ecosystems":["Noir Lang"]}
+{"url":"https://github.com/zkvrf/zkvrf-frontend","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/zubietaroberto/zkvax","sub_ecosystems":["Noir Lang"]}
 {"url":"https://github.com/zkemail/.github","sub_ecosystems":["Noir Lang","ZK Email"]}
 {"url":"https://github.com/zkemail/7702-email-recovery","sub_ecosystems":["Noir Lang","ZK Email"]}
