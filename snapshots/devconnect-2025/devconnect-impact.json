@@ -1,0 +1,7551 @@
+{
+  "generatedAt": "2025-12-02T11:18:29.114Z",
+  "beforeSnapshot": {
+    "date": "2025-11-15",
+    "timestamp": "2025-11-15T16:35:59.000Z",
+    "totalRepos": 148
+  },
+  "afterSnapshot": {
+    "date": "2025-12-02",
+    "timestamp": "2025-12-02T11:02:02.508Z",
+    "totalRepos": 148
+  },
+  "timeDifference": {
+    "days": 16,
+    "hours": 18
+  },
+  "summary": {
+    "totalStars": {
+      "before": 5632,
+      "after": 5691,
+      "change": 59,
+      "percentChange": 1
+    },
+    "totalForks": {
+      "before": 2748,
+      "after": 2827,
+      "change": 79,
+      "percentChange": 2.9
+    },
+    "totalWatchers": {
+      "before": 5632,
+      "after": 5691,
+      "change": 59,
+      "percentChange": 1
+    },
+    "avgStarsPerRepo": {
+      "before": 38,
+      "after": 38,
+      "change": 0
+    },
+    "avgForksPerRepo": {
+      "before": 19,
+      "after": 19,
+      "change": 0
+    },
+    "newRepositories": [],
+    "removedRepositories": [],
+    "topGainers": [
+      {
+        "repository": "AztecProtocol/aztec-packages",
+        "url": "https://github.com/AztecProtocol/aztec-packages",
+        "metrics": {
+          "stars": {
+            "before": 385,
+            "after": 403,
+            "change": 18,
+            "percentChange": 4.7
+          },
+          "forks": {
+            "before": 536,
+            "after": 562,
+            "change": 26,
+            "percentChange": 4.9
+          },
+          "watchers": {
+            "before": 385,
+            "after": 403,
+            "change": 18,
+            "percentChange": 4.7
+          },
+          "openIssues": {
+            "before": 1160,
+            "after": 1172,
+            "change": 12,
+            "percentChange": 1
+          },
+          "size": {
+            "before": 952598,
+            "after": 982694,
+            "change": 30096,
+            "percentChange": 3.2
+          },
+          "contributors": {
+            "before": 141,
+            "after": 142,
+            "change": 1,
+            "percentChange": 0.7
+          },
+          "releases": {
+            "before": 1042,
+            "after": 1075,
+            "change": 33,
+            "percentChange": 3.2
+          }
+        },
+        "status": "improved"
+      },
+      {
+        "repository": "noir-lang/awesome-noir",
+        "url": "https://github.com/noir-lang/awesome-noir",
+        "metrics": {
+          "stars": {
+            "before": 530,
+            "after": 543,
+            "change": 13,
+            "percentChange": 2.5
+          },
+          "forks": {
+            "before": 125,
+            "after": 127,
+            "change": 2,
+            "percentChange": 1.6
+          },
+          "watchers": {
+            "before": 530,
+            "after": 543,
+            "change": 13,
+            "percentChange": 2.5
+          },
+          "openIssues": {
+            "before": 2,
+            "after": 2,
+            "change": 0,
+            "percentChange": 0
+          },
+          "size": {
+            "before": 287,
+            "after": 299,
+            "change": 12,
+            "percentChange": 4.2
+          },
+          "contributors": {
+            "before": 83,
+            "after": 83,
+            "change": 0,
+            "percentChange": 0
+          },
+          "releases": {
+            "before": 0,
+            "after": 0,
+            "change": 0,
+            "percentChange": 0
+          }
+        },
+        "status": "improved"
+      },
+      {
+        "repository": "noir-lang/noir",
+        "url": "https://github.com/noir-lang/noir",
+        "metrics": {
+          "stars": {
+            "before": 1227,
+            "after": 1239,
+            "change": 12,
+            "percentChange": 1
+          },
+          "forks": {
+            "before": 347,
+            "after": 351,
+            "change": 4,
+            "percentChange": 1.2
+          },
+          "watchers": {
+            "before": 1227,
+            "after": 1239,
+            "change": 12,
+            "percentChange": 1
+          },
+          "openIssues": {
+            "before": 765,
+            "after": 842,
+            "change": 77,
+            "percentChange": 10.1
+          },
+          "size": {
+            "before": 968505,
+            "after": 976606,
+            "change": 8101,
+            "percentChange": 0.8
+          },
+          "contributors": {
+            "before": 116,
+            "after": 116,
+            "change": 0,
+            "percentChange": 0
+          },
+          "releases": {
+            "before": 846,
+            "after": 864,
+            "change": 18,
+            "percentChange": 2.1
+          }
+        },
+        "status": "improved"
+      },
+      {
+        "repository": "AztecProtocol/aztec-starter",
+        "url": "https://github.com/AztecProtocol/aztec-starter",
+        "metrics": {
+          "stars": {
+            "before": 100,
+            "after": 107,
+            "change": 7,
+            "percentChange": 7
+          },
+          "forks": {
+            "before": 90,
+            "after": 94,
+            "change": 4,
+            "percentChange": 4.4
+          },
+          "watchers": {
+            "before": 100,
+            "after": 107,
+            "change": 7,
+            "percentChange": 7
+          },
+          "openIssues": {
+            "before": 23,
+            "after": 31,
+            "change": 8,
+            "percentChange": 34.8
+          },
+          "size": {
+            "before": 1405,
+            "after": 1535,
+            "change": 130,
+            "percentChange": 9.3
+          },
+          "contributors": {
+            "before": 32,
+            "after": 33,
+            "change": 1,
+            "percentChange": 3.1
+          },
+          "releases": {
+            "before": 0,
+            "after": 0,
+            "change": 0,
+            "percentChange": 0
+          }
+        },
+        "status": "improved"
+      },
+      {
+        "repository": "defi-wonderland/aztec-boilerplate",
+        "url": "https://github.com/defi-wonderland/aztec-boilerplate",
+        "metrics": {
+          "stars": {
+            "before": 11,
+            "after": 12,
+            "change": 1,
+            "percentChange": 9.1
+          },
+          "forks": {
+            "before": 6,
+            "after": 7,
+            "change": 1,
+            "percentChange": 16.7
+          },
+          "watchers": {
+            "before": 11,
+            "after": 12,
+            "change": 1,
+            "percentChange": 9.1
+          },
+          "openIssues": {
+            "before": 9,
+            "after": 11,
+            "change": 2,
+            "percentChange": 22.2
+          },
+          "size": {
+            "before": 4130,
+            "after": 4137,
+            "change": 7,
+            "percentChange": 0.2
+          },
+          "contributors": {
+            "before": 7,
+            "after": 7,
+            "change": 0,
+            "percentChange": 0
+          },
+          "releases": {
+            "before": 0,
+            "after": 0,
+            "change": 0,
+            "percentChange": 0
+          }
+        },
+        "status": "improved"
+      }
+    ],
+    "topLosers": []
+  },
+  "repositories": [
+    {
+      "repository": "defi-wonderland/aztec-boilerplate",
+      "url": "https://github.com/defi-wonderland/aztec-boilerplate",
+      "metrics": {
+        "stars": {
+          "before": 11,
+          "after": 12,
+          "change": 1,
+          "percentChange": 9.1
+        },
+        "forks": {
+          "before": 6,
+          "after": 7,
+          "change": 1,
+          "percentChange": 16.7
+        },
+        "watchers": {
+          "before": 11,
+          "after": 12,
+          "change": 1,
+          "percentChange": 9.1
+        },
+        "openIssues": {
+          "before": 9,
+          "after": 11,
+          "change": 2,
+          "percentChange": 22.2
+        },
+        "size": {
+          "before": 4130,
+          "after": 4137,
+          "change": 7,
+          "percentChange": 0.2
+        },
+        "contributors": {
+          "before": 7,
+          "after": 7,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "improved"
+    },
+    {
+      "repository": "defi-wonderland/aztec-bridge-and-seek",
+      "url": "https://github.com/defi-wonderland/aztec-bridge-and-seek",
+      "metrics": {
+        "stars": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 7,
+          "after": 5,
+          "change": -2,
+          "percentChange": -28.6
+        },
+        "size": {
+          "before": 34644,
+          "after": 34416,
+          "change": -228,
+          "percentChange": -0.7
+        },
+        "contributors": {
+          "before": 5,
+          "after": 5,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "defi-wonderland/aztec-coin-toss",
+      "url": "https://github.com/defi-wonderland/aztec-coin-toss",
+      "metrics": {
+        "stars": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 6878,
+          "after": 6878,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 4,
+          "after": 4,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "defi-wonderland/aztec-coin-toss-pvp",
+      "url": "https://github.com/defi-wonderland/aztec-coin-toss-pvp",
+      "metrics": {
+        "stars": {
+          "before": 1,
+          "after": 1,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 1,
+          "after": 1,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 12203,
+          "after": 12203,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 4,
+          "after": 4,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "defi-wonderland/aztec-escrow-extensions",
+      "url": "https://github.com/defi-wonderland/aztec-escrow-extensions",
+      "metrics": {
+        "stars": {
+          "before": 2,
+          "after": 2,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 2,
+          "after": 2,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 2,
+          "after": 2,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 688,
+          "after": 688,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 3,
+          "after": 3,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "defi-wonderland/aztec-extensions",
+      "url": "https://github.com/defi-wonderland/aztec-extensions",
+      "metrics": {
+        "stars": {
+          "before": 1,
+          "after": 1,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 1,
+          "after": 1,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 3,
+          "after": 3,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 473,
+          "after": 473,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 5,
+          "after": 5,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "defi-wonderland/aztec-integration-testing",
+      "url": "https://github.com/defi-wonderland/aztec-integration-testing",
+      "metrics": {
+        "stars": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 1,
+          "after": 1,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 255,
+          "after": 255,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 4,
+          "after": 4,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "defi-wonderland/aztec-patterns",
+      "url": "https://github.com/defi-wonderland/aztec-patterns",
+      "metrics": {
+        "stars": {
+          "before": 16,
+          "after": 16,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 3,
+          "after": 3,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 16,
+          "after": 16,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 1,
+          "after": 1,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 3154,
+          "after": 3154,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 3,
+          "after": 3,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "defi-wonderland/aztec-private-oracle",
+      "url": "https://github.com/defi-wonderland/aztec-private-oracle",
+      "metrics": {
+        "stars": {
+          "before": 11,
+          "after": 11,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 1,
+          "after": 1,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 11,
+          "after": 11,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 3,
+          "after": 3,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 13538,
+          "after": 13538,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 5,
+          "after": 5,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "defi-wonderland/aztec-token",
+      "url": "https://github.com/defi-wonderland/aztec-token",
+      "metrics": {
+        "stars": {
+          "before": 1,
+          "after": 1,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 1,
+          "after": 1,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 1,
+          "after": 1,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 2,
+          "after": 2,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 13116,
+          "after": 13116,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 3,
+          "after": 3,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "defi-wonderland/aztec-web-boilerplate",
+      "url": "https://github.com/defi-wonderland/aztec-web-boilerplate",
+      "metrics": {
+        "stars": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 2,
+          "after": 2,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 1729,
+          "after": 9166,
+          "change": 7437,
+          "percentChange": 430.1
+        },
+        "contributors": {
+          "before": 6,
+          "after": 6,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "AztecProtocol/awesome-aztec",
+      "url": "https://github.com/AztecProtocol/awesome-aztec",
+      "metrics": {
+        "stars": {
+          "before": 78,
+          "after": 79,
+          "change": 1,
+          "percentChange": 1.3
+        },
+        "forks": {
+          "before": 43,
+          "after": 43,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 78,
+          "after": 79,
+          "change": 1,
+          "percentChange": 1.3
+        },
+        "openIssues": {
+          "before": 4,
+          "after": 4,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 161,
+          "after": 161,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 24,
+          "after": 24,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "improved"
+    },
+    {
+      "repository": "AztecProtocol/AZIPs",
+      "url": "https://github.com/AztecProtocol/AZIPs",
+      "metrics": {
+        "stars": {
+          "before": 2,
+          "after": 2,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 2,
+          "after": 2,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 2,
+          "after": 2,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 408,
+          "after": 408,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 1,
+          "after": 1,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "AztecProtocol/aztec-connect",
+      "url": "https://github.com/AztecProtocol/aztec-connect",
+      "metrics": {
+        "stars": {
+          "before": 457,
+          "after": 457,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 393,
+          "after": 397,
+          "change": 4,
+          "percentChange": 1
+        },
+        "watchers": {
+          "before": 457,
+          "after": 457,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 11,
+          "after": 15,
+          "change": 4,
+          "percentChange": 36.4
+        },
+        "size": {
+          "before": 241112,
+          "after": 241112,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 38,
+          "after": 38,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 10,
+          "after": 10,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "improved"
+    },
+    {
+      "repository": "AztecProtocol/aztec-connect-bridges",
+      "url": "https://github.com/AztecProtocol/aztec-connect-bridges",
+      "metrics": {
+        "stars": {
+          "before": 229,
+          "after": 229,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 147,
+          "after": 151,
+          "change": 4,
+          "percentChange": 2.7
+        },
+        "watchers": {
+          "before": 229,
+          "after": 229,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 10,
+          "after": 14,
+          "change": 4,
+          "percentChange": 40
+        },
+        "size": {
+          "before": 71741,
+          "after": 71741,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 26,
+          "after": 26,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 49,
+          "after": 49,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "improved"
+    },
+    {
+      "repository": "AztecProtocol/aztec-connect-contracts",
+      "url": "https://github.com/AztecProtocol/aztec-connect-contracts",
+      "metrics": {
+        "stars": {
+          "before": 4,
+          "after": 4,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 5,
+          "after": 5,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 4,
+          "after": 4,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 1,
+          "after": 1,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 150,
+          "after": 150,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 3,
+          "after": 3,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "AztecProtocol/aztec-connect-cpp",
+      "url": "https://github.com/AztecProtocol/aztec-connect-cpp",
+      "metrics": {
+        "stars": {
+          "before": 2,
+          "after": 2,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 3,
+          "after": 3,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 2,
+          "after": 2,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 1,
+          "after": 1,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 210,
+          "after": 210,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 3,
+          "after": 3,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "AztecProtocol/aztec-connect-ejector",
+      "url": "https://github.com/AztecProtocol/aztec-connect-ejector",
+      "metrics": {
+        "stars": {
+          "before": 37,
+          "after": 38,
+          "change": 1,
+          "percentChange": 2.7
+        },
+        "forks": {
+          "before": 15,
+          "after": 14,
+          "change": -1,
+          "percentChange": -6.7
+        },
+        "watchers": {
+          "before": 37,
+          "after": 38,
+          "change": 1,
+          "percentChange": 2.7
+        },
+        "openIssues": {
+          "before": 1,
+          "after": 1,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 271,
+          "after": 271,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 2,
+          "after": 2,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "improved"
+    },
+    {
+      "repository": "AztecProtocol/aztec-connect-explorer",
+      "url": "https://github.com/AztecProtocol/aztec-connect-explorer",
+      "metrics": {
+        "stars": {
+          "before": 5,
+          "after": 5,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 3,
+          "after": 3,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 5,
+          "after": 5,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 2,
+          "after": 2,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 2955,
+          "after": 2955,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 25,
+          "after": 25,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "AztecProtocol/aztec-examples",
+      "url": "https://github.com/AztecProtocol/aztec-examples",
+      "metrics": {
+        "stars": {
+          "before": 1,
+          "after": 1,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 7,
+          "after": 7,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 1,
+          "after": 1,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 6,
+          "after": 6,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 1762,
+          "after": 1765,
+          "change": 3,
+          "percentChange": 0.2
+        },
+        "contributors": {
+          "before": 6,
+          "after": 6,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "AztecProtocol/aztec-frontend-boilerplate",
+      "url": "https://github.com/AztecProtocol/aztec-frontend-boilerplate",
+      "metrics": {
+        "stars": {
+          "before": 18,
+          "after": 18,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 18,
+          "after": 18,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 18,
+          "after": 18,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 8,
+          "after": 8,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 768,
+          "after": 768,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 6,
+          "after": 6,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "AztecProtocol/aztec-nr",
+      "url": "https://github.com/AztecProtocol/aztec-nr",
+      "metrics": {
+        "stars": {
+          "before": 127,
+          "after": 128,
+          "change": 1,
+          "percentChange": 0.8
+        },
+        "forks": {
+          "before": 69,
+          "after": 76,
+          "change": 7,
+          "percentChange": 10.1
+        },
+        "watchers": {
+          "before": 127,
+          "after": 128,
+          "change": 1,
+          "percentChange": 0.8
+        },
+        "openIssues": {
+          "before": 17,
+          "after": 23,
+          "change": 6,
+          "percentChange": 35.3
+        },
+        "size": {
+          "before": 3089,
+          "after": 3152,
+          "change": 63,
+          "percentChange": 2
+        },
+        "contributors": {
+          "before": 37,
+          "after": 37,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "improved"
+    },
+    {
+      "repository": "AztecProtocol/aztec-packages",
+      "url": "https://github.com/AztecProtocol/aztec-packages",
+      "metrics": {
+        "stars": {
+          "before": 385,
+          "after": 403,
+          "change": 18,
+          "percentChange": 4.7
+        },
+        "forks": {
+          "before": 536,
+          "after": 562,
+          "change": 26,
+          "percentChange": 4.9
+        },
+        "watchers": {
+          "before": 385,
+          "after": 403,
+          "change": 18,
+          "percentChange": 4.7
+        },
+        "openIssues": {
+          "before": 1160,
+          "after": 1172,
+          "change": 12,
+          "percentChange": 1
+        },
+        "size": {
+          "before": 952598,
+          "after": 982694,
+          "change": 30096,
+          "percentChange": 3.2
+        },
+        "contributors": {
+          "before": 141,
+          "after": 142,
+          "change": 1,
+          "percentChange": 0.7
+        },
+        "releases": {
+          "before": 1042,
+          "after": 1075,
+          "change": 33,
+          "percentChange": 3.2
+        }
+      },
+      "status": "improved"
+    },
+    {
+      "repository": "AztecProtocol/aztec-sdk-starter",
+      "url": "https://github.com/AztecProtocol/aztec-sdk-starter",
+      "metrics": {
+        "stars": {
+          "before": 7,
+          "after": 7,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 6,
+          "after": 6,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 7,
+          "after": 7,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 2513,
+          "after": 2513,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 3,
+          "after": 3,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "AztecProtocol/aztec-security",
+      "url": "https://github.com/AztecProtocol/aztec-security",
+      "metrics": {
+        "stars": {
+          "before": 12,
+          "after": 12,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 9,
+          "after": 9,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 12,
+          "after": 12,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 1595,
+          "after": 1595,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 2,
+          "after": 2,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "AztecProtocol/aztec-starter",
+      "url": "https://github.com/AztecProtocol/aztec-starter",
+      "metrics": {
+        "stars": {
+          "before": 100,
+          "after": 107,
+          "change": 7,
+          "percentChange": 7
+        },
+        "forks": {
+          "before": 90,
+          "after": 94,
+          "change": 4,
+          "percentChange": 4.4
+        },
+        "watchers": {
+          "before": 100,
+          "after": 107,
+          "change": 7,
+          "percentChange": 7
+        },
+        "openIssues": {
+          "before": 23,
+          "after": 31,
+          "change": 8,
+          "percentChange": 34.8
+        },
+        "size": {
+          "before": 1405,
+          "after": 1535,
+          "change": 130,
+          "percentChange": 9.3
+        },
+        "contributors": {
+          "before": 32,
+          "after": 33,
+          "change": 1,
+          "percentChange": 3.1
+        },
+        "releases": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "improved"
+    },
+    {
+      "repository": "AztecProtocol/aztec-starter-vanilla",
+      "url": "https://github.com/AztecProtocol/aztec-starter-vanilla",
+      "metrics": {
+        "stars": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 11,
+          "after": 40,
+          "change": 29,
+          "percentChange": 263.6
+        },
+        "contributors": {
+          "before": 1,
+          "after": 1,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "AztecProtocol/aztec-v1",
+      "url": "https://github.com/AztecProtocol/aztec-v1",
+      "metrics": {
+        "stars": {
+          "before": 632,
+          "after": 633,
+          "change": 1,
+          "percentChange": 0.2
+        },
+        "forks": {
+          "before": 104,
+          "after": 103,
+          "change": -1,
+          "percentChange": -1
+        },
+        "watchers": {
+          "before": 632,
+          "after": 633,
+          "change": 1,
+          "percentChange": 0.2
+        },
+        "openIssues": {
+          "before": 72,
+          "after": 72,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 83279,
+          "after": 83279,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 17,
+          "after": 17,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 64,
+          "after": 64,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "improved"
+    },
+    {
+      "repository": "AztecProtocol/aztec-v1-loan-dapp",
+      "url": "https://github.com/AztecProtocol/aztec-v1-loan-dapp",
+      "metrics": {
+        "stars": {
+          "before": 34,
+          "after": 34,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 18,
+          "after": 18,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 34,
+          "after": 34,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 16,
+          "after": 16,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 2823,
+          "after": 2823,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 4,
+          "after": 4,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "AztecProtocol/aztec-v2-escape-hatch-server",
+      "url": "https://github.com/AztecProtocol/aztec-v2-escape-hatch-server",
+      "metrics": {
+        "stars": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 3,
+          "after": 3,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 0,
+          "after": 1,
+          "change": 1,
+          "percentChange": 100
+        },
+        "size": {
+          "before": 7375,
+          "after": 7375,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 1,
+          "after": 1,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "AztecProtocol/aztec-web-starter",
+      "url": "https://github.com/AztecProtocol/aztec-web-starter",
+      "metrics": {
+        "stars": {
+          "before": 7,
+          "after": 7,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 12,
+          "after": 12,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 7,
+          "after": 7,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 1,
+          "after": 1,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 1168,
+          "after": 1168,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 4,
+          "after": 4,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "AztecProtocol/aztec3-circuits",
+      "url": "https://github.com/AztecProtocol/aztec3-circuits",
+      "metrics": {
+        "stars": {
+          "before": 13,
+          "after": 13,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 7,
+          "after": 21,
+          "change": 14,
+          "percentChange": 200
+        },
+        "watchers": {
+          "before": 13,
+          "after": 13,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 3,
+          "after": 17,
+          "change": 14,
+          "percentChange": 466.7
+        },
+        "size": {
+          "before": 2869,
+          "after": 2869,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 13,
+          "after": 13,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "improved"
+    },
+    {
+      "repository": "AztecProtocol/aztec3-l1-contracts",
+      "url": "https://github.com/AztecProtocol/aztec3-l1-contracts",
+      "metrics": {
+        "stars": {
+          "before": 9,
+          "after": 9,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 9,
+          "after": 9,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 1,
+          "after": 1,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 701,
+          "after": 701,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 4,
+          "after": 4,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "AztecProtocol/barretenberg",
+      "url": "https://github.com/AztecProtocol/barretenberg",
+      "metrics": {
+        "stars": {
+          "before": 186,
+          "after": 187,
+          "change": 1,
+          "percentChange": 0.5
+        },
+        "forks": {
+          "before": 129,
+          "after": 129,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 186,
+          "after": 187,
+          "change": 1,
+          "percentChange": 0.5
+        },
+        "openIssues": {
+          "before": 326,
+          "after": 321,
+          "change": -5,
+          "percentChange": -1.5
+        },
+        "size": {
+          "before": 147019,
+          "after": 147019,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 73,
+          "after": 73,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 35,
+          "after": 35,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "improved"
+    },
+    {
+      "repository": "AztecProtocol/block-explorer",
+      "url": "https://github.com/AztecProtocol/block-explorer",
+      "metrics": {
+        "stars": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 3,
+          "after": 3,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 3,
+          "after": 3,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 18750,
+          "after": 18750,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 3,
+          "after": 3,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "AztecProtocol/build-system",
+      "url": "https://github.com/AztecProtocol/build-system",
+      "metrics": {
+        "stars": {
+          "before": 3,
+          "after": 3,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 5,
+          "after": 5,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 3,
+          "after": 3,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 7339,
+          "after": 7339,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 11,
+          "after": 11,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "AztecProtocol/consolerr",
+      "url": "https://github.com/AztecProtocol/consolerr",
+      "metrics": {
+        "stars": {
+          "before": 23,
+          "after": 23,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 5,
+          "after": 5,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 23,
+          "after": 23,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 143,
+          "after": 143,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 1,
+          "after": 1,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "AztecProtocol/dev-connect-workshop",
+      "url": "https://github.com/AztecProtocol/dev-connect-workshop",
+      "metrics": {
+        "stars": {
+          "before": 1,
+          "after": 1,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 3,
+          "after": 3,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 1,
+          "after": 1,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 1,
+          "after": 1,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 33997,
+          "after": 33997,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 2,
+          "after": 2,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "AztecProtocol/dev-rel",
+      "url": "https://github.com/AztecProtocol/dev-rel",
+      "metrics": {
+        "stars": {
+          "before": 61,
+          "after": 61,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 46,
+          "after": 53,
+          "change": 7,
+          "percentChange": 15.2
+        },
+        "watchers": {
+          "before": 61,
+          "after": 61,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 73,
+          "after": 80,
+          "change": 7,
+          "percentChange": 9.6
+        },
+        "size": {
+          "before": 11103,
+          "after": 11099,
+          "change": -4,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 26,
+          "after": 26,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "improved"
+    },
+    {
+      "repository": "AztecProtocol/devcontainer-feature",
+      "url": "https://github.com/AztecProtocol/devcontainer-feature",
+      "metrics": {
+        "stars": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 1,
+          "after": 1,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 1,
+          "after": 1,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 30,
+          "after": 30,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 2,
+          "after": 2,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "AztecProtocol/docs",
+      "url": "https://github.com/AztecProtocol/docs",
+      "metrics": {
+        "stars": {
+          "before": 7,
+          "after": 7,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 36,
+          "after": 36,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 7,
+          "after": 7,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 6,
+          "after": 6,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 19791,
+          "after": 19791,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 44,
+          "after": 44,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "AztecProtocol/ec2-action-builder",
+      "url": "https://github.com/AztecProtocol/ec2-action-builder",
+      "metrics": {
+        "stars": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 8549,
+          "after": 8549,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 2,
+          "after": 2,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 6,
+          "after": 6,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "AztecProtocol/engineering-designs",
+      "url": "https://github.com/AztecProtocol/engineering-designs",
+      "metrics": {
+        "stars": {
+          "before": 12,
+          "after": 12,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 18,
+          "after": 18,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 12,
+          "after": 12,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 22,
+          "after": 22,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 11920,
+          "after": 11935,
+          "change": 15,
+          "percentChange": 0.1
+        },
+        "contributors": {
+          "before": 9,
+          "after": 9,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "AztecProtocol/foundation",
+      "url": "https://github.com/AztecProtocol/foundation",
+      "metrics": {
+        "stars": {
+          "before": 3,
+          "after": 3,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 3,
+          "after": 3,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 2,
+          "after": 2,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 1739,
+          "after": 1739,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 8,
+          "after": 8,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "AztecProtocol/google-benchmark",
+      "url": "https://github.com/AztecProtocol/google-benchmark",
+      "metrics": {
+        "stars": {
+          "before": 1,
+          "after": 1,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 1,
+          "after": 1,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 1,
+          "after": 1,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 2576,
+          "after": 2576,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 299,
+          "after": 299,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 1,
+          "after": 1,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "AztecProtocol/huff",
+      "url": "https://github.com/AztecProtocol/huff",
+      "metrics": {
+        "stars": {
+          "before": 239,
+          "after": 239,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 25,
+          "after": 25,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 239,
+          "after": 239,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 1,
+          "after": 1,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 182,
+          "after": 182,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 6,
+          "after": 6,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 1,
+          "after": 1,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "AztecProtocol/ignition-verification",
+      "url": "https://github.com/AztecProtocol/ignition-verification",
+      "metrics": {
+        "stars": {
+          "before": 19,
+          "after": 19,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 7,
+          "after": 8,
+          "change": 1,
+          "percentChange": 14.3
+        },
+        "watchers": {
+          "before": 19,
+          "after": 19,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 14,
+          "after": 14,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 4172,
+          "after": 4172,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 3,
+          "after": 3,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "improved"
+    },
+    {
+      "repository": "AztecProtocol/interview-tests",
+      "url": "https://github.com/AztecProtocol/interview-tests",
+      "metrics": {
+        "stars": {
+          "before": 25,
+          "after": 26,
+          "change": 1,
+          "percentChange": 4
+        },
+        "forks": {
+          "before": 19,
+          "after": 19,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 25,
+          "after": 26,
+          "change": 1,
+          "percentChange": 4
+        },
+        "openIssues": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 392,
+          "after": 392,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 7,
+          "after": 7,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "improved"
+    },
+    {
+      "repository": "AztecProtocol/l1-contracts",
+      "url": "https://github.com/AztecProtocol/l1-contracts",
+      "metrics": {
+        "stars": {
+          "before": 4,
+          "after": 5,
+          "change": 1,
+          "percentChange": 25
+        },
+        "forks": {
+          "before": 11,
+          "after": 11,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 4,
+          "after": 5,
+          "change": 1,
+          "percentChange": 25
+        },
+        "openIssues": {
+          "before": 4,
+          "after": 4,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 4412,
+          "after": 4530,
+          "change": 118,
+          "percentChange": 2.7
+        },
+        "contributors": {
+          "before": 2,
+          "after": 2,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "improved"
+    },
+    {
+      "repository": "AztecProtocol/libff",
+      "url": "https://github.com/AztecProtocol/libff",
+      "metrics": {
+        "stars": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 1,
+          "after": 1,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 228,
+          "after": 228,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 7,
+          "after": 7,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "AztecProtocol/msgpack-c",
+      "url": "https://github.com/AztecProtocol/msgpack-c",
+      "metrics": {
+        "stars": {
+          "before": 3,
+          "after": 3,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 2,
+          "after": 2,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 3,
+          "after": 3,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 2,
+          "after": 2,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 6164,
+          "after": 6164,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 174,
+          "after": 174,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "AztecProtocol/noir-public-oracle",
+      "url": "https://github.com/AztecProtocol/noir-public-oracle",
+      "metrics": {
+        "stars": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 1,
+          "after": 1,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 4,
+          "after": 4,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 1,
+          "after": 1,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "AztecProtocol/noir-starter",
+      "url": "https://github.com/AztecProtocol/noir-starter",
+      "metrics": {
+        "stars": {
+          "before": 192,
+          "after": 192,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 61,
+          "after": 60,
+          "change": -1,
+          "percentChange": -1.6
+        },
+        "watchers": {
+          "before": 192,
+          "after": 192,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 13,
+          "after": 12,
+          "change": -1,
+          "percentChange": -7.7
+        },
+        "size": {
+          "before": 18206,
+          "after": 18206,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 20,
+          "after": 20,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "declined"
+    },
+    {
+      "repository": "AztecProtocol/offsite-proxy",
+      "url": "https://github.com/AztecProtocol/offsite-proxy",
+      "metrics": {
+        "stars": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 1,
+          "after": 1,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 257,
+          "after": 257,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 4,
+          "after": 4,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "AztecProtocol/Oliver",
+      "url": "https://github.com/AztecProtocol/Oliver",
+      "metrics": {
+        "stars": {
+          "before": 14,
+          "after": 14,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 3,
+          "after": 3,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 14,
+          "after": 14,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 55,
+          "after": 55,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 1,
+          "after": 1,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "AztecProtocol/parity-ethereum",
+      "url": "https://github.com/AztecProtocol/parity-ethereum",
+      "metrics": {
+        "stars": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 2,
+          "after": 2,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 63595,
+          "after": 63595,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 215,
+          "after": 215,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "AztecProtocol/plonk-with-lookups",
+      "url": "https://github.com/AztecProtocol/plonk-with-lookups",
+      "metrics": {
+        "stars": {
+          "before": 19,
+          "after": 19,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 4,
+          "after": 4,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 19,
+          "after": 19,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 3157,
+          "after": 3157,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 3,
+          "after": 3,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "AztecProtocol/polaris",
+      "url": "https://github.com/AztecProtocol/polaris",
+      "metrics": {
+        "stars": {
+          "before": 4,
+          "after": 4,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 2,
+          "after": 2,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 4,
+          "after": 4,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 37,
+          "after": 37,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 1,
+          "after": 1,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "AztecProtocol/powdr",
+      "url": "https://github.com/AztecProtocol/powdr",
+      "metrics": {
+        "stars": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 16,
+          "after": 16,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 4,
+          "after": 4,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 6387,
+          "after": 6387,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 20,
+          "after": 20,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "AztecProtocol/protocol-specs-pdf",
+      "url": "https://github.com/AztecProtocol/protocol-specs-pdf",
+      "metrics": {
+        "stars": {
+          "before": 3,
+          "after": 3,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 4,
+          "after": 4,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 3,
+          "after": 3,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 1,
+          "after": 1,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 22848,
+          "after": 22848,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 2,
+          "after": 2,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "AztecProtocol/rollup-encoder",
+      "url": "https://github.com/AztecProtocol/rollup-encoder",
+      "metrics": {
+        "stars": {
+          "before": 11,
+          "after": 11,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 3,
+          "after": 3,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 11,
+          "after": 11,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 43,
+          "after": 43,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 2,
+          "after": 2,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "AztecProtocol/sandbox-version-manager",
+      "url": "https://github.com/AztecProtocol/sandbox-version-manager",
+      "metrics": {
+        "stars": {
+          "before": 10,
+          "after": 10,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 1,
+          "after": 1,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 10,
+          "after": 10,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 1,
+          "after": 1,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 28,
+          "after": 28,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 1,
+          "after": 1,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 2,
+          "after": 2,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "AztecProtocol/sandbox-website",
+      "url": "https://github.com/AztecProtocol/sandbox-website",
+      "metrics": {
+        "stars": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 1,
+          "after": 1,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 280,
+          "after": 280,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 9,
+          "after": 9,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "AztecProtocol/Setup",
+      "url": "https://github.com/AztecProtocol/Setup",
+      "metrics": {
+        "stars": {
+          "before": 33,
+          "after": 33,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 26,
+          "after": 30,
+          "change": 4,
+          "percentChange": 15.4
+        },
+        "watchers": {
+          "before": 33,
+          "after": 33,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 10,
+          "after": 15,
+          "change": 5,
+          "percentChange": 50
+        },
+        "size": {
+          "before": 28962,
+          "after": 28962,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 5,
+          "after": 5,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "improved"
+    },
+    {
+      "repository": "AztecProtocol/stackproofs",
+      "url": "https://github.com/AztecProtocol/stackproofs",
+      "metrics": {
+        "stars": {
+          "before": 4,
+          "after": 4,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 4,
+          "after": 4,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 10877,
+          "after": 10877,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 4,
+          "after": 4,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "AztecProtocol/tiny-noir-codespace",
+      "url": "https://github.com/AztecProtocol/tiny-noir-codespace",
+      "metrics": {
+        "stars": {
+          "before": 2,
+          "after": 2,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 1,
+          "after": 1,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 2,
+          "after": 2,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 2295,
+          "after": 2295,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 1,
+          "after": 1,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "AztecProtocol/token-partition-table",
+      "url": "https://github.com/AztecProtocol/token-partition-table",
+      "metrics": {
+        "stars": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 6713,
+          "after": 6713,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 1,
+          "after": 1,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "AztecProtocol/wallet-ui",
+      "url": "https://github.com/AztecProtocol/wallet-ui",
+      "metrics": {
+        "stars": {
+          "before": 2,
+          "after": 2,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 7,
+          "after": 7,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 2,
+          "after": 2,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 5,
+          "after": 5,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 2897,
+          "after": 2897,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 5,
+          "after": 5,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "AztecProtocol/weierstrudel",
+      "url": "https://github.com/AztecProtocol/weierstrudel",
+      "metrics": {
+        "stars": {
+          "before": 114,
+          "after": 114,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 9,
+          "after": 9,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 114,
+          "after": 114,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 400,
+          "after": 400,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 3,
+          "after": 3,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "AztecProtocol/zk-money",
+      "url": "https://github.com/AztecProtocol/zk-money",
+      "metrics": {
+        "stars": {
+          "before": 13,
+          "after": 13,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 16,
+          "after": 16,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 13,
+          "after": 13,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 13,
+          "after": 13,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 15434,
+          "after": 15434,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 28,
+          "after": 28,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 41,
+          "after": 41,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "AztecProtocol/zkSecurity-aztec-packages",
+      "url": "https://github.com/AztecProtocol/zkSecurity-aztec-packages",
+      "metrics": {
+        "stars": {
+          "before": 1,
+          "after": 1,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 1,
+          "after": 1,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 470463,
+          "after": 470463,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 93,
+          "after": 93,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "noir-lang/aztec-contracts",
+      "url": "https://github.com/noir-lang/aztec-contracts",
+      "metrics": {
+        "stars": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 3,
+          "after": 3,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 35,
+          "after": 35,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 1,
+          "after": 1,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "olehmisar/aztec-recursive-proofs",
+      "url": "https://github.com/olehmisar/aztec-recursive-proofs",
+      "metrics": {
+        "stars": {
+          "before": 2,
+          "after": 2,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 2,
+          "after": 2,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 311,
+          "after": 311,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 1,
+          "after": 1,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "olehmisar/aztec-tools",
+      "url": "https://github.com/olehmisar/aztec-tools",
+      "metrics": {
+        "stars": {
+          "before": 6,
+          "after": 6,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 6,
+          "after": 6,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 2,
+          "after": 2,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 3057,
+          "after": 3057,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 1,
+          "after": 1,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "olehmisar/prols",
+      "url": "https://github.com/olehmisar/prols",
+      "metrics": {
+        "stars": {
+          "before": 1,
+          "after": 1,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 1,
+          "after": 1,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 3299,
+          "after": 3299,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 2,
+          "after": 2,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "olehmisar/six-dos",
+      "url": "https://github.com/olehmisar/six-dos",
+      "metrics": {
+        "stars": {
+          "before": 1,
+          "after": 1,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 1,
+          "after": 1,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 8860,
+          "after": 8860,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 2,
+          "after": 2,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "noir-lang/.github",
+      "url": "https://github.com/noir-lang/.github",
+      "metrics": {
+        "stars": {
+          "before": 4,
+          "after": 4,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 3,
+          "after": 3,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 4,
+          "after": 4,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 2,
+          "after": 2,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 31,
+          "after": 31,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 4,
+          "after": 4,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "noir-lang/acvm",
+      "url": "https://github.com/noir-lang/acvm",
+      "metrics": {
+        "stars": {
+          "before": 49,
+          "after": 49,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 17,
+          "after": 17,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 49,
+          "after": 49,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 3008,
+          "after": 3008,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 23,
+          "after": 23,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 267,
+          "after": 267,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "noir-lang/acvm-backend-barretenberg",
+      "url": "https://github.com/noir-lang/acvm-backend-barretenberg",
+      "metrics": {
+        "stars": {
+          "before": 41,
+          "after": 41,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 17,
+          "after": 17,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 41,
+          "after": 41,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 8975,
+          "after": 8975,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 16,
+          "after": 16,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 18,
+          "after": 18,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "noir-lang/acvm-docs",
+      "url": "https://github.com/noir-lang/acvm-docs",
+      "metrics": {
+        "stars": {
+          "before": 7,
+          "after": 7,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 3,
+          "after": 3,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 7,
+          "after": 7,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 396,
+          "after": 396,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 3,
+          "after": 3,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "noir-lang/acvm-simulator",
+      "url": "https://github.com/noir-lang/acvm-simulator",
+      "metrics": {
+        "stars": {
+          "before": 5,
+          "after": 5,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 2,
+          "after": 2,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 5,
+          "after": 5,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 2,
+          "after": 2,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 1370,
+          "after": 1370,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 6,
+          "after": 6,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "noir-lang/arkworks_backend",
+      "url": "https://github.com/noir-lang/arkworks_backend",
+      "metrics": {
+        "stars": {
+          "before": 10,
+          "after": 10,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 8,
+          "after": 8,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 10,
+          "after": 10,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 1,
+          "after": 1,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 42,
+          "after": 42,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 5,
+          "after": 5,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "noir-lang/awesome-noir",
+      "url": "https://github.com/noir-lang/awesome-noir",
+      "metrics": {
+        "stars": {
+          "before": 530,
+          "after": 543,
+          "change": 13,
+          "percentChange": 2.5
+        },
+        "forks": {
+          "before": 125,
+          "after": 127,
+          "change": 2,
+          "percentChange": 1.6
+        },
+        "watchers": {
+          "before": 530,
+          "after": 543,
+          "change": 13,
+          "percentChange": 2.5
+        },
+        "openIssues": {
+          "before": 2,
+          "after": 2,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 287,
+          "after": 299,
+          "change": 12,
+          "percentChange": 4.2
+        },
+        "contributors": {
+          "before": 83,
+          "after": 83,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "improved"
+    },
+    {
+      "repository": "noir-lang/aztec-connect",
+      "url": "https://github.com/noir-lang/aztec-connect",
+      "metrics": {
+        "stars": {
+          "before": 2,
+          "after": 2,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 4,
+          "after": 4,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 2,
+          "after": 2,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 3,
+          "after": 3,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 182846,
+          "after": 182846,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 12,
+          "after": 12,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "noir-lang/barretenberg",
+      "url": "https://github.com/noir-lang/barretenberg",
+      "metrics": {
+        "stars": {
+          "before": 8,
+          "after": 8,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 2,
+          "after": 2,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 8,
+          "after": 8,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 19861,
+          "after": 19861,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 2,
+          "after": 2,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "noir-lang/barretenberg-js-binary",
+      "url": "https://github.com/noir-lang/barretenberg-js-binary",
+      "metrics": {
+        "stars": {
+          "before": 2,
+          "after": 2,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 1,
+          "after": 1,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 2,
+          "after": 2,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 3,
+          "after": 3,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 1,
+          "after": 1,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "noir-lang/barretenberg-sys",
+      "url": "https://github.com/noir-lang/barretenberg-sys",
+      "metrics": {
+        "stars": {
+          "before": 3,
+          "after": 3,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 6,
+          "after": 6,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 3,
+          "after": 3,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 2,
+          "after": 2,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 11121,
+          "after": 11121,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 6,
+          "after": 6,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 5,
+          "after": 5,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "noir-lang/book",
+      "url": "https://github.com/noir-lang/book",
+      "metrics": {
+        "stars": {
+          "before": 17,
+          "after": 17,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 15,
+          "after": 15,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 17,
+          "after": 17,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 4,
+          "after": 4,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 2813,
+          "after": 2813,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 19,
+          "after": 19,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "noir-lang/build-nargo",
+      "url": "https://github.com/noir-lang/build-nargo",
+      "metrics": {
+        "stars": {
+          "before": 3,
+          "after": 3,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 1,
+          "after": 1,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 3,
+          "after": 3,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 54,
+          "after": 54,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 5,
+          "after": 5,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "noir-lang/docs",
+      "url": "https://github.com/noir-lang/docs",
+      "metrics": {
+        "stars": {
+          "before": 21,
+          "after": 21,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 22,
+          "after": 22,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 21,
+          "after": 21,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 2,
+          "after": 2,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 2607,
+          "after": 2607,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 23,
+          "after": 23,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "noir-lang/dummy_proof_system",
+      "url": "https://github.com/noir-lang/dummy_proof_system",
+      "metrics": {
+        "stars": {
+          "before": 3,
+          "after": 3,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 1,
+          "after": 1,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 3,
+          "after": 3,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 4,
+          "after": 4,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 1,
+          "after": 1,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "noir-lang/ec",
+      "url": "https://github.com/noir-lang/ec",
+      "metrics": {
+        "stars": {
+          "before": 1,
+          "after": 1,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 1,
+          "after": 1,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 2,
+          "after": 2,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 42,
+          "after": 42,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 4,
+          "after": 4,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 3,
+          "after": 3,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "noir-lang/eddsa",
+      "url": "https://github.com/noir-lang/eddsa",
+      "metrics": {
+        "stars": {
+          "before": 1,
+          "after": 1,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 1,
+          "after": 1,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 4,
+          "after": 4,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 43,
+          "after": 43,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 5,
+          "after": 5,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 4,
+          "after": 4,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "noir-lang/features",
+      "url": "https://github.com/noir-lang/features",
+      "metrics": {
+        "stars": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 13,
+          "after": 13,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 2,
+          "after": 2,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "noir-lang/grumpkin",
+      "url": "https://github.com/noir-lang/grumpkin",
+      "metrics": {
+        "stars": {
+          "before": 5,
+          "after": 5,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 1,
+          "after": 1,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 5,
+          "after": 5,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 1,
+          "after": 1,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 9,
+          "after": 9,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 2,
+          "after": 2,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "noir-lang/keccak256",
+      "url": "https://github.com/noir-lang/keccak256",
+      "metrics": {
+        "stars": {
+          "before": 4,
+          "after": 4,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 4,
+          "after": 4,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 34,
+          "after": 34,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 5,
+          "after": 5,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 2,
+          "after": 2,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "noir-lang/library-workflows",
+      "url": "https://github.com/noir-lang/library-workflows",
+      "metrics": {
+        "stars": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 1,
+          "after": 1,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 1,
+          "after": 1,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "noir-lang/marlin_arkworks_backend",
+      "url": "https://github.com/noir-lang/marlin_arkworks_backend",
+      "metrics": {
+        "stars": {
+          "before": 10,
+          "after": 10,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 3,
+          "after": 3,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 10,
+          "after": 10,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 2,
+          "after": 2,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 24904,
+          "after": 24904,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 2,
+          "after": 2,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "noir-lang/mimc",
+      "url": "https://github.com/noir-lang/mimc",
+      "metrics": {
+        "stars": {
+          "before": 3,
+          "after": 3,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 2,
+          "after": 2,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 3,
+          "after": 3,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 2,
+          "after": 2,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 22,
+          "after": 22,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 3,
+          "after": 3,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 1,
+          "after": 1,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "noir-lang/mq-tests",
+      "url": "https://github.com/noir-lang/mq-tests",
+      "metrics": {
+        "stars": {
+          "before": 2,
+          "after": 2,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 1,
+          "after": 1,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 2,
+          "after": 2,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 3,
+          "after": 3,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 10,
+          "after": 10,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 1,
+          "after": 1,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "noir-lang/nextjs-bbjs-demo",
+      "url": "https://github.com/noir-lang/nextjs-bbjs-demo",
+      "metrics": {
+        "stars": {
+          "before": 6,
+          "after": 6,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 1,
+          "after": 1,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 6,
+          "after": 6,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 1,
+          "after": 1,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 395,
+          "after": 395,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 1,
+          "after": 1,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "noir-lang/noir",
+      "url": "https://github.com/noir-lang/noir",
+      "metrics": {
+        "stars": {
+          "before": 1227,
+          "after": 1239,
+          "change": 12,
+          "percentChange": 1
+        },
+        "forks": {
+          "before": 347,
+          "after": 351,
+          "change": 4,
+          "percentChange": 1.2
+        },
+        "watchers": {
+          "before": 1227,
+          "after": 1239,
+          "change": 12,
+          "percentChange": 1
+        },
+        "openIssues": {
+          "before": 765,
+          "after": 842,
+          "change": 77,
+          "percentChange": 10.1
+        },
+        "size": {
+          "before": 968505,
+          "after": 976606,
+          "change": 8101,
+          "percentChange": 0.8
+        },
+        "contributors": {
+          "before": 116,
+          "after": 116,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 846,
+          "after": 864,
+          "change": 18,
+          "percentChange": 2.1
+        }
+      },
+      "status": "improved"
+    },
+    {
+      "repository": "noir-lang/noir-aztec3",
+      "url": "https://github.com/noir-lang/noir-aztec3",
+      "metrics": {
+        "stars": {
+          "before": 7,
+          "after": 7,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 2,
+          "after": 2,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 7,
+          "after": 7,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 1,
+          "after": 1,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 27,
+          "after": 27,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 2,
+          "after": 2,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "noir-lang/noir-aztec3-contract-example",
+      "url": "https://github.com/noir-lang/noir-aztec3-contract-example",
+      "metrics": {
+        "stars": {
+          "before": 5,
+          "after": 5,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 1,
+          "after": 1,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 5,
+          "after": 5,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 1,
+          "after": 1,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 67,
+          "after": 67,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 1,
+          "after": 1,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "noir-lang/noir-bench-report",
+      "url": "https://github.com/noir-lang/noir-bench-report",
+      "metrics": {
+        "stars": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 1,
+          "after": 1,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 2197,
+          "after": 2197,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 5,
+          "after": 5,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "noir-lang/noir-bignum",
+      "url": "https://github.com/noir-lang/noir-bignum",
+      "metrics": {
+        "stars": {
+          "before": 29,
+          "after": 29,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 18,
+          "after": 20,
+          "change": 2,
+          "percentChange": 11.1
+        },
+        "watchers": {
+          "before": 29,
+          "after": 29,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 7,
+          "after": 9,
+          "change": 2,
+          "percentChange": 28.6
+        },
+        "size": {
+          "before": 35994,
+          "after": 36131,
+          "change": 137,
+          "percentChange": 0.4
+        },
+        "contributors": {
+          "before": 20,
+          "after": 20,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 32,
+          "after": 32,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "improved"
+    },
+    {
+      "repository": "noir-lang/noir-bignum-paramgen",
+      "url": "https://github.com/noir-lang/noir-bignum-paramgen",
+      "metrics": {
+        "stars": {
+          "before": 4,
+          "after": 4,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 1,
+          "after": 1,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 4,
+          "after": 4,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 6,
+          "after": 6,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 62,
+          "after": 62,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 4,
+          "after": 4,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "noir-lang/noir-cra",
+      "url": "https://github.com/noir-lang/noir-cra",
+      "metrics": {
+        "stars": {
+          "before": 4,
+          "after": 4,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 1,
+          "after": 1,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 4,
+          "after": 4,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 1,
+          "after": 1,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 36445,
+          "after": 36445,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 1,
+          "after": 1,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "noir-lang/noir-edwards",
+      "url": "https://github.com/noir-lang/noir-edwards",
+      "metrics": {
+        "stars": {
+          "before": 8,
+          "after": 8,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 3,
+          "after": 3,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 8,
+          "after": 8,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 3,
+          "after": 3,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 145,
+          "after": 145,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 8,
+          "after": 8,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 8,
+          "after": 8,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "noir-lang/noir-examples",
+      "url": "https://github.com/noir-lang/noir-examples",
+      "metrics": {
+        "stars": {
+          "before": 71,
+          "after": 71,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 35,
+          "after": 36,
+          "change": 1,
+          "percentChange": 2.9
+        },
+        "watchers": {
+          "before": 71,
+          "after": 71,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 20,
+          "after": 20,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 24008,
+          "after": 24008,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 14,
+          "after": 14,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "improved"
+    },
+    {
+      "repository": "noir-lang/noir-gates-diff",
+      "url": "https://github.com/noir-lang/noir-gates-diff",
+      "metrics": {
+        "stars": {
+          "before": 2,
+          "after": 2,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 3,
+          "after": 3,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 2,
+          "after": 2,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 4043,
+          "after": 4043,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 4,
+          "after": 4,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "noir-lang/noir-in-an-afternoon",
+      "url": "https://github.com/noir-lang/noir-in-an-afternoon",
+      "metrics": {
+        "stars": {
+          "before": 21,
+          "after": 21,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 4,
+          "after": 4,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 21,
+          "after": 21,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 1,
+          "after": 1,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 164322,
+          "after": 164322,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 1,
+          "after": 1,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "noir-lang/noir-library-starter",
+      "url": "https://github.com/noir-lang/noir-library-starter",
+      "metrics": {
+        "stars": {
+          "before": 6,
+          "after": 6,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 2,
+          "after": 2,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 6,
+          "after": 6,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 4,
+          "after": 4,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 78,
+          "after": 78,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 5,
+          "after": 5,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "noir-lang/noir-lsp",
+      "url": "https://github.com/noir-lang/noir-lsp",
+      "metrics": {
+        "stars": {
+          "before": 7,
+          "after": 7,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 2,
+          "after": 2,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 7,
+          "after": 7,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 232,
+          "after": 232,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 2,
+          "after": 2,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "noir-lang/noir-nvim",
+      "url": "https://github.com/noir-lang/noir-nvim",
+      "metrics": {
+        "stars": {
+          "before": 17,
+          "after": 17,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 6,
+          "after": 6,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 17,
+          "after": 17,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 2,
+          "after": 2,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 8,
+          "after": 8,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 2,
+          "after": 2,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "noir-lang/noir-runner",
+      "url": "https://github.com/noir-lang/noir-runner",
+      "metrics": {
+        "stars": {
+          "before": 1,
+          "after": 1,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 1,
+          "after": 1,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 1,
+          "after": 1,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 3,
+          "after": 3,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 28,
+          "after": 28,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 1,
+          "after": 1,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "noir-lang/noir-source-resolver",
+      "url": "https://github.com/noir-lang/noir-source-resolver",
+      "metrics": {
+        "stars": {
+          "before": 3,
+          "after": 3,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 4,
+          "after": 4,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 3,
+          "after": 3,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 74,
+          "after": 74,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 6,
+          "after": 6,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "noir-lang/noir-wasm-testing",
+      "url": "https://github.com/noir-lang/noir-wasm-testing",
+      "metrics": {
+        "stars": {
+          "before": 3,
+          "after": 3,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 1,
+          "after": 1,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 3,
+          "after": 3,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 395,
+          "after": 395,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 3,
+          "after": 3,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "noir-lang/noir-web-starter-next",
+      "url": "https://github.com/noir-lang/noir-web-starter-next",
+      "metrics": {
+        "stars": {
+          "before": 18,
+          "after": 18,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 3,
+          "after": 3,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 18,
+          "after": 18,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 3,
+          "after": 3,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 98,
+          "after": 98,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 2,
+          "after": 2,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "noir-lang/noir_base64",
+      "url": "https://github.com/noir-lang/noir_base64",
+      "metrics": {
+        "stars": {
+          "before": 9,
+          "after": 9,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 8,
+          "after": 8,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 9,
+          "after": 9,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 1586,
+          "after": 1586,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 14,
+          "after": 14,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 10,
+          "after": 10,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "noir-lang/noir_bigcurve",
+      "url": "https://github.com/noir-lang/noir_bigcurve",
+      "metrics": {
+        "stars": {
+          "before": 14,
+          "after": 14,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 4,
+          "after": 4,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 14,
+          "after": 14,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 5,
+          "after": 5,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 655,
+          "after": 655,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 12,
+          "after": 12,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 15,
+          "after": 15,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "noir-lang/noir_check_shuffle",
+      "url": "https://github.com/noir-lang/noir_check_shuffle",
+      "metrics": {
+        "stars": {
+          "before": 2,
+          "after": 2,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 1,
+          "after": 1,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 2,
+          "after": 2,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 51,
+          "after": 51,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 6,
+          "after": 6,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 3,
+          "after": 3,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "noir-lang/noir_js-dev",
+      "url": "https://github.com/noir-lang/noir_js-dev",
+      "metrics": {
+        "stars": {
+          "before": 3,
+          "after": 4,
+          "change": 1,
+          "percentChange": 33.3
+        },
+        "forks": {
+          "before": 1,
+          "after": 1,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 3,
+          "after": 4,
+          "change": 1,
+          "percentChange": 33.3
+        },
+        "openIssues": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 12128,
+          "after": 12128,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 2,
+          "after": 2,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "improved"
+    },
+    {
+      "repository": "noir-lang/noir_json_parser",
+      "url": "https://github.com/noir-lang/noir_json_parser",
+      "metrics": {
+        "stars": {
+          "before": 16,
+          "after": 16,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 6,
+          "after": 6,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 16,
+          "after": 16,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 7,
+          "after": 7,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 18152,
+          "after": 18152,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 10,
+          "after": 10,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 4,
+          "after": 4,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "noir-lang/noir_rsa",
+      "url": "https://github.com/noir-lang/noir_rsa",
+      "metrics": {
+        "stars": {
+          "before": 22,
+          "after": 22,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 10,
+          "after": 10,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 22,
+          "after": 22,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 2,
+          "after": 2,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 2704,
+          "after": 2704,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 13,
+          "after": 13,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 10,
+          "after": 10,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "noir-lang/noir_sort",
+      "url": "https://github.com/noir-lang/noir_sort",
+      "metrics": {
+        "stars": {
+          "before": 2,
+          "after": 2,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 1,
+          "after": 1,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 2,
+          "after": 2,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 1,
+          "after": 1,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 74,
+          "after": 74,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 9,
+          "after": 9,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 6,
+          "after": 6,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "noir-lang/noir_string_search",
+      "url": "https://github.com/noir-lang/noir_string_search",
+      "metrics": {
+        "stars": {
+          "before": 18,
+          "after": 18,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 9,
+          "after": 9,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 18,
+          "after": 18,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 227,
+          "after": 227,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 10,
+          "after": 10,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 6,
+          "after": 6,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "noir-lang/noir_wasm",
+      "url": "https://github.com/noir-lang/noir_wasm",
+      "metrics": {
+        "stars": {
+          "before": 11,
+          "after": 11,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 4,
+          "after": 4,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 11,
+          "after": 11,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 2,
+          "after": 2,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 80711,
+          "after": 80711,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 10,
+          "after": 10,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 1,
+          "after": 1,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "noir-lang/noirup",
+      "url": "https://github.com/noir-lang/noirup",
+      "metrics": {
+        "stars": {
+          "before": 31,
+          "after": 31,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 17,
+          "after": 17,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 31,
+          "after": 31,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 12,
+          "after": 12,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 88,
+          "after": 88,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 11,
+          "after": 11,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 5,
+          "after": 5,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "noir-lang/parser-fuzzer",
+      "url": "https://github.com/noir-lang/parser-fuzzer",
+      "metrics": {
+        "stars": {
+          "before": 6,
+          "after": 6,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 2,
+          "after": 2,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 6,
+          "after": 6,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 1,
+          "after": 1,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 572,
+          "after": 572,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 2,
+          "after": 2,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "noir-lang/Planning",
+      "url": "https://github.com/noir-lang/Planning",
+      "metrics": {
+        "stars": {
+          "before": 3,
+          "after": 3,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 1,
+          "after": 1,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 3,
+          "after": 3,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 1,
+          "after": 1,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "noir-lang/poseidon",
+      "url": "https://github.com/noir-lang/poseidon",
+      "metrics": {
+        "stars": {
+          "before": 12,
+          "after": 12,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 5,
+          "after": 6,
+          "change": 1,
+          "percentChange": 20
+        },
+        "watchers": {
+          "before": 12,
+          "after": 12,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 4,
+          "after": 4,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 968,
+          "after": 968,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 6,
+          "after": 6,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 2,
+          "after": 2,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "improved"
+    },
+    {
+      "repository": "noir-lang/schnorr",
+      "url": "https://github.com/noir-lang/schnorr",
+      "metrics": {
+        "stars": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 1,
+          "after": 1,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 1,
+          "after": 1,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 38,
+          "after": 38,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 5,
+          "after": 5,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 4,
+          "after": 4,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "noir-lang/sha256",
+      "url": "https://github.com/noir-lang/sha256",
+      "metrics": {
+        "stars": {
+          "before": 3,
+          "after": 3,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 4,
+          "after": 4,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 3,
+          "after": 3,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 7,
+          "after": 5,
+          "change": -2,
+          "percentChange": -28.6
+        },
+        "size": {
+          "before": 335,
+          "after": 262,
+          "change": -73,
+          "percentChange": -21.8
+        },
+        "contributors": {
+          "before": 7,
+          "after": 7,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 8,
+          "after": 8,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "noir-lang/sha512",
+      "url": "https://github.com/noir-lang/sha512",
+      "metrics": {
+        "stars": {
+          "before": 2,
+          "after": 2,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 3,
+          "after": 3,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 2,
+          "after": 2,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 1,
+          "after": 1,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 155,
+          "after": 155,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 4,
+          "after": 4,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "noir-lang/sparse_array",
+      "url": "https://github.com/noir-lang/sparse_array",
+      "metrics": {
+        "stars": {
+          "before": 4,
+          "after": 4,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 5,
+          "after": 5,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 4,
+          "after": 4,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 2,
+          "after": 2,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 26,
+          "after": 26,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 7,
+          "after": 7,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 2,
+          "after": 2,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "noir-lang/stealthdrop",
+      "url": "https://github.com/noir-lang/stealthdrop",
+      "metrics": {
+        "stars": {
+          "before": 4,
+          "after": 4,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 4,
+          "after": 4,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 10530,
+          "after": 10530,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 1,
+          "after": 1,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "noir-lang/tiny-noirjs-app",
+      "url": "https://github.com/noir-lang/tiny-noirjs-app",
+      "metrics": {
+        "stars": {
+          "before": 15,
+          "after": 15,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 14,
+          "after": 14,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 15,
+          "after": 15,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 2,
+          "after": 2,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 101,
+          "after": 101,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 5,
+          "after": 5,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "noir-lang/vscode-noir",
+      "url": "https://github.com/noir-lang/vscode-noir",
+      "metrics": {
+        "stars": {
+          "before": 10,
+          "after": 10,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 9,
+          "after": 9,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 10,
+          "after": 10,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 10,
+          "after": 10,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 6405,
+          "after": 6405,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 14,
+          "after": 14,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 18,
+          "after": 18,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "noir-lang/zk-regex",
+      "url": "https://github.com/noir-lang/zk-regex",
+      "metrics": {
+        "stars": {
+          "before": 4,
+          "after": 4,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 1,
+          "after": 1,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 4,
+          "after": 4,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 4,
+          "after": 4,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 10861,
+          "after": 10861,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 13,
+          "after": 13,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "noir-lang/zk_bench",
+      "url": "https://github.com/noir-lang/zk_bench",
+      "metrics": {
+        "stars": {
+          "before": 8,
+          "after": 8,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 1,
+          "after": 1,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 8,
+          "after": 8,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 9,
+          "after": 9,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 39522,
+          "after": 39522,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 3,
+          "after": 3,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "olehmisar/hardhat-noir",
+      "url": "https://github.com/olehmisar/hardhat-noir",
+      "metrics": {
+        "stars": {
+          "before": 10,
+          "after": 10,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 1,
+          "after": 1,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 10,
+          "after": 10,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 6,
+          "after": 6,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 228,
+          "after": 228,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 1,
+          "after": 1,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "olehmisar/hardhat-noir-starter",
+      "url": "https://github.com/olehmisar/hardhat-noir-starter",
+      "metrics": {
+        "stars": {
+          "before": 3,
+          "after": 3,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 3,
+          "after": 3,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 679,
+          "after": 679,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 1,
+          "after": 1,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "olehmisar/nodash",
+      "url": "https://github.com/olehmisar/nodash",
+      "metrics": {
+        "stars": {
+          "before": 16,
+          "after": 16,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 2,
+          "after": 2,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 16,
+          "after": 16,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 2,
+          "after": 2,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 54,
+          "after": 54,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 1,
+          "after": 1,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 20,
+          "after": 20,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "olehmisar/noir-directory",
+      "url": "https://github.com/olehmisar/noir-directory",
+      "metrics": {
+        "stars": {
+          "before": 1,
+          "after": 1,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 1,
+          "after": 1,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 180,
+          "after": 180,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 1,
+          "after": 1,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "olehmisar/noir_webauthn",
+      "url": "https://github.com/olehmisar/noir_webauthn",
+      "metrics": {
+        "stars": {
+          "before": 7,
+          "after": 7,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 1,
+          "after": 1,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 7,
+          "after": 7,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 23,
+          "after": 23,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 1,
+          "after": 1,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 6,
+          "after": 6,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "olehmisar/recursive-proofs-bug",
+      "url": "https://github.com/olehmisar/recursive-proofs-bug",
+      "metrics": {
+        "stars": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 60,
+          "after": 60,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 1,
+          "after": 1,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    },
+    {
+      "repository": "olehmisar/zkemail",
+      "url": "https://github.com/olehmisar/zkemail",
+      "metrics": {
+        "stars": {
+          "before": 5,
+          "after": 5,
+          "change": 0,
+          "percentChange": 0
+        },
+        "forks": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "watchers": {
+          "before": 5,
+          "after": 5,
+          "change": 0,
+          "percentChange": 0
+        },
+        "openIssues": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        },
+        "size": {
+          "before": 229,
+          "after": 229,
+          "change": 0,
+          "percentChange": 0
+        },
+        "contributors": {
+          "before": 1,
+          "after": 1,
+          "change": 0,
+          "percentChange": 0
+        },
+        "releases": {
+          "before": 0,
+          "after": 0,
+          "change": 0,
+          "percentChange": 0
+        }
+      },
+      "status": "unchanged"
+    }
+  ]
+}

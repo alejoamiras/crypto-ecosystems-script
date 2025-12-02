@@ -5,7 +5,7 @@
  * Shows differences in stars, forks, and other metrics
  */
 
-import { readFileSync, existsSync } from 'fs';
+import { readFileSync, existsSync, writeFileSync } from 'fs';
 import { resolve, join } from 'path';
 import { logger } from '../src/lib/logger';
 import type { Logger } from 'pino';
